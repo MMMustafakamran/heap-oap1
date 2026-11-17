@@ -29,6 +29,7 @@ export const ACTION_MAP: Record<string, PageActionHandler> = {
   'rendering-in-app': runRenderingInAppFindingAction, // #1: doc page crashes, then the harness copy
   'headless-threads': runHeadlessThreadsAction, // #2
   'components-state-actions': runGenuiFindingAction, // #3
+  'components-theming': runKeyboardSendWithFinding, // #22
   a2ui: runA2uiDynamicFindingAction, // #4
   'a2ui-dynamic': runA2uiDynamicFindingAction, // #5
   'a2ui-fixed': runStandardWithFinding, // #6: card renders with empty fields
@@ -40,7 +41,6 @@ export const ACTION_MAP: Record<string, PageActionHandler> = {
   components: runKeyboardSendAction,
   'components-catalogs': runKeyboardSendAction,
   'components-surfaces': runKeyboardSendAction,
-  'components-theming': runKeyboardSendAction,
   'components-standard-catalog': runKeyboardSendAction,
   'components-from-a2ui': runKeyboardSendAction,
   'components-markdown-mode': runKeyboardSendAction,

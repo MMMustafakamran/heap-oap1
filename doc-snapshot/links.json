@@ -376,6 +376,13 @@
    "/openai-agents-python/vs-code-extension"
   ],
   "/openai-agents-python/community-frameworks": [],
-  "/openai-agents-python/telemetry": []
+  "/openai-agents-python/telemetry": [],
+  "/openai-agents-python/programmatic-control": [
+   "/openai-agents-python/headless",
+   "/openai-agents-python/human-in-the-loop"
+  ],
+  "/openai-agents-python/agent-config": [
+   "/openai-agents-python/shared-state"
+  ]
  }
 }

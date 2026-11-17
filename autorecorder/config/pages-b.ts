@@ -102,7 +102,7 @@ export const PAGES_B = [
     docPath: 'generative-ui/components/theming', route: 'generative-ui/components-sub/theming',
     ideFile: 'frontend/app/generative-ui/components-sub/theming/page.tsx', startLine: 1, endLine: 24,
     prompt: "Show me a card with a title, a short description and a primary button.",
-    timeouts: { replyStartMs: 180000, replyStreamMs: 180000 },
+    timeouts: { replyStartMs: 60000, replyStreamMs: 60000 },
   },
   {
     id: 'components-transports', name: 'Generative UI - Components: Transports', videoName: 'ComponentsTransports',
@@ -117,7 +117,7 @@ export const PAGES_B = [
     ideFile: 'frontend/app/generative-ui/components-sub/state-and-actions/catalog.tsx', startLine: 16, endLine: 53,
     ideAddedText: '<p>In cart: {inCart}</p>{/* HARNESS */}',
     prompt: "Show me product cards for productId shoe-1 named Runner and productId shoe-2 named Trail.",
-    timeouts: { replyStartMs: 180000, replyStreamMs: 180000 },
+    timeouts: { replyStartMs: 60000, replyStreamMs: 60000 },
   },
   {
     id: 'components-markdown-mode', name: 'Generative UI - Components: Markdown mode', videoName: 'ComponentsMarkdownMode',

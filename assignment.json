@@ -571,7 +571,8 @@
      "narration": null,
      "filmed": null
     }
-   ]
+   ],
+   "notes": "Note: BarChart and its schema are never defined and no agent is shown; recorded with the showcase components and a harness agent."
   },
   {
    "id": "tool-rendering",
@@ -775,22 +776,25 @@
    "child": false,
    "docPath": "generative-ui/components/theming",
    "reachable": "sidebar",
-   "status": "✅",
+   "status": "❌",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [],
+   "findings": [
+    22
+   ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-33-ComponentsTheming",
      "loom": null,
-     "narration": null,
+     "narration": "narration/scripts/OAP-react-33-ComponentsTheming.json",
      "filmed": null
     }
-   ]
+   ],
+   "notes": "Issue: asked for a card, nothing renders: the reply stays empty or shows \"Part of this UI couldn't be shown\", so the theme can never be seen (CI take + 3/3 probes)."
   },
   {
    "id": "components-transports",

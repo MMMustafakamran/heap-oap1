@@ -23,6 +23,10 @@ Stack: `@copilotkit/react-core` 1.85.0, `@copilotkit/runtime` 1.85.0, `@ag-ui/cl
 
 **#3** Asked for product cards, the assistant message stays empty: no `ProductCard` renders and the cart never fills (3/3 runs). `shopUI` is split across several blocks on the page (merged into one catalog in the harness).
 
+### [Theming](https://docs.copilotkit.ai/openai-agents-python/generative-ui/components/theming)
+
+**#22** With the page's `theme` provider, asking for a card renders nothing: the assistant message stays empty or shows "Part of this UI couldn't be shown" (CI take 2026-11-17 and 3/3 probes). The theme can never be seen.
+
 ### [A2UI](https://docs.copilotkit.ai/openai-agents-python/generative-ui/a2ui)
 
 **#4** Wrong-framework agent code and a broken surface.
