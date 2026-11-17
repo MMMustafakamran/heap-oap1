@@ -2,7 +2,7 @@
 
 Open doc defects for https://docs.copilotkit.ai/openai-agents-python (React pages), found by following each page verbatim in this harness.
 
-Stack: `@copilotkit/react-core` 1.85.0, `@copilotkit/runtime` 1.85.0, `@ag-ui/client` 1.0.2 (doc pins it), Next.js 16.4.5, React 19.3.0 · `openai-agents` 0.24.0, `ag-ui-openai-agents` 0.1.0, FastAPI 0.163.1 · Node 26.7.0, npm 11, Python 3.13.15 · Microsoft Windows 11 Pro · docs snapshot 2026-11-17. CI installs npm `latest` CopilotKit / AG-UI each run (`VERSIONS.md`).
+Stack: `@copilotkit/react-core` 1.88.0, `@copilotkit/runtime` 1.88.0, `@ag-ui/client` 1.0.4 (CI latest; the doc pins 1.0.2, local runs used 1.0.2 and 1.85.0), Next.js 16.4.5, React 19.3.0 · `openai-agents` 0.24.0, `ag-ui-openai-agents` 0.1.0, FastAPI 0.163.1 · Node 26.7.0, npm 11, Python 3.13.15 · Microsoft Windows 11 Pro · docs snapshot 2026-11-17. CI installs npm `latest` CopilotKit / AG-UI each run (`VERSIONS.md`).
 
 ## Dev blockers
 

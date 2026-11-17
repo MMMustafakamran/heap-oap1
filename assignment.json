@@ -4,9 +4,9 @@
  "repo": "OpenAIAgents-React",
  "docBase": "https://docs.copilotkit.ai/openai-agents-python/",
  "versions": {
-  "@copilotkit/react-core": "1.85.0",
-  "@copilotkit/runtime": "1.85.0",
-  "@ag-ui/client": "1.0.2",
+  "@copilotkit/react-core": "1.88.0",
+  "@copilotkit/runtime": "1.88.0",
+  "@ag-ui/client": "1.0.4",
   "next": "16.4.5",
   "react": "19.3.0",
   "openai-agents": "0.24.0",
@@ -136,9 +136,9 @@
     {
      "text": null,
      "clip": "OAP-react-01-Quickstart",
-     "loom": null,
+     "loom": "https://www.loom.com/share/25275386a13c4ba2a3e976a9b2f44161",
      "narration": null,
-     "filmed": null
+     "filmed": "2026-11-17"
     }
    ]
   },
@@ -257,7 +257,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: agent_server.py uses AGENTS and lifespan but never defines them.",
+   "notes": [
+    "Note: agent_server.py uses AGENTS and lifespan but never defines them."
+   ],
    "links": [
     {
      "text": null,
@@ -310,14 +312,16 @@
    "findings": [
     2
    ],
-   "notes": "Issue: the runtime registers the agent as \"default\", but the quickstart's provider targets openai_agent, so useAgent throws: Agent 'openai_agent' not found after runtime sync. Known agents: [default].",
+   "notes": [
+    "Issue: the runtime registers the agent as \"default\", but the quickstart's provider targets openai_agent, so useAgent throws: Agent 'openai_agent' not found after runtime sync. Known agents: [default]."
+   ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-16-HeadlessThreads",
-     "loom": null,
+     "loom": "https://www.loom.com/share/a6f673accb514c4f8a99f850fd953bc5",
      "narration": "narration/scripts/OAP-react-16-HeadlessThreads.json",
-     "filmed": null
+     "filmed": "2026-11-17"
     }
    ]
   },
@@ -436,7 +440,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: the page gives no agent or reasoning model; recorded with gpt-5-mini reasoning summaries.",
+   "notes": [
+    "Note: the page gives no agent or reasoning model; recorded with gpt-5-mini reasoning summaries."
+   ],
    "links": [
     {
      "text": null,
@@ -462,7 +468,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: no agent on the page; its example model gpt-6-luna does not exist.",
+   "notes": [
+    "Note: no agent on the page; its example model gpt-6-luna does not exist."
+   ],
    "links": [
     {
      "text": null,
@@ -572,7 +580,9 @@
      "filmed": "2026-11-17"
     }
    ],
-   "notes": "Note: BarChart and its schema are never defined and no agent is shown; recorded with the showcase components and a harness agent."
+   "notes": [
+    "Note: BarChart and its schema are never defined and no agent is shown; recorded with the showcase components and a harness agent."
+   ]
   },
   {
    "id": "tool-rendering",
@@ -589,7 +599,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: the agent uses SYSTEM_PROMPT, search_flights, get_stock_price and roll_d20, which the page never defines.",
+   "notes": [
+    "Note: the agent uses SYSTEM_PROMPT, search_flights, get_stock_price and roll_d20, which the page never defines."
+   ],
    "links": [
     {
      "text": null,
@@ -729,7 +741,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: works, but the model sometimes answers in text instead of a component.",
+   "notes": [
+    "Note: works, but the model sometimes answers in text instead of a component."
+   ],
    "links": [
     {
      "text": null,
@@ -757,14 +771,16 @@
    "findings": [
     3
    ],
-   "notes": "Issue: asked for product cards, the assistant message stays empty, no ProductCard renders and the cart never fills (3/3 runs).",
+   "notes": [
+    "Issue: asked for product cards, the assistant message stays empty, no ProductCard renders and the cart never fills (3/3 runs)."
+   ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-35-ComponentsStateActions",
-     "loom": null,
+     "loom": "https://www.loom.com/share/16763bac2c614d2fa94a30366beaca4a",
      "narration": "narration/scripts/OAP-react-35-ComponentsStateActions.json",
-     "filmed": null
+     "filmed": "2026-11-17"
     }
    ]
   },
@@ -787,12 +803,14 @@
     {
      "text": null,
      "clip": "OAP-react-33-ComponentsTheming",
-     "loom": null,
+     "loom": "https://www.loom.com/share/5b2510216411498683b5f86e83fc493c",
      "narration": null,
-     "filmed": null
+     "filmed": "2026-11-17"
     }
    ],
-   "notes": "Note: works (themed card), but in 1 of 2 CI takes the reply rendered nothing."
+   "notes": [
+    "Note: works (themed card), but in 1 of 2 CI takes the reply rendered nothing."
+   ]
   },
   {
    "id": "components-transports",
@@ -859,7 +877,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: the Airport and Arrow renderers are never shown.",
+   "notes": [
+    "Note: the Airport and Arrow renderers are never shown."
+   ],
    "links": [
     {
      "text": null,
@@ -887,7 +907,9 @@
    "findings": [
     4
    ],
-   "notes": "Issue: the agent code is the CopilotKit Python SDK (from copilotkit import a2ui), not OpenAI Agents; the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map').",
+   "notes": [
+    "Issue: the agent code is the CopilotKit Python SDK (from copilotkit import a2ui), not OpenAI Agents; the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
+   ],
    "links": [
     {
      "text": null,
@@ -915,14 +937,16 @@
    "findings": [
     5
    ],
-   "notes": "Issue: the agent code is LangGraph (ag_ui_langgraph, langchain_openai); the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map').",
+   "notes": [
+    "Issue: the agent code is LangGraph (ag_ui_langgraph, langchain_openai); the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
+   ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-29-A2UIDynamicSchema",
-     "loom": null,
+     "loom": "https://www.loom.com/share/d8328e1880464368825276ae12aec8f6",
      "narration": "narration/scripts/OAP-react-29-A2UIDynamicSchema.json",
-     "filmed": null
+     "filmed": "2026-11-17"
     }
    ]
   },
@@ -943,7 +967,9 @@
    "findings": [
     6
    ],
-   "notes": "Issue: the page defines display_flight but never builds the agent, and flight_schema.json is never shown; the card renders with every field empty.",
+   "notes": [
+    "Issue: the page defines display_flight but never builds the agent, and flight_schema.json is never shown; the card renders with every field empty."
+   ],
    "links": [
     {
      "text": null,
@@ -969,7 +995,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: the page shows example agent output only, no OpenAI Agents agent; recorded with a harness agent.",
+   "notes": [
+    "Note: the page shows example agent output only, no OpenAI Agents agent; recorded with a harness agent."
+   ],
    "links": [
     {
      "text": null,
@@ -997,7 +1025,9 @@
    "findings": [
     7
    ],
-   "notes": "Issue: the page gives no OpenAI Agents agent, only the JSON the agent should send; works once an agent is written by hand.",
+   "notes": [
+    "Issue: the page gives no OpenAI Agents agent, only the JSON the agent should send; works once an agent is written by hand."
+   ],
    "links": [
     {
      "text": null,
@@ -1048,7 +1078,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: VISUALIZATION_DESIGN_SKILL is never defined.",
+   "notes": [
+    "Note: VISUALIZATION_DESIGN_SKILL is never defined."
+   ],
    "links": [
     {
      "text": null,
@@ -1074,7 +1106,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: step 1 uses set_notes before step 2 defines it; demo_agents._common is never shown.",
+   "notes": [
+    "Note: step 1 uses set_notes before step 2 defines it; demo_agents._common is never shown."
+   ],
    "links": [
     {
      "text": null,
@@ -1102,7 +1136,9 @@
    "findings": [
     1
    ],
-   "notes": "Issue: useAgent() with no agentId looks for an agent named \"default\", which no step registers: Agent 'default' not found after runtime sync. Known agents: [openai_agent].",
+   "notes": [
+    "Issue: useAgent() with no agentId looks for an agent named \"default\", which no step registers: Agent 'default' not found after runtime sync. Known agents: [openai_agent]."
+   ],
    "links": [
     {
      "text": null,
@@ -1128,7 +1164,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: shared_state_streaming_agent is never defined on the page.",
+   "notes": [
+    "Note: shared_state_streaming_agent is never defined on the page."
+   ],
    "links": [
     {
      "text": null,
@@ -1204,7 +1242,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: the page says it is not available on this framework.",
+   "notes": [
+    "Note: the page says it is not available on this framework."
+   ],
    "links": []
   },
   {
@@ -1222,7 +1262,9 @@
     "by": null
    },
    "findings": [],
-   "notes": "Note: the page says it is not available on this framework.",
+   "notes": [
+    "Note: the page says it is not available on this framework."
+   ],
    "links": []
   },
   {
