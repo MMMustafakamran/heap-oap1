@@ -1,0 +1,381 @@
+{
+ "root": "openai-agents-python",
+ "savedAt": "2026-11-17",
+ "pages": {
+  "/openai-agents-python/prebuilt-components/popup": [
+   "/openai-agents-python/custom-look-and-feel/slots",
+   "/openai-agents-python/migrate/v2",
+   "/openai-agents-python/prebuilt-components/chat",
+   "/openai-agents-python/prebuilt-components/sidebar"
+  ],
+  "/openai-agents-python": [
+   "/openai-agents-python/inspector"
+  ],
+  "/openai-agents-python/prebuilt-components/sidebar": [
+   "/openai-agents-python/custom-look-and-feel/slots",
+   "/openai-agents-python/migrate/v2",
+   "/openai-agents-python/prebuilt-components/chat",
+   "/openai-agents-python/prebuilt-components/copilot-threads-drawer",
+   "/openai-agents-python/prebuilt-components/popup"
+  ],
+  "/openai-agents-python/build-with-agents": [],
+  "/openai-agents-python/quickstart": [
+   "/openai-agents-python/inspector"
+  ],
+  "/openai-agents-python/prebuilt-components/chat": [
+   "/openai-agents-python/custom-look-and-feel/css",
+   "/openai-agents-python/custom-look-and-feel/headless-ui",
+   "/openai-agents-python/custom-look-and-feel/slots",
+   "/openai-agents-python/headless-threads",
+   "/openai-agents-python/migrate/v2",
+   "/openai-agents-python/prebuilt-components/copilot-threads-drawer",
+   "/openai-agents-python/prebuilt-components/popup",
+   "/openai-agents-python/prebuilt-components/sidebar"
+  ],
+  "/openai-agents-python/prebuilt-components/chat-controls": [
+   "/openai-agents-python/custom-look-and-feel/slots",
+   "/openai-agents-python/intelligence/capture-interactions",
+   "/openai-agents-python/prebuilt-components/popup",
+   "/openai-agents-python/prebuilt-components/sidebar",
+   "/openai-agents-python/programmatic-control"
+  ],
+  "/openai-agents-python/custom-look-and-feel/css": [
+   "/openai-agents-python/custom-look-and-feel/headless-ui",
+   "/openai-agents-python/custom-look-and-feel/slots"
+  ],
+  "/openai-agents-python/custom-look-and-feel/slots": [
+   "/openai-agents-python/custom-look-and-feel/markdown",
+   "/openai-agents-python/generative-ui/tool-rendering"
+  ],
+  "/openai-agents-python/custom-look-and-feel/markdown": [
+   "/openai-agents-python/custom-look-and-feel/slots",
+   "/openai-agents-python/generative-ui/tool-rendering"
+  ],
+  "/openai-agents-python/custom-look-and-feel/headless-ui": [
+   "/openai-agents-python/custom-look-and-feel/css",
+   "/openai-agents-python/custom-look-and-feel/slots"
+  ],
+  "/openai-agents-python/multimodal-attachments": [],
+  "/openai-agents-python/generative-ui/reasoning": [],
+  "/openai-agents-python/custom-look-and-feel/reasoning-messages": [],
+  "/openai-agents-python/voice": [
+   "/openai-agents-python/multimodal-attachments"
+  ],
+  "/openai-agents-python/frontend-tools": [
+   "/openai-agents-python/inspector"
+  ],
+  "/openai-agents-python/generative-ui/tool-based": [
+   "/openai-agents-python/custom-look-and-feel/headless-ui",
+   "/openai-agents-python/generative-ui/tool-rendering",
+   "/openai-agents-python/human-in-the-loop"
+  ],
+  "/openai-agents-python/generative-ui/tool-rendering": [],
+  "/openai-agents-python/generative-ui/state-rendering": [],
+  "/openai-agents-python/prebuilt-components/copilot-threads-drawer": [
+   "/openai-agents-python/AG-UI-Streams",
+   "/openai-agents-python/headless-threads",
+   "/openai-agents-python/migrate/v2",
+   "/openai-agents-python/prebuilt-components/chat",
+   "/openai-agents-python/threads-lifecycle"
+  ],
+  "/openai-agents-python/headless-threads": [
+   "/openai-agents-python/intelligence/quickstart",
+   "/openai-agents-python/intelligence/self-hosting",
+   "/openai-agents-python/intelligence/threads-explained",
+   "/openai-agents-python/prebuilt-components/copilot-threads-drawer",
+   "/openai-agents-python/threads-import",
+   "/openai-agents-python/threads-lifecycle"
+  ],
+  "/openai-agents-python/generative-ui/components/surfaces": [
+   "/openai-agents-python/generative-ui/components",
+   "/openai-agents-python/generative-ui/components/catalogs",
+   "/openai-agents-python/react-native"
+  ],
+  "/openai-agents-python/generative-ui/components": [
+   "/openai-agents-python/generative-ui/components/catalogs",
+   "/openai-agents-python/generative-ui/components/from-a2ui",
+   "/openai-agents-python/generative-ui/components/markdown-mode",
+   "/openai-agents-python/generative-ui/components/state-and-actions",
+   "/openai-agents-python/generative-ui/components/surfaces",
+   "/openai-agents-python/generative-ui/components/theming",
+   "/openai-agents-python/generative-ui/components/transports",
+   "/openai-agents-python/inspector",
+   "/openai-agents-python/react-native"
+  ],
+  "/openai-agents-python/generative-ui/components/standard-catalog": [
+   "/openai-agents-python/generative-ui/components/catalogs",
+   "/openai-agents-python/generative-ui/components/theming",
+   "/openai-agents-python/react-native"
+  ],
+  "/openai-agents-python/generative-ui/components/state-and-actions": [
+   "/openai-agents-python/react-native"
+  ],
+  "/openai-agents-python/generative-ui/components/theming": [
+   "/openai-agents-python/react-native"
+  ],
+  "/openai-agents-python/generative-ui/components/transports": [
+   "/openai-agents-python/generative-ui/components/markdown-mode"
+  ],
+  "/openai-agents-python/generative-ui/components/catalogs": [
+   "/openai-agents-python/generative-ui/components",
+   "/openai-agents-python/generative-ui/components/state-and-actions"
+  ],
+  "/openai-agents-python/generative-ui/components/from-a2ui": [
+   "/openai-agents-python/generative-ui/components/catalogs",
+   "/openai-agents-python/generative-ui/components/markdown-mode",
+   "/openai-agents-python/generative-ui/components/state-and-actions",
+   "/openai-agents-python/generative-ui/components/surfaces"
+  ],
+  "/openai-agents-python/generative-ui/components/markdown-mode": [
+   "/openai-agents-python/generative-ui/components/state-and-actions",
+   "/openai-agents-python/generative-ui/components/surfaces",
+   "/openai-agents-python/generative-ui/components/transports"
+  ],
+  "/openai-agents-python/generative-ui/a2ui": [
+   "/openai-agents-python/generative-ui/a2ui/dynamic-schema",
+   "/openai-agents-python/generative-ui/a2ui/fixed-schema",
+   "/openai-agents-python/generative-ui/components"
+  ],
+  "/openai-agents-python/generative-ui/a2ui/dynamic-schema": [
+   "/openai-agents-python/generative-ui/a2ui/fixed-schema"
+  ],
+  "/openai-agents-python/generative-ui/a2ui/fixed-schema": [
+   "/openai-agents-python/generative-ui/a2ui/dynamic-schema"
+  ],
+  "/openai-agents-python/generative-ui/hashbrown": [
+   "/openai-agents-python/generative-ui/json-render"
+  ],
+  "/openai-agents-python/generative-ui/json-render": [
+   "/openai-agents-python/generative-ui/hashbrown"
+  ],
+  "/openai-agents-python/generative-ui/mcp-apps": [
+   "/openai-agents-python/intelligence/quickstart"
+  ],
+  "/openai-agents-python/generative-ui/open-generative-ui": [
+   "/openai-agents-python/frontend-tools"
+  ],
+  "/openai-agents-python/shared-state": [
+   "/openai-agents-python/inspector",
+   "/openai-agents-python/shared-state/agent-readonly",
+   "/openai-agents-python/shared-state/rendering-in-app",
+   "/openai-agents-python/shared-state/streaming"
+  ],
+  "/openai-agents-python/human-in-the-loop": [
+   "/openai-agents-python/human-in-the-loop/headless",
+   "/openai-agents-python/human-in-the-loop/useInterrupt",
+   "/openai-agents-python/inspector"
+  ],
+  "/openai-agents-python/human-in-the-loop/useInterrupt": [
+   "/openai-agents-python/human-in-the-loop",
+   "/openai-agents-python/human-in-the-loop/headless"
+  ],
+  "/openai-agents-python/shared-state/rendering-in-app": [
+   "/openai-agents-python/shared-state",
+   "/openai-agents-python/shared-state/agent-readonly",
+   "/openai-agents-python/shared-state/streaming"
+  ],
+  "/openai-agents-python/human-in-the-loop/headless": [
+   "/openai-agents-python/human-in-the-loop",
+   "/openai-agents-python/human-in-the-loop/useInterrupt"
+  ],
+  "/openai-agents-python/shared-state/agent-readonly": [
+   "/openai-agents-python/inspector",
+   "/openai-agents-python/shared-state",
+   "/openai-agents-python/shared-state/streaming"
+  ],
+  "/openai-agents-python/shared-state/streaming": [
+   "/openai-agents-python/shared-state",
+   "/openai-agents-python/shared-state/agent-readonly"
+  ],
+  "/openai-agents-python/human-in-the-loop/governed-actions": [
+   "/openai-agents-python/frontend-tools",
+   "/openai-agents-python/human-in-the-loop",
+   "/openai-agents-python/human-in-the-loop/useInterrupt"
+  ],
+  "/openai-agents-python/webmcp": [
+   "/openai-agents-python/frontend-tools"
+  ],
+  "/openai-agents-python/multi-agent/subagents": [
+   "/openai-agents-python/shared-state",
+   "/openai-agents-python/shared-state/streaming"
+  ],
+  "/openai-agents-python/AG-UI-Streams": [
+   "/openai-agents-python/headless-threads",
+   "/openai-agents-python/inspector",
+   "/openai-agents-python/intelligence/bring-your-own-thread-system",
+   "/openai-agents-python/intelligence/managed-intelligence-platform",
+   "/openai-agents-python/intelligence/quickstart",
+   "/openai-agents-python/intelligence/self-hosting",
+   "/openai-agents-python/intelligence/threads-explained",
+   "/openai-agents-python/prebuilt-components/copilot-threads-drawer",
+   "/openai-agents-python/threads-import",
+   "/openai-agents-python/threads-lifecycle"
+  ],
+  "/openai-agents-python/threads-import": [
+   "/openai-agents-python/headless-threads",
+   "/openai-agents-python/intelligence/bring-your-own-thread-system",
+   "/openai-agents-python/intelligence/managed-intelligence-platform",
+   "/openai-agents-python/intelligence/quickstart",
+   "/openai-agents-python/intelligence/self-hosting",
+   "/openai-agents-python/intelligence/threads-explained",
+   "/openai-agents-python/prebuilt-components/copilot-threads-drawer"
+  ],
+  "/openai-agents-python/threads-lifecycle": [
+   "/openai-agents-python/auth",
+   "/openai-agents-python/headless-threads",
+   "/openai-agents-python/intelligence/bring-your-own-thread-system",
+   "/openai-agents-python/intelligence/quickstart",
+   "/openai-agents-python/intelligence/threads-explained",
+   "/openai-agents-python/threads-import"
+  ],
+  "/openai-agents-python/learning": [
+   "/openai-agents-python/AG-UI-Streams",
+   "/openai-agents-python/cli",
+   "/openai-agents-python/inspector",
+   "/openai-agents-python/intelligence/capture-interactions",
+   "/openai-agents-python/intelligence/learned-skills",
+   "/openai-agents-python/intelligence/memories",
+   "/openai-agents-python/intelligence/overview",
+   "/openai-agents-python/intelligence/quickstart",
+   "/openai-agents-python/intelligence/threads-explained"
+  ],
+  "/openai-agents-python/runtime-server-adapter": [
+   "/openai-agents-python/backend/runtime-endpoints",
+   "/openai-agents-python/intelligence/quickstart"
+  ],
+  "/openai-agents-python/auth": [
+   "/openai-agents-python/backend/runtime-endpoints",
+   "/openai-agents-python/human-in-the-loop",
+   "/openai-agents-python/inspector",
+   "/openai-agents-python/intelligence/quickstart",
+   "/openai-agents-python/threads-lifecycle"
+  ],
+  "/openai-agents-python/inspector": [
+   "/openai-agents-python/AG-UI-Streams",
+   "/openai-agents-python/agent-config",
+   "/openai-agents-python/agentic-protocols/ag-ui",
+   "/openai-agents-python/backend/copilot-runtime",
+   "/openai-agents-python/backend/runtime-endpoints",
+   "/openai-agents-python/frontend-tools",
+   "/openai-agents-python/generative-ui/components",
+   "/openai-agents-python/headless-threads",
+   "/openai-agents-python/intelligence/overview",
+   "/openai-agents-python/intelligence/quickstart",
+   "/openai-agents-python/learning",
+   "/openai-agents-python/quickstart",
+   "/openai-agents-python/react-native",
+   "/openai-agents-python/shared-state",
+   "/openai-agents-python/shared-state/agent-readonly",
+   "/openai-agents-python/troubleshooting/debug-mode",
+   "/openai-agents-python/troubleshooting/error-debugging",
+   "/openai-agents-python/vs-code-extension"
+  ],
+  "/openai-agents-python/vs-code-extension": [
+   "/openai-agents-python/troubleshooting/event-inspector",
+   "/openai-agents-python/troubleshooting/hook-explorer"
+  ],
+  "/openai-agents-python/concepts/architecture": [
+   "/openai-agents-python/agentic-protocols/ag-ui",
+   "/openai-agents-python/intelligence/overview",
+   "/openai-agents-python/quickstart"
+  ],
+  "/openai-agents-python/concepts/generative-ui-overview": [
+   "/openai-agents-python/generative-ui/a2ui",
+   "/openai-agents-python/generative-ui/a2ui/dynamic-schema",
+   "/openai-agents-python/generative-ui/a2ui/fixed-schema",
+   "/openai-agents-python/generative-ui/mcp-apps",
+   "/openai-agents-python/generative-ui/reasoning",
+   "/openai-agents-python/generative-ui/state-rendering",
+   "/openai-agents-python/generative-ui/tool-based",
+   "/openai-agents-python/generative-ui/tool-rendering"
+  ],
+  "/openai-agents-python/concepts/which-hook": [
+   "/openai-agents-python/frontend-tools",
+   "/openai-agents-python/generative-ui/tool-rendering",
+   "/openai-agents-python/human-in-the-loop"
+  ],
+  "/openai-agents-python/concepts/oss-vs-enterprise": [
+   "/openai-agents-python/AG-UI-Streams",
+   "/openai-agents-python/backend/copilot-runtime",
+   "/openai-agents-python/inspector",
+   "/openai-agents-python/intelligence/analytics",
+   "/openai-agents-python/intelligence/channels",
+   "/openai-agents-python/intelligence/intelligence-platform",
+   "/openai-agents-python/intelligence/learned-skills",
+   "/openai-agents-python/intelligence/managed-intelligence-platform",
+   "/openai-agents-python/intelligence/memories",
+   "/openai-agents-python/intelligence/overview",
+   "/openai-agents-python/intelligence/self-hosting",
+   "/openai-agents-python/intelligence/self-hosting-ecs",
+   "/openai-agents-python/learning",
+   "/openai-agents-python/quickstart"
+  ],
+  "/openai-agents-python/agentic-protocols": [
+   "/openai-agents-python/agentic-protocols/a2a",
+   "/openai-agents-python/agentic-protocols/ag-ui",
+   "/openai-agents-python/agentic-protocols/mcp",
+   "/openai-agents-python/generative-ui/a2ui",
+   "/openai-agents-python/generative-ui/mcp-apps"
+  ],
+  "/openai-agents-python/agentic-protocols/ag-ui": [],
+  "/openai-agents-python/agentic-protocols/ag-ui-middleware": [
+   "/openai-agents-python/agentic-protocols/ag-ui",
+   "/openai-agents-python/backend/ag-ui",
+   "/openai-agents-python/backend/copilot-runtime"
+  ],
+  "/openai-agents-python/agentic-protocols/mcp": [
+   "/openai-agents-python/agentic-protocols",
+   "/openai-agents-python/backend/copilot-runtime",
+   "/openai-agents-python/generative-ui/mcp-apps",
+   "/openai-agents-python/generative-ui/tool-rendering",
+   "/openai-agents-python/human-in-the-loop"
+  ],
+  "/openai-agents-python/agentic-protocols/a2a": [
+   "/openai-agents-python/agentic-protocols"
+  ],
+  "/openai-agents-python/contributing/code-contributions": [
+   "/openai-agents-python/contributing/code-contributions/package-linking"
+  ],
+  "/openai-agents-python/contributing/docs-contributions": [],
+  "/openai-agents-python/troubleshooting/common-issues": [
+   "/openai-agents-python/backend/agent-runner",
+   "/openai-agents-python/backend/runtime-endpoints",
+   "/openai-agents-python/deploy/agentcore",
+   "/openai-agents-python/inspector",
+   "/openai-agents-python/intelligence/self-hosting",
+   "/openai-agents-python/model-selection",
+   "/openai-agents-python/quickstart",
+   "/openai-agents-python/troubleshooting/error-debugging",
+   "/openai-agents-python/troubleshooting/error-reference"
+  ],
+  "/openai-agents-python/troubleshooting/error-reference": [
+   "/openai-agents-python/backend/runtime-endpoints",
+   "/openai-agents-python/backend/self-managed-agents",
+   "/openai-agents-python/troubleshooting/common-issues",
+   "/openai-agents-python/troubleshooting/error-debugging"
+  ],
+  "/openai-agents-python/troubleshooting/error-debugging": [
+   "/openai-agents-python/inspector"
+  ],
+  "/openai-agents-python/troubleshooting/inspector-dev-console": [
+   "/openai-agents-python/inspector",
+   "/openai-agents-python/migrate/v2",
+   "/openai-agents-python/troubleshooting/error-debugging"
+  ],
+  "/openai-agents-python/troubleshooting/debug-mode": [
+   "/openai-agents-python/troubleshooting/error-debugging"
+  ],
+  "/openai-agents-python/troubleshooting/event-inspector": [
+   "/openai-agents-python/inspector",
+   "/openai-agents-python/troubleshooting/error-debugging",
+   "/openai-agents-python/troubleshooting/hook-explorer",
+   "/openai-agents-python/vs-code-extension"
+  ],
+  "/openai-agents-python/troubleshooting/hook-explorer": [
+   "/openai-agents-python/troubleshooting/event-inspector",
+   "/openai-agents-python/vs-code-extension"
+  ],
+  "/openai-agents-python/community-frameworks": [],
+  "/openai-agents-python/telemetry": []
+ }
+}

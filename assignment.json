@@ -1,0 +1,1352 @@
+{
+ "framework": "OpenAI Agents (Python)",
+ "ui": "react",
+ "repo": "OpenAIAgents-React",
+ "docBase": "https://docs.copilotkit.ai/openai-agents-python/",
+ "versions": {
+  "@copilotkit/react-core": "1.85.0",
+  "@copilotkit/runtime": "1.85.0",
+  "@ag-ui/client": "1.0.2",
+  "next": "16.4.5",
+  "react": "19.3.0",
+  "openai-agents": "0.24.0",
+  "ag-ui-openai-agents": "0.1.0"
+ },
+ "testedContext": {
+  "os": "Microsoft Windows 11 Pro",
+  "packageManager": "npm 11 (Node 26.7.0)"
+ },
+ "report": {
+  "style": "team",
+  "h1": "OpenAI Agents",
+  "title": "OpenAI Agents Python testing",
+  "quickstartHeading": "Quickstarts",
+  "quickstartHeader": null,
+  "clipsToUpload": true,
+  "guidesHeading": "React Guides",
+  "columns": [
+   "Page/Section",
+   "OpenAI Agents.python"
+  ],
+  "resultColumn": 1
+ },
+ "sections": [
+  {
+   "label": "Basics",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  },
+  {
+   "label": "Chat",
+   "cells": [
+    "Sub section",
+    "Sub Section"
+   ]
+  },
+  {
+   "label": "Prebuilt Components",
+   "cells": [
+    "",
+    ""
+   ]
+  },
+  {
+   "label": "Custom Look and Feel",
+   "cells": [
+    "Sub section",
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Built Generative UI",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  },
+  {
+   "label": "Controlled",
+   "cells": [
+    "Sub-Section",
+    "Sub-Section"
+   ]
+  },
+  {
+   "label": "Declarative",
+   "cells": [
+    "Sub-Section",
+    "Sub-Section"
+   ]
+  },
+  {
+   "label": "A2UI",
+   "cells": [
+    "Sub-Section",
+    "Sub-Section"
+   ]
+  },
+  {
+   "label": "Interactivity",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  },
+  {
+   "label": "Shared State",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  },
+  {
+   "label": "Agent Capabilities",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  },
+  {
+   "label": "Debugging",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "id": "quickstart",
+   "label": "JS (React)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "quickstart",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-01-Quickstart",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "prebuilt-chat",
+   "label": "CopilotChat",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "prebuilt-components/chat",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-02-PrebuiltChat",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "prebuilt-sidebar",
+   "label": "CopilotSidebar",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "prebuilt-components/sidebar",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-03-PrebuiltSidebar",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "prebuilt-popup",
+   "label": "CopilotPopup",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "prebuilt-components/popup",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-04-PrebuiltPopup",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "chat-controls",
+   "label": "Open, close, and feedback",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "prebuilt-components/chat-controls",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-05-ChatControls",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "programmatic-control",
+   "label": "Programmatic Control",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "programmatic-control",
+   "reachable": "in-content",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: agent_server.py uses AGENTS and lifespan but never defines them.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-06-ProgrammaticControl",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "prebuilt-components-copilot-threads-drawer",
+   "label": "Threads Drawer",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "prebuilt-components/copilot-threads-drawer",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-15-ThreadsDrawer",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "headless-threads",
+   "label": "Headless Threads",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "headless-threads",
+   "reachable": "sidebar",
+   "status": "❌",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [
+    2
+   ],
+   "notes": "Issue: the runtime registers the agent as \"default\", but the quickstart's provider targets openai_agent, so useAgent throws: Agent 'openai_agent' not found after runtime sync. Known agents: [default].",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-16-HeadlessThreads",
+     "loom": null,
+     "narration": "narration/scripts/OAP-react-16-HeadlessThreads.json",
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "css",
+   "label": "CSS Customization",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/css",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-07-CSS",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "markdown",
+   "label": "Markdown Rendering",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/markdown",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-09-Markdown",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "slots",
+   "label": "Slots (Subcomponents)",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/slots",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-08-Slots",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "headless-ui",
+   "label": "Headless UI",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/headless-ui",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-10-HeadlessUI",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "reasoning",
+   "label": "Reasoning",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "generative-ui/reasoning",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: the page gives no agent or reasoning model; recorded with gpt-5-mini reasoning summaries.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-12-Reasoning",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "reasoning-messages",
+   "label": "Reasoning Messages",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/reasoning-messages",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: no agent on the page; its example model gpt-6-luna does not exist.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-11-ReasoningMessages",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "multimodal",
+   "label": "Multimodal Attachments",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "multimodal-attachments",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-13-Multimodal",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "voice",
+   "label": "Voice",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "voice",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-14-Voice",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "frontend-tools",
+   "label": "Frontend Tools",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "frontend-tools",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-17-FrontendTools",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "tool-based",
+   "label": "Components as Tools",
+   "kind": "guide",
+   "group": "Controlled",
+   "child": true,
+   "docPath": "generative-ui/tool-based",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-37-ComponentsAsTools",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "tool-rendering",
+   "label": "Tool Call Rendering",
+   "kind": "guide",
+   "group": "Controlled",
+   "child": true,
+   "docPath": "generative-ui/tool-rendering",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: the agent uses SYSTEM_PROMPT, search_flights, get_stock_price and roll_d20, which the page never defines.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-20-ToolRendering",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    },
+    {
+     "text": null,
+     "clip": "OAP-react-21-ToolRenderingDefault",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    },
+    {
+     "text": null,
+     "clip": "OAP-react-22-ToolRenderingCustom",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "state-rendering",
+   "label": "State Rendering",
+   "kind": "guide",
+   "group": "Controlled",
+   "child": true,
+   "docPath": "generative-ui/state-rendering",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-38-StateRendering",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "components",
+   "label": "Components and surfaces",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-23-Components",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "components-surfaces",
+   "label": "Surfaces",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/surfaces",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-32-ComponentsSurfaces",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "components-catalogs",
+   "label": "Catalogs",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/catalogs",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-31-ComponentsCatalogs",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "components-standard-catalog",
+   "label": "Standard catalog",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/standard-catalog",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: works, but the model sometimes answers in text instead of a component.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-39-ComponentsStandardCatalog",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "components-state-actions",
+   "label": "State and actions",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/state-and-actions",
+   "reachable": "sidebar",
+   "status": "❌",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [
+    3
+   ],
+   "notes": "Issue: asked for product cards, the assistant message stays empty, no ProductCard renders and the cart never fills (3/3 runs).",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-35-ComponentsStateActions",
+     "loom": null,
+     "narration": "narration/scripts/OAP-react-35-ComponentsStateActions.json",
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "components-theming",
+   "label": "Theming",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/theming",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-33-ComponentsTheming",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "components-transports",
+   "label": "Transports",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/transports",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-34-ComponentsTransports",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "components-markdown-mode",
+   "label": "Markdown mode",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/markdown-mode",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-36-ComponentsMarkdownMode",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "components-from-a2ui",
+   "label": "Adopt from A2UI",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/from-a2ui",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: the Airport and Arrow renderers are never shown.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-40-ComponentsFromA2UI",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "a2ui",
+   "label": "A2UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/a2ui",
+   "reachable": "sidebar",
+   "status": "❌",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [
+    4
+   ],
+   "notes": "Issue: the agent code is the CopilotKit Python SDK (from copilotkit import a2ui), not OpenAI Agents; the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map').",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-28-A2UI",
+     "loom": null,
+     "narration": "narration/scripts/OAP-react-28-A2UI.json",
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "a2ui-dynamic",
+   "label": "Dynamic Schema A2UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/a2ui/dynamic-schema",
+   "reachable": "sidebar",
+   "status": "❌",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [
+    5
+   ],
+   "notes": "Issue: the agent code is LangGraph (ag_ui_langgraph, langchain_openai); the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map').",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-29-A2UIDynamicSchema",
+     "loom": null,
+     "narration": "narration/scripts/OAP-react-29-A2UIDynamicSchema.json",
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "a2ui-fixed",
+   "label": "Fixed Schema A2UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/a2ui/fixed-schema",
+   "reachable": "sidebar",
+   "status": "❌",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [
+    6
+   ],
+   "notes": "Issue: the page defines display_flight but never builds the agent, and flight_schema.json is never shown; the card renders with every field empty.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-30-A2UIFixedSchema",
+     "loom": null,
+     "narration": "narration/scripts/OAP-react-30-A2UIFixedSchema.json",
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "json-render",
+   "label": "JSON Render",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/json-render",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: the page shows example agent output only, no OpenAI Agents agent; recorded with a harness agent.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-25-JsonRender",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "hashbrown",
+   "label": "Hashbrown",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/hashbrown",
+   "reachable": "sidebar",
+   "status": "⚠️",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [
+    7
+   ],
+   "notes": "Issue: the page gives no OpenAI Agents agent, only the JSON the agent should send; works once an agent is written by hand.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-26-Hashbrown",
+     "loom": null,
+     "narration": "narration/scripts/OAP-react-26-Hashbrown.json",
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "mcp-apps",
+   "label": "MCP Apps",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/mcp-apps",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-24-McpApps",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "open-generative-ui",
+   "label": "Open Generative UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/open-generative-ui",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: VISUALIZATION_DESIGN_SKILL is never defined.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-27-OpenGenerativeUI",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "shared-state",
+   "label": "Shared State",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "shared-state",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: step 1 uses set_notes before step 2 defines it; demo_agents._common is never shown.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-41-SharedState",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "rendering-in-app",
+   "label": "Render agent state in your app",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "shared-state/rendering-in-app",
+   "reachable": "sidebar",
+   "status": "❌",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [
+    1
+   ],
+   "notes": "Issue: useAgent() with no agentId looks for an agent named \"default\", which no step registers: Agent 'default' not found after runtime sync. Known agents: [openai_agent].",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-42-RenderAgentState",
+     "loom": null,
+     "narration": "narration/scripts/OAP-react-42-RenderAgentState.json",
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "state-streaming",
+   "label": "State Streaming",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "shared-state/streaming",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: shared_state_streaming_agent is never defined on the page.",
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-43-StateStreaming",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "agent-readonly",
+   "label": "Agent Read-Only Context",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "shared-state/agent-readonly",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-44-AgentReadOnly",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "human-in-the-loop",
+   "label": "HITL Overview",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "human-in-the-loop",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-45-HumanInTheLoop",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "use-interrupt",
+   "label": "Pausing the Agent for Input",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": true,
+   "docPath": "human-in-the-loop/useInterrupt",
+   "reachable": "sidebar",
+   "status": "N/A",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: the page says it is not available on this framework.",
+   "links": []
+  },
+  {
+   "id": "headless-interrupts",
+   "label": "Headless Interrupts",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": true,
+   "docPath": "human-in-the-loop/headless",
+   "reachable": "sidebar",
+   "status": "N/A",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": "Note: the page says it is not available on this framework.",
+   "links": []
+  },
+  {
+   "id": "governed-actions",
+   "label": "Governed Action Approval UI",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": true,
+   "docPath": "human-in-the-loop/governed-actions",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-46-GovernedActions",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "webmcp",
+   "label": "WebMCP",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "webmcp",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-47-WebMCP",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "subagents",
+   "label": "Sub-agents",
+   "kind": "guide",
+   "group": "Agent Capabilities",
+   "child": false,
+   "docPath": "multi-agent/subagents",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-48-SubAgents",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "agent-config",
+   "label": "Agent Config",
+   "kind": "guide",
+   "group": "Agent Capabilities",
+   "child": false,
+   "docPath": "agent-config",
+   "reachable": "in-content",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-18-AgentConfig",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  },
+  {
+   "id": "inspector",
+   "label": "Inspector",
+   "kind": "guide",
+   "group": "Debugging",
+   "child": false,
+   "docPath": "inspector",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-19-Inspector",
+     "loom": null,
+     "narration": null,
+     "filmed": null
+    }
+   ]
+  }
+ ]
+}

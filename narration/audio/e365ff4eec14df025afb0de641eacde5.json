@@ -1,0 +1,9 @@
+{
+ "text": "So this is the problem, umm, useAgent with no agent ID means the default agent, but nothing on the page ever registers a default agent.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 9.056,
+ "file": "e365ff4eec14df025afb0de641eacde5.mp3",
+ "clip": "OAP-react-42-RenderAgentState",
+ "at": "evidence"
+}

@@ -1,0 +1,9 @@
+{
+ "text": "So this is the problem, the runtime here registers the agent as default, but the quickstart provider points at the OpenAI agent.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 10.356,
+ "file": "5819983338ba5d42a3c6e80ca0325c91.mp3",
+ "clip": "OAP-react-16-HeadlessThreads",
+ "at": "evidence"
+}

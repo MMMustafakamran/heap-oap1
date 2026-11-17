@@ -1,0 +1,9 @@
+{
+ "text": "So basically, the page has no OpenAI Agents agent, only another SDK's code, and the surface fails with this render error.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 10.031,
+ "file": "2246cab3bc15a4ad01618af53707d28f.mp3",
+ "clip": "OAP-react-28-A2UI",
+ "at": "notepad"
+}

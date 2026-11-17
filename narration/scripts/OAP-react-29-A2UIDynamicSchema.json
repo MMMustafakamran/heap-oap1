@@ -1,0 +1,34 @@
+{
+ "clip": "OAP-react-29-A2UIDynamicSchema",
+ "finding": "5",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the dynamic schema A2UI page for OpenAI Agents, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, umm, the agent code here is LangGraph, it imports from the LangGraph adapter and LangChain."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "+",
+   "text": "This part, the OpenAI Agents agent, wasn't on the page, so I added it myself."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. I asked for my team performance, it should render cards, but there's an A2UI render error and no dashboard."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the page gives LangGraph code with an undefined tool, nothing for OpenAI Agents, and the surface just fails to render."
+  },
+  {
+   "at": "+",
+   "text": "Alright, that's the issue, kindly sort it out."
+  }
+ ]
+}

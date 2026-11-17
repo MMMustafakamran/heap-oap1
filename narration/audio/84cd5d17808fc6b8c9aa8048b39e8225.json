@@ -1,0 +1,9 @@
+{
+ "text": "So this is the problem, the display flight tool is defined, but no agent is ever built with it, and the flight schema file is never shown.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 9.334,
+ "file": "84cd5d17808fc6b8c9aa8048b39e8225.mp3",
+ "clip": "OAP-react-30-A2UIFixedSchema",
+ "at": "evidence"
+}

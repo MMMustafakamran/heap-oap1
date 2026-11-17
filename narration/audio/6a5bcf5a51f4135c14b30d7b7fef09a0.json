@@ -1,0 +1,9 @@
+{
+ "text": "So basically, the page relies on a default agent, the quickstart only registers the OpenAI agent, and the page never says to pass an agent ID.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 11.006,
+ "file": "6a5bcf5a51f4135c14b30d7b7fef09a0.mp3",
+ "clip": "OAP-react-42-RenderAgentState",
+ "at": "notepad"
+}

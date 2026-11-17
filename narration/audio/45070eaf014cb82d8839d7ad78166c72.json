@@ -1,0 +1,9 @@
+{
+ "text": "So basically, the frontend works, but you have to guess the whole agent, since the page never gives one.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 7.616,
+ "file": "45070eaf014cb82d8839d7ad78166c72.mp3",
+ "clip": "OAP-react-26-Hashbrown",
+ "at": "notepad"
+}

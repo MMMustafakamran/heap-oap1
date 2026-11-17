@@ -1,0 +1,9 @@
+{
+ "text": "So this is the problem, this agent code imports from the CopilotKit Python SDK, it's not OpenAI Agents code at all.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 7.941,
+ "file": "2541ba072aabd9dfb6e15bc76637b7e6.mp3",
+ "clip": "OAP-react-28-A2UI",
+ "at": "evidence"
+}

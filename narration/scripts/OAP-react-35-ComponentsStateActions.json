@@ -1,0 +1,34 @@
+{
+ "clip": "OAP-react-35-ComponentsStateActions",
+ "finding": "3",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the state and actions page for OpenAI Agents, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, umm, the page says add to cart works from the card, but the product cards never render at all."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "+",
+   "text": "This part, the in cart line, wasn't on the page, I added it to see the cart."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. I asked for two product cards, they should show up with an add to cart button, but the reply just stays empty."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, no product card renders and the cart never fills, same in every run, and the catalog is split over a few blocks on the page."
+  },
+  {
+   "at": "+",
+   "text": "That's the problem here, please have a look."
+  }
+ ]
+}

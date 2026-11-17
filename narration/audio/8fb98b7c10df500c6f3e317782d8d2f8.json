@@ -1,0 +1,9 @@
+{
+ "text": "So this is the problem, umm, the agent code here is LangGraph, it imports from the LangGraph adapter and LangChain.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 8.22,
+ "file": "8fb98b7c10df500c6f3e317782d8d2f8.mp3",
+ "clip": "OAP-react-29-A2UIDynamicSchema",
+ "at": "evidence"
+}

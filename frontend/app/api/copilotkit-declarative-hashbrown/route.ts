@@ -1,0 +1,42 @@
+// Dedicated runtime for the declarative-hashbrown demo.
+//
+// The demo page (`src/app/demos/declarative-hashbrown/page.tsx`) wraps
+// CopilotChat in the HashBrownDashboard provider and overrides the assistant
+// message slot with a renderer that consumes hashbrown-shaped structured
+// output via `@hashbrownai/react`'s `useUiKit` + `useJsonParser`. The
+// agent behind this endpoint uses the `byoc_hashbrown` graph (the internal
+// graph ID retains the legacy name; only the user-facing slug, route, and
+// frontend folder were renamed).
+
+import type { NextRequest } from "next/server";
+import { NextResponse } from "next/server";
+import {
+  CopilotRuntime,
+  createCopilotRuntimeHandler,
+} from "@copilotkit/runtime/v2";
+import { HttpAgent } from "@ag-ui/client"; // HARNESS: OpenAI Agents backend over AG-UI instead of the showcase LangGraph agent
+
+
+const byocHashbrownAgent = new HttpAgent({ url: "http://localhost:8093/hashbrown" }) // HARNESS: OpenAI Agents backend;
+
+const runtime = new CopilotRuntime({
+  // @ts-ignore -- see main route.ts
+  agents: { "declarative-hashbrown-demo": byocHashbrownAgent },
+});
+
+export const POST = async (req: NextRequest) => {
+  try {
+    const copilotHandler = createCopilotRuntimeHandler({
+      runtime,
+      basePath: "/api/copilotkit-declarative-hashbrown",
+      mode: "single-route",
+    });
+    return await copilotHandler(req);
+  } catch (error: unknown) {
+    const e = error as { message?: string; stack?: string };
+    return NextResponse.json(
+      { error: e.message, stack: e.stack },
+      { status: 500 },
+    );
+  }
+};

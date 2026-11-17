@@ -1,0 +1,34 @@
+{
+ "clip": "OAP-react-42-RenderAgentState",
+ "finding": "1",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the render agent state in your app page for OpenAI Agents, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, umm, useAgent with no agent ID means the default agent, but nothing on the page ever registers a default agent."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "+",
+   "text": "This part, the agent name on the provider, wasn't on the page, I added it for a second copy."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. The canvas should show the agent state, but uh, the doc's page crashes with agent default not found. The copy with the agent name works."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the page relies on a default agent, the quickstart only registers the OpenAI agent, and the page never says to pass an agent ID."
+  },
+  {
+   "at": "+",
+   "text": "So yeah, this is the issue, kindly fix it."
+  }
+ ]
+}

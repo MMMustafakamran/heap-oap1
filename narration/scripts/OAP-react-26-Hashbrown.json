@@ -1,0 +1,34 @@
+{
+ "clip": "OAP-react-26-Hashbrown",
+ "finding": "7",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the Hashbrown page for OpenAI Agents, and I'm reporting a small issue on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, the page only shows the JSON the agent should send, there's no OpenAI Agents agent anywhere."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "+",
+   "text": "This part, the agent and its prompt, wasn't on the page, so I wrote it myself."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. The main part works, the dashboard streams in, but uh, only on the agent I wrote by hand."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the frontend works, but you have to guess the whole agent, since the page never gives one."
+  },
+  {
+   "at": "+",
+   "text": "So yeah, please take a look and fix this."
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "text": "Moving on to the demo. The flight card should show the airports, airline and price, but umm, the card shows up with every field empty.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 8.591,
+ "file": "b29ef93289307a3d986cbf877643f734.mp3",
+ "clip": "OAP-react-30-A2UIFixedSchema",
+ "at": "demo"
+}
