@@ -23,10 +23,6 @@ Stack: `@copilotkit/react-core` 1.85.0, `@copilotkit/runtime` 1.85.0, `@ag-ui/cl
 
 **#3** Asked for product cards, the assistant message stays empty: no `ProductCard` renders and the cart never fills (3/3 runs). `shopUI` is split across several blocks on the page (merged into one catalog in the harness).
 
-### [Theming](https://docs.copilotkit.ai/openai-agents-python/generative-ui/components/theming)
-
-**#22** With the page's `theme` provider, asking for a card renders nothing: the assistant message stays empty or shows "Part of this UI couldn't be shown" (CI take 2026-11-17 and 3/3 probes). The theme can never be seen.
-
 ### [A2UI](https://docs.copilotkit.ai/openai-agents-python/generative-ui/a2ui)
 
 **#4** Wrong-framework agent code and a broken surface.
@@ -61,4 +57,5 @@ Stack: `@copilotkit/react-core` 1.85.0, `@copilotkit/runtime` 1.85.0, `@ag-ui/cl
 - **#18** Voice: the doc's `${AGENT_URL}/voice` collides with the quickstart's `AGENT_URL` (`…/agent`), giving `/agent/voice`.
 - **#19** Headless UI logs `[langgraph-python:headless-simple]` (wrong framework label).
 - **#20** Prebuilt Chat / Sidebar / Popup: `useAgenticChatSuggestions`, `MainContent`, `Suggestions` never shown; Chat controls: `analytics` undefined.
+- **#22** Theming: works, but the reply sometimes renders nothing ("Part of this UI couldn't be shown").
 - **#21** Next.js logs `require('node:crypto').randomUUID()` "unstable value in a Client Component" from `CopilotKitProvider` on every route.

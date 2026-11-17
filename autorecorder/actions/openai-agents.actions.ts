@@ -109,9 +109,6 @@ export const FINDING_EVIDENCE: Record<string, DocEvidence[]> = {
     { text: 'def display_flight(origin: str, destination: str, airline: str, price: str) -> dict:', caption: 'Tool defined, but no Agent is built with it' },
     { text: 'with open(_SCHEMAS_DIR / "flight_schema.json", encoding="utf-8") as _f:', caption: 'flight_schema.json is never shown' },
   ],
-  'components-theming': [
-    { text: 'Set the variables with the', caption: 'theme option; no themed component ever renders' },
-  ],
   hashbrown: [
     { text: 'The agent sends one JSON object as the assistant message', caption: 'Only the output format, no OpenAI Agents agent' },
   ],
