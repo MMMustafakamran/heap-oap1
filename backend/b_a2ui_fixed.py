@@ -1,5 +1,5 @@
 # Doc: generative-ui/a2ui/fixed-schema (openai-agents-python), "Return render operations from the tool" block, verbatim.
-# HARNESS: a2ui_schemas/flight_schema.json is never shown on the page (copied from the showcase).
+# a2ui_schemas/flight_schema.json: the page shows it now ("Load the schema JSON at startup"), copied verbatim.
 # src/demo_agents/a2ui_fixed.py
 import json
 from pathlib import Path

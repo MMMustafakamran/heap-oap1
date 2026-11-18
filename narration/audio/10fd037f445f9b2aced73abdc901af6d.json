@@ -1,0 +1,9 @@
+{
+ "text": "So basically, the page never builds the agent, and even with the agent added and the schema from the page, the card never gets its data.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 9.938,
+ "file": "10fd037f445f9b2aced73abdc901af6d.mp3",
+ "clip": "OAP-react-30-A2UIFixedSchema",
+ "at": "notepad"
+}

@@ -1,19 +1,11 @@
 [
-  {
-    "id": "root",
-    "component": "Card",
-    "child": "content"
-  },
+  { "id": "root", "component": "Card", "child": "content" },
   {
     "id": "content",
     "component": "Column",
     "children": ["title", "route", "meta", "bookButton"]
   },
-  {
-    "id": "title",
-    "component": "Title",
-    "text": "Flight Details"
-  },
+  { "id": "title", "component": "Title", "text": "Flight Details" },
   {
     "id": "route",
     "component": "Row",
@@ -21,20 +13,9 @@
     "align": "center",
     "children": ["from", "arrow", "to"]
   },
-  {
-    "id": "from",
-    "component": "Airport",
-    "code": { "path": "/origin" }
-  },
-  {
-    "id": "arrow",
-    "component": "Arrow"
-  },
-  {
-    "id": "to",
-    "component": "Airport",
-    "code": { "path": "/destination" }
-  },
+  { "id": "from", "component": "Airport", "code": { "path": "/origin" } },
+  { "id": "arrow", "component": "Arrow" },
+  { "id": "to", "component": "Airport", "code": { "path": "/destination" } },
   {
     "id": "meta",
     "component": "Row",
@@ -42,16 +23,8 @@
     "align": "center",
     "children": ["airline", "price"]
   },
-  {
-    "id": "airline",
-    "component": "AirlineBadge",
-    "name": { "path": "/airline" }
-  },
-  {
-    "id": "price",
-    "component": "PriceTag",
-    "amount": { "path": "/price" }
-  },
+  { "id": "airline", "component": "AirlineBadge", "name": { "path": "/airline" } },
+  { "id": "price", "component": "PriceTag", "amount": { "path": "/price" } },
   {
     "id": "bookButton",
     "component": "Button",
@@ -69,9 +42,5 @@
       }
     }
   },
-  {
-    "id": "bookButtonLabel",
-    "component": "Text",
-    "text": "Book flight"
-  }
+  { "id": "bookButtonLabel", "component": "Text", "text": "Book flight" }
 ]

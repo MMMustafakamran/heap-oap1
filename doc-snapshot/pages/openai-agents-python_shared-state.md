@@ -2,10 +2,9 @@
 
 > Create a two-way connection between your UI and agent state.
 
+## What is shared state? [#what-is-shared-state]
 
-## What is shared state?
-
-Agentic Copilots maintain a shared state that seamlessly connects your UI with the agent's execution. This shared state system allows you to:
+Agentic Copilots maintain a shared state that connects your UI with the agent's execution. This shared state lets you:
 
 - Display the agent's current progress and intermediate results
 - Update the agent's state through UI interactions
@@ -20,18 +19,19 @@ Agentic Copilots maintain a shared state that seamlessly connects your UI with t
 />
 
 <Callout type="info" title="See this in Inspector">
-  Open Inspector on localhost. Open a thread, then click **State**.
-  Agent state updates here as the run proceeds.
+  Open Inspector on localhost. Go to **Inspect**, then **Agent**.
+  The **Current State** section shows the agent state as the run proceeds.
+  With Intelligence on, you can also open a thread in **Rich Threads** and
+  click **State** to see its saved state.
 
   More detail: [Inspector](/openai-agents-python/inspector).
 </Callout>
 
-
-## When should I use this?
+## When should I use this? [#when-should-i-use-this]
 
 Use shared state when you want the agent and the user to collaborate through the
-same application state. The agent's outputs are reflected in the UI, and user
-updates in the UI are reflected in the agent's execution.
+same application state. The UI shows what the agent writes. The agent reads what
+the user changes in the UI.
 
 <OpsPlatformCTA
   variant="inline"
@@ -40,7 +40,7 @@ updates in the UI are reflected in the agent's execution.
   surface="docs_shared_state"
 />
 
-## Reading agent state
+## Reading agent state [#reading-agent-state]
 
 <Steps>
   <Step>
@@ -52,7 +52,6 @@ updates in the UI are reflected in the agent's execution.
     adapter's `shared_state()`, so the model sees the current value on every
     turn, including edits the user made with `agent.setState`:
 
-    
 ~~~~python title="shared_state.py"
 def with_state(prompt: str) -> Callable[[RunContextWrapper[Any], Agent[Any]], str]:
     """Dynamic instructions: ``prompt`` plus the run's shared state as JSON."""
@@ -71,8 +70,6 @@ def with_state(prompt: str) -> Callable[[RunContextWrapper[Any], Agent[Any]], st
 
 ~~~~
 
-
-    
 ~~~~python title="shared_state.py"
 READ_WRITE_PROMPT = (
     "You are a helpful, concise assistant. The shared application state below "
@@ -97,7 +94,6 @@ shared_state_read_write_agent = Agent(
 
 ~~~~
 
-
   </Step>
   <Step>
     ### Write state from a server tool
@@ -108,7 +104,6 @@ shared_state_read_write_agent = Agent(
     any component subscribed with `useAgent` re-renders while the agent is
     still running.
 
-    
 ~~~~python title="shared_state.py"
 @function_tool
 def set_notes(notes: list[str]) -> str:
@@ -124,7 +119,6 @@ def set_notes(notes: list[str]) -> str:
 
 
 ~~~~
-
 
     `shared_state().set(value)` replaces the whole state instead. The
     request's own `state` is never changed.
@@ -143,8 +137,7 @@ Subscribe a component to the agent's state with `useAgent`. Any time the agent
 mutates its state, for example via a tool call, the hook fires and your UI
 re-renders with the new values.
 
-```typescript
-// src/app/demos/shared-state-read-write/page.tsx
+```typescript title="src/app/demos/shared-state-read-write/page.tsx"
   // Subscribe the component to agent state changes. Any time the agent
   // mutates its state (e.g. via its `set_notes` tool) this hook fires,
   // we re-render, and the sidebar panels reflect the new values.
@@ -159,14 +152,13 @@ piece of React state and render the parts you care about: agent-written
 notes, structured outputs, progress indicators, anything the agent has put
 there.
 
-## Writing agent state
+## Writing agent state [#writing-agent-state]
 
 The same `agent` object exposes a `setState` setter. Calling it from a UI
 event handler pushes the new value into shared state, and the agent reads it
 back on its next turn. The UI's writes visibly steer the model.
 
-```typescript
-// src/app/demos/shared-state-read-write/page.tsx
+```typescript title="src/app/demos/shared-state-read-write/page.tsx"
   // WRITE: every edit in the sidebar goes straight into agent state.
   // On the agent's next turn, its dynamic instructions show the model this
   // state — so the UI's writes visibly steer the model.
@@ -178,18 +170,37 @@ back on its next turn. The UI's writes visibly steer the model.
   };
 ```
 
-This is what makes the channel two-way: the UI doesn't just observe the
-agent, it can hand the agent fresh inputs (preferences, selections, partial
-work) without going through the chat thread.
+This makes shared state two-way. The UI can also send the agent new inputs,
+such as preferences, selections, or partial work. These inputs do not go
+through the chat.
 
-## Rendering shared state in the UI
+The agent reads the new state on its next run. To run it right away, call
+`copilotkit.runAgent({ agent })` (from `useCopilotKit`) after `setState`.
+Running through `copilotkit` also sends your frontend tools and context with
+the run. To tell the model what changed, add a hint message first:
+
+```tsx
+const { copilotkit } = useCopilotKit();
+
+agent.setState({ language: newLanguage });
+agent.addMessage({
+  id: crypto.randomUUID(),
+  role: "user",
+  content: `the language has been updated to ${newLanguage}`,
+});
+await copilotkit.runAgent({ agent });
+```
+
+See [Programmatic control](/openai-agents-python/programmatic-control) for more ways to run the
+agent from code.
+
+## Rendering shared state in the UI [#rendering-shared-state-in-the-ui]
 
 Because `agent.state` is plain React data, the UI layer is whatever you'd
 normally build. The demo on this page wires the agent's outputs into a
 small card component and feeds user edits back through `setState`.
 
-```typescript
-// src/app/demos/shared-state-read-write/notes-card.tsx
+```typescript title="src/app/demos/shared-state-read-write/notes-card.tsx"
 // Read-side render: this card reflects the agent-authored `notes` slice
 // of shared state. The parent page passes `state.notes` in; we never
 // touch agent state ourselves — we just render it. The Clear button is
@@ -263,15 +274,16 @@ not just inside the chat panel. See
 **[Render agent state in your app](/openai-agents-python/shared-state/rendering-in-app)** for the
 full main-view pattern.
 
-## Streaming partial state updates
+## Streaming partial state updates [#streaming-partial-state-updates]
 
 By default, agent state only updates *between* backend checkpoints, so a
 long-running tool call appears as one big burst at the end. State streaming
-forwards a specific tool argument straight into a state key *as it's being
-generated*, so the UI can watch the answer assemble token-by-token.
+copies one tool argument into a state key while the model writes it. The UI
+shows the answer token by token.
 
-```python
-# src/demo_agents/shared_state_streaming.py
+<WhenFrameworkSupports feature="shared-state-streaming">
+
+```python title="src/demo_agents/shared_state_streaming.py"
 def _document_so_far(arguments: str) -> str | None:
     """The ``document`` argument as far as the model has written it."""
     try:
@@ -310,13 +322,21 @@ class DocumentStreamingAgent(OpenAIAgentsAgent):
                             ],
                         )
 
-
 ```
 
 See **[State streaming](/openai-agents-python/shared-state/streaming)** for the full walkthrough,
 including the corresponding `useAgent` subscription on the frontend.
 
-## Read-only context
+</WhenFrameworkSupports>
+
+<WhenFrameworkSupports feature="shared-state-streaming" not>
+
+State streaming isn't available on this framework yet. The UI gets the
+agent's state between checkpoints.
+
+</WhenFrameworkSupports>
+
+## Read-only context [#read-only-context]
 
 When the value is **UI-owned** and the agent should read it but never write
 it back, such as current user, selected record, or scroll position, reach for

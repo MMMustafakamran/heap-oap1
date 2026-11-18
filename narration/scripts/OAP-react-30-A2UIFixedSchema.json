@@ -8,7 +8,7 @@
   },
   {
    "at": "evidence",
-   "text": "So this is the problem, the display flight tool is defined, but no agent is ever built with it, and the flight schema file is never shown."
+   "text": "So this is the problem, the display flight tool is defined here, but no agent is ever built with it."
   },
   {
    "at": "ide",
@@ -24,7 +24,7 @@
   },
   {
    "at": "notepad",
-   "text": "So basically, the page is missing the agent and the schema file, and even with both added the card never gets its data."
+   "text": "So basically, the page never builds the agent, and even with the agent added and the schema from the page, the card never gets its data."
   },
   {
    "at": "+",

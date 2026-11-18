@@ -1,0 +1,30 @@
+{
+ "clip": "OAP-react-33-ComponentsTheming",
+ "finding": "22",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the theming page for OpenAI Agents, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, umm, you set the theme here, but no component ever shows up to use it."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. I asked for a card with a title and a button, it should render in the theme colors, but nothing renders."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the card never shows up, the reply stays empty, same in every run, so the theme can't even be seen."
+  },
+  {
+   "at": "+",
+   "text": "So umm, this one needs fixing, please look into it."
+  }
+ ]
+}

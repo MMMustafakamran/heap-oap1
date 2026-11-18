@@ -1,11 +1,12 @@
 {
  "root": "openai-agents-python",
- "savedAt": "2026-11-17",
+ "savedAt": "2026-11-18",
  "pages": {
   "/openai-agents-python/prebuilt-components/popup": [
    "/openai-agents-python/custom-look-and-feel/slots",
    "/openai-agents-python/migrate/v2",
    "/openai-agents-python/prebuilt-components/chat",
+   "/openai-agents-python/prebuilt-components/chat-controls",
    "/openai-agents-python/prebuilt-components/sidebar"
   ],
   "/openai-agents-python": [
@@ -15,6 +16,7 @@
    "/openai-agents-python/custom-look-and-feel/slots",
    "/openai-agents-python/migrate/v2",
    "/openai-agents-python/prebuilt-components/chat",
+   "/openai-agents-python/prebuilt-components/chat-controls",
    "/openai-agents-python/prebuilt-components/copilot-threads-drawer",
    "/openai-agents-python/prebuilt-components/popup"
   ],
@@ -33,11 +35,7 @@
    "/openai-agents-python/prebuilt-components/sidebar"
   ],
   "/openai-agents-python/prebuilt-components/chat-controls": [
-   "/openai-agents-python/custom-look-and-feel/slots",
-   "/openai-agents-python/intelligence/capture-interactions",
-   "/openai-agents-python/prebuilt-components/popup",
-   "/openai-agents-python/prebuilt-components/sidebar",
-   "/openai-agents-python/programmatic-control"
+   "/openai-agents-python/intelligence/capture-interactions"
   ],
   "/openai-agents-python/custom-look-and-feel/css": [
    "/openai-agents-python/custom-look-and-feel/headless-ui",
@@ -52,16 +50,20 @@
    "/openai-agents-python/generative-ui/tool-rendering"
   ],
   "/openai-agents-python/custom-look-and-feel/headless-ui": [
-   "/openai-agents-python/custom-look-and-feel/css",
-   "/openai-agents-python/custom-look-and-feel/slots"
+   "/openai-agents-python/custom-look-and-feel/slots",
+   "/openai-agents-python/programmatic-control"
   ],
   "/openai-agents-python/multimodal-attachments": [],
-  "/openai-agents-python/generative-ui/reasoning": [],
+  "/openai-agents-python/generative-ui/reasoning": [
+   "/openai-agents-python/custom-look-and-feel/reasoning-messages"
+  ],
   "/openai-agents-python/custom-look-and-feel/reasoning-messages": [],
   "/openai-agents-python/voice": [
    "/openai-agents-python/multimodal-attachments"
   ],
   "/openai-agents-python/frontend-tools": [
+   "/openai-agents-python/generative-ui",
+   "/openai-agents-python/human-in-the-loop",
    "/openai-agents-python/inspector"
   ],
   "/openai-agents-python/generative-ui/tool-based": [
@@ -70,11 +72,13 @@
    "/openai-agents-python/human-in-the-loop"
   ],
   "/openai-agents-python/generative-ui/tool-rendering": [],
-  "/openai-agents-python/generative-ui/state-rendering": [],
+  "/openai-agents-python/generative-ui/state-rendering": [
+   "/openai-agents-python/shared-state",
+   "/openai-agents-python/shared-state/streaming"
+  ],
   "/openai-agents-python/prebuilt-components/copilot-threads-drawer": [
    "/openai-agents-python/AG-UI-Streams",
    "/openai-agents-python/headless-threads",
-   "/openai-agents-python/migrate/v2",
    "/openai-agents-python/prebuilt-components/chat",
    "/openai-agents-python/threads-lifecycle"
   ],
@@ -88,41 +92,99 @@
   ],
   "/openai-agents-python/generative-ui/components/surfaces": [
    "/openai-agents-python/generative-ui/components",
-   "/openai-agents-python/generative-ui/components/catalogs",
-   "/openai-agents-python/react-native"
+   "/openai-agents-python/generative-ui/components/catalogs"
   ],
   "/openai-agents-python/generative-ui/components": [
    "/openai-agents-python/generative-ui/components/catalogs",
    "/openai-agents-python/generative-ui/components/from-a2ui",
    "/openai-agents-python/generative-ui/components/markdown-mode",
+   "/openai-agents-python/generative-ui/components/standard-catalog",
    "/openai-agents-python/generative-ui/components/state-and-actions",
    "/openai-agents-python/generative-ui/components/surfaces",
    "/openai-agents-python/generative-ui/components/theming",
    "/openai-agents-python/generative-ui/components/transports",
-   "/openai-agents-python/inspector",
-   "/openai-agents-python/react-native"
+   "/openai-agents-python/inspector"
   ],
   "/openai-agents-python/generative-ui/components/standard-catalog": [
    "/openai-agents-python/generative-ui/components/catalogs",
-   "/openai-agents-python/generative-ui/components/theming",
-   "/openai-agents-python/react-native"
+   "/openai-agents-python/generative-ui/components/standard-catalog/audio-player",
+   "/openai-agents-python/generative-ui/components/standard-catalog/badge",
+   "/openai-agents-python/generative-ui/components/standard-catalog/blockquote",
+   "/openai-agents-python/generative-ui/components/standard-catalog/bold",
+   "/openai-agents-python/generative-ui/components/standard-catalog/box",
+   "/openai-agents-python/generative-ui/components/standard-catalog/button",
+   "/openai-agents-python/generative-ui/components/standard-catalog/caption",
+   "/openai-agents-python/generative-ui/components/standard-catalog/card",
+   "/openai-agents-python/generative-ui/components/standard-catalog/carousel",
+   "/openai-agents-python/generative-ui/components/standard-catalog/chart",
+   "/openai-agents-python/generative-ui/components/standard-catalog/check-box",
+   "/openai-agents-python/generative-ui/components/standard-catalog/choice-picker",
+   "/openai-agents-python/generative-ui/components/standard-catalog/citation",
+   "/openai-agents-python/generative-ui/components/standard-catalog/code",
+   "/openai-agents-python/generative-ui/components/standard-catalog/column",
+   "/openai-agents-python/generative-ui/components/standard-catalog/date-time-input",
+   "/openai-agents-python/generative-ui/components/standard-catalog/divider",
+   "/openai-agents-python/generative-ui/components/standard-catalog/entity-card",
+   "/openai-agents-python/generative-ui/components/standard-catalog/favicon",
+   "/openai-agents-python/generative-ui/components/standard-catalog/flashcard-flip",
+   "/openai-agents-python/generative-ui/components/standard-catalog/flow",
+   "/openai-agents-python/generative-ui/components/standard-catalog/follow-up",
+   "/openai-agents-python/generative-ui/components/standard-catalog/form",
+   "/openai-agents-python/generative-ui/components/standard-catalog/grid",
+   "/openai-agents-python/generative-ui/components/standard-catalog/html-view",
+   "/openai-agents-python/generative-ui/components/standard-catalog/icon",
+   "/openai-agents-python/generative-ui/components/standard-catalog/image",
+   "/openai-agents-python/generative-ui/components/standard-catalog/image-grid",
+   "/openai-agents-python/generative-ui/components/standard-catalog/italic",
+   "/openai-agents-python/generative-ui/components/standard-catalog/label",
+   "/openai-agents-python/generative-ui/components/standard-catalog/link",
+   "/openai-agents-python/generative-ui/components/standard-catalog/link-card",
+   "/openai-agents-python/generative-ui/components/standard-catalog/list",
+   "/openai-agents-python/generative-ui/components/standard-catalog/map",
+   "/openai-agents-python/generative-ui/components/standard-catalog/markdown",
+   "/openai-agents-python/generative-ui/components/standard-catalog/math",
+   "/openai-agents-python/generative-ui/components/standard-catalog/modal",
+   "/openai-agents-python/generative-ui/components/standard-catalog/popover",
+   "/openai-agents-python/generative-ui/components/standard-catalog/pressable",
+   "/openai-agents-python/generative-ui/components/standard-catalog/pulse-indicator",
+   "/openai-agents-python/generative-ui/components/standard-catalog/radio",
+   "/openai-agents-python/generative-ui/components/standard-catalog/radio-group",
+   "/openai-agents-python/generative-ui/components/standard-catalog/row",
+   "/openai-agents-python/generative-ui/components/standard-catalog/segmented-control",
+   "/openai-agents-python/generative-ui/components/standard-catalog/select",
+   "/openai-agents-python/generative-ui/components/standard-catalog/shimmer-text",
+   "/openai-agents-python/generative-ui/components/standard-catalog/slider",
+   "/openai-agents-python/generative-ui/components/standard-catalog/spacer",
+   "/openai-agents-python/generative-ui/components/standard-catalog/strikethrough",
+   "/openai-agents-python/generative-ui/components/standard-catalog/svg",
+   "/openai-agents-python/generative-ui/components/standard-catalog/table",
+   "/openai-agents-python/generative-ui/components/standard-catalog/tabs",
+   "/openai-agents-python/generative-ui/components/standard-catalog/text",
+   "/openai-agents-python/generative-ui/components/standard-catalog/text-area",
+   "/openai-agents-python/generative-ui/components/standard-catalog/text-field",
+   "/openai-agents-python/generative-ui/components/standard-catalog/title",
+   "/openai-agents-python/generative-ui/components/standard-catalog/tooltip",
+   "/openai-agents-python/generative-ui/components/standard-catalog/underline",
+   "/openai-agents-python/generative-ui/components/standard-catalog/video",
+   "/openai-agents-python/generative-ui/components/theming"
   ],
   "/openai-agents-python/generative-ui/components/state-and-actions": [
-   "/openai-agents-python/react-native"
+   "/openai-agents-python/generative-ui/components/catalogs"
   ],
-  "/openai-agents-python/generative-ui/components/theming": [
-   "/openai-agents-python/react-native"
-  ],
+  "/openai-agents-python/generative-ui/components/theming": [],
   "/openai-agents-python/generative-ui/components/transports": [
-   "/openai-agents-python/generative-ui/components/markdown-mode"
+   "/openai-agents-python/generative-ui/components/markdown-mode",
+   "/openai-agents-python/generative-ui/components/standard-catalog"
   ],
   "/openai-agents-python/generative-ui/components/catalogs": [
    "/openai-agents-python/generative-ui/components",
+   "/openai-agents-python/generative-ui/components/standard-catalog",
    "/openai-agents-python/generative-ui/components/state-and-actions"
   ],
   "/openai-agents-python/generative-ui/components/from-a2ui": [
    "/openai-agents-python/generative-ui/components/catalogs",
    "/openai-agents-python/generative-ui/components/markdown-mode",
+   "/openai-agents-python/generative-ui/components/standard-catalog",
    "/openai-agents-python/generative-ui/components/state-and-actions",
    "/openai-agents-python/generative-ui/components/surfaces"
   ],
@@ -134,12 +196,14 @@
   "/openai-agents-python/generative-ui/a2ui": [
    "/openai-agents-python/generative-ui/a2ui/dynamic-schema",
    "/openai-agents-python/generative-ui/a2ui/fixed-schema",
+   "/openai-agents-python/generative-ui/a2ui/styling",
    "/openai-agents-python/generative-ui/components"
   ],
   "/openai-agents-python/generative-ui/a2ui/dynamic-schema": [
    "/openai-agents-python/generative-ui/a2ui/fixed-schema"
   ],
   "/openai-agents-python/generative-ui/a2ui/fixed-schema": [
+   "/openai-agents-python/generative-ui/a2ui/advanced",
    "/openai-agents-python/generative-ui/a2ui/dynamic-schema"
   ],
   "/openai-agents-python/generative-ui/hashbrown": [
@@ -156,6 +220,7 @@
   ],
   "/openai-agents-python/shared-state": [
    "/openai-agents-python/inspector",
+   "/openai-agents-python/programmatic-control",
    "/openai-agents-python/shared-state/agent-readonly",
    "/openai-agents-python/shared-state/rendering-in-app",
    "/openai-agents-python/shared-state/streaming"
@@ -166,8 +231,7 @@
    "/openai-agents-python/inspector"
   ],
   "/openai-agents-python/human-in-the-loop/useInterrupt": [
-   "/openai-agents-python/human-in-the-loop",
-   "/openai-agents-python/human-in-the-loop/headless"
+   "/openai-agents-python/human-in-the-loop"
   ],
   "/openai-agents-python/shared-state/rendering-in-app": [
    "/openai-agents-python/shared-state",
@@ -184,8 +248,7 @@
    "/openai-agents-python/shared-state/streaming"
   ],
   "/openai-agents-python/shared-state/streaming": [
-   "/openai-agents-python/shared-state",
-   "/openai-agents-python/shared-state/agent-readonly"
+   "/openai-agents-python/shared-state"
   ],
   "/openai-agents-python/human-in-the-loop/governed-actions": [
    "/openai-agents-python/frontend-tools",
@@ -253,7 +316,6 @@
   "/openai-agents-python/inspector": [
    "/openai-agents-python/AG-UI-Streams",
    "/openai-agents-python/agent-config",
-   "/openai-agents-python/agentic-protocols/ag-ui",
    "/openai-agents-python/backend/copilot-runtime",
    "/openai-agents-python/backend/runtime-endpoints",
    "/openai-agents-python/frontend-tools",
@@ -263,7 +325,6 @@
    "/openai-agents-python/intelligence/quickstart",
    "/openai-agents-python/learning",
    "/openai-agents-python/quickstart",
-   "/openai-agents-python/react-native",
    "/openai-agents-python/shared-state",
    "/openai-agents-python/shared-state/agent-readonly",
    "/openai-agents-python/troubleshooting/debug-mode",

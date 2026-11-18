@@ -69,16 +69,25 @@ export const FINDING_NOTES: Record<string, string> = {
   'a2ui-dynamic': [
     'dynamic schema page says the generated dashboard renders cards as data comes in',
     'no dashboard,chat shows a2ui render error cannot read properties of undefined reading map',
-    'the agent.py on the page is langgraph,ag_ui_langgraph get_a2ui_tools and langchain_openai',
+    'the only agent.py on the page is langgraph,ag_ui_langgraph get_a2ui_tools and langchain_openai',
+    'for other agents it just says write ur own generate_a2ui tool,links a typescript example',
     'and my_other_tool is never defined,nothing for openai agents so agent is my own',
   ].join('\n'),
   // #6
   'a2ui-fixed': [
     'fixed schema page says display_flight fills the flight card with origin destination airline price',
     'card and book flight button show up but every field is empty',
-    'page defines display_flight but never builds an agent that uses it',
-    'and a2ui_schemas/flight_schema.json is never shown,copied it from the showcase',
+    'page defines display_flight but never builds an agent that uses it,had to add the agent',
+    'flight_schema.json is on the page now,used it as is,still empty fields',
   ].join('\n'),
+  // #22
+  'components-theming': [
+    'theming page says set the theme and the generated components use ur colors',
+    'asked for a card with a title and a button,nothing renders',
+    'reply stays empty or says part of this ui couldnt be shown,3 runs same',
+    'so the theme can never be seen',
+  ].join('
+'),
   // #7 (⚠️)
   hashbrown: [
     'hashbrown page says the agent sends one json object and the dashboard streams in',
@@ -88,7 +97,7 @@ export const FINDING_NOTES: Record<string, string> = {
   ].join('\n'),
 };
 
-/** Where each finding shows on the RENDERED doc page (checked headless, 2026-11-17). */
+/** Where each finding shows on the RENDERED doc page (checked headless, 2026-11-18). */
 export const FINDING_EVIDENCE: Record<string, DocEvidence[]> = {
   'rendering-in-app': [
     { text: 'No agentId means the "default" agent', caption: 'useAgent() with no id wants "default"; the quickstart registers only openai_agent' },
@@ -107,7 +116,9 @@ export const FINDING_EVIDENCE: Record<string, DocEvidence[]> = {
   ],
   'a2ui-fixed': [
     { text: 'def display_flight(origin: str, destination: str, airline: str, price: str) -> dict:', caption: 'Tool defined, but no Agent is built with it' },
-    { text: 'with open(_SCHEMAS_DIR / "flight_schema.json", encoding="utf-8") as _f:', caption: 'flight_schema.json is never shown' },
+  ],
+  'components-theming': [
+    { text: 'Set the variables with the', caption: 'theme option; no themed component ever renders' },
   ],
   hashbrown: [
     { text: 'The agent sends one JSON object as the assistant message', caption: 'Only the output format, no OpenAI Agents agent' },

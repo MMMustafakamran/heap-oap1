@@ -18,8 +18,9 @@ import { useInterrupt } from "@copilotkit/react-core/v2";
 
 function GovernedActionApproval() {
   useInterrupt({
-    render: ({ interrupt, resolve, cancel }) => {
-      const action = interrupt?.metadata?.action as GovernedAction | undefined;
+    render: ({ event, interrupt, resolve, cancel }) => {
+      const action = (interrupt?.metadata?.action ??
+        parseInterruptValue(event.value)?.action) as GovernedAction | undefined;
 
       if (!action) {
         return null;
@@ -49,6 +50,16 @@ function GovernedActionApproval() {
   });
 
   return null;
+}
+
+// A custom-event interrupt can send its value as a JSON string.
+function parseInterruptValue(value: unknown): { action?: unknown } | undefined {
+  if (typeof value !== "string") return value as { action?: unknown } | undefined;
+  try {
+    return JSON.parse(value);
+  } catch {
+    return undefined;
+  }
 }
 
 function GovernedActionCard({

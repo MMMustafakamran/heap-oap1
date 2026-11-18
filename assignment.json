@@ -4,12 +4,12 @@
  "repo": "OpenAIAgents-React",
  "docBase": "https://docs.copilotkit.ai/openai-agents-python/",
  "versions": {
-  "@copilotkit/react-core": "1.88.0",
-  "@copilotkit/runtime": "1.88.0",
-  "@ag-ui/client": "1.0.4",
+  "@copilotkit/react-core": "1.89.0",
+  "@copilotkit/runtime": "1.89.0",
+  "@ag-ui/client": "1.0.5",
   "next": "16.4.5",
   "react": "19.3.0",
-  "openai-agents": "0.24.0",
+  "openai-agents": "0.25.0",
   "ag-ui-openai-agents": "0.1.0"
  },
  "testedContext": {
@@ -581,7 +581,7 @@
     }
    ],
    "notes": [
-    "Note: BarChart and its schema are never defined and no agent is shown; recorded with the showcase components and a harness agent."
+    "Note: demo_agents._common (MODEL, chat_settings) is never shown; BarChart is your own component."
    ]
   },
   {
@@ -792,24 +792,26 @@
    "child": false,
    "docPath": "generative-ui/components/theming",
    "reachable": "sidebar",
-   "status": "✅",
+   "status": "❌",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [],
+   "findings": [
+    22
+   ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-33-ComponentsTheming",
      "loom": "https://www.loom.com/share/5b2510216411498683b5f86e83fc493c",
-     "narration": null,
+     "narration": "narration/scripts/OAP-react-33-ComponentsTheming.json",
      "filmed": "2026-11-17"
     }
    ],
    "notes": [
-    "Note: works (themed card), but in 1 of 2 CI takes the reply rendered nothing."
+    "Issue: asked for a card, nothing renders: the reply stays empty or shows \"Part of this UI couldn't be shown\", so the theme can never be seen (3/3 probes)."
    ]
   },
   {
@@ -938,7 +940,7 @@
     5
    ],
    "notes": [
-    "Issue: the agent code is LangGraph (ag_ui_langgraph, langchain_openai); the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
+    "Issue: the only agent code is LangGraph (ag_ui_langgraph, langchain_openai); for other agents the page only says to write your own generate_a2ui tool. The surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
    ],
    "links": [
     {
@@ -968,7 +970,7 @@
     6
    ],
    "notes": [
-    "Issue: the page defines display_flight but never builds the agent, and flight_schema.json is never shown; the card renders with every field empty."
+    "Issue: the page defines display_flight but never builds the agent; with an agent added and the page's flight_schema.json, the card renders with every field empty."
    ],
    "links": [
     {
@@ -1107,7 +1109,7 @@
    },
    "findings": [],
    "notes": [
-    "Note: step 1 uses set_notes before step 2 defines it; demo_agents._common is never shown."
+    "Note: step 1 uses set_notes before step 2 defines it."
    ],
    "links": [
     {
@@ -1243,7 +1245,7 @@
    },
    "findings": [],
    "notes": [
-    "Note: the page says it is not available on this framework."
+    "Note: the page says to use useHumanInTheLoop on this framework (interrupts unavailable)."
    ],
    "links": []
   },
@@ -1263,7 +1265,7 @@
    },
    "findings": [],
    "notes": [
-    "Note: the page says it is not available on this framework."
+    "Note: the page says to use useHumanInTheLoop on this framework (interrupts unavailable)."
    ],
    "links": []
   },
@@ -1290,6 +1292,9 @@
      "narration": null,
      "filmed": "2026-11-17"
     }
+   ],
+   "notes": [
+    "Note: the only agent shown is LangGraph Python (interrupt path); recorded with the useHumanInTheLoop path on the quickstart agent."
    ]
   },
   {

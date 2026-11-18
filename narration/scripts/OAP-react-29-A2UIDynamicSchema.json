@@ -8,7 +8,7 @@
   },
   {
    "at": "evidence",
-   "text": "So this is the problem, umm, the agent code here is LangGraph, it imports from the LangGraph adapter and LangChain."
+   "text": "So this is the problem, umm, the only agent code here is LangGraph, for other agents it just says write your own tool."
   },
   {
    "at": "ide",
@@ -24,7 +24,7 @@
   },
   {
    "at": "notepad",
-   "text": "So basically, the page gives LangGraph code with an undefined tool, nothing for OpenAI Agents, and the surface just fails to render."
+   "text": "So basically, there's LangGraph code with an undefined tool, nothing for OpenAI Agents, and the surface just fails to render."
   },
   {
    "at": "+",
