@@ -41,6 +41,7 @@ export const PAGES_B = [
     id: 'json-render', name: 'Generative UI - JSON Render', videoName: 'JsonRender',
     docPath: 'generative-ui/json-render', route: 'declarative-json-render',
     ideFile: 'frontend/app/declarative-json-render/page.tsx', startLine: 1, endLine: 19,
+    extraTabs: [{ filePath: 'backend/b_json_render.py', startLine: 1, endLine: 12, addedText: 'json_render_agent = Agent(' }],
     prompt: "Show me the sales dashboard with metrics and a revenue chart",
     timeouts: { replyStartMs: 180000, replyStreamMs: 180000 },
   },

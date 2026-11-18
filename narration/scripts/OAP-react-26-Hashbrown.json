@@ -4,7 +4,7 @@
  "segments": [
   {
    "at": "doc",
-   "text": "Ok so this is the Hashbrown page for OpenAI Agents, and I'm reporting a small issue on this page."
+   "text": "Ok so this is the Hashbrown page for OpenAI Agents, and I'm reporting a problem on this page."
   },
   {
    "at": "evidence",
@@ -20,11 +20,11 @@
   },
   {
    "at": "demo",
-   "text": "Moving on to the demo. The main part works, the dashboard streams in, but uh, only on the agent I wrote by hand."
+   "text": "Moving on to the demo. It should stream in the dashboard from the page's agent, but umm, there's no agent to run, it only works on the one I wrote by hand."
   },
   {
    "at": "notepad",
-   "text": "So basically, the frontend works, but you have to guess the whole agent, since the page never gives one."
+   "text": "So basically, the page says the agent sends one JSON object, but never gives you that agent, so you have to guess the whole backend."
   },
   {
    "at": "+",

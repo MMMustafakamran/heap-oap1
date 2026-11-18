@@ -1,0 +1,9 @@
+{
+ "text": "Moving on to the demo. It should stream in the dashboard from the page's agent, but umm, there's no agent to run, it only works on the one I wrote by hand.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 10.077,
+ "file": "72f02d65e87ac6c29d11285c4dc789e2.mp3",
+ "clip": "OAP-react-26-Hashbrown",
+ "at": "demo"
+}

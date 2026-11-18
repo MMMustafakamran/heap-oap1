@@ -258,7 +258,7 @@
    },
    "findings": [],
    "notes": [
-    "Note: agent_server.py uses AGENTS and lifespan but never defines them."
+    "Note: AGENTS and lifespan are never defined; harness backend added."
    ],
    "links": [
     {
@@ -293,6 +293,9 @@
      "narration": null,
      "filmed": "2026-11-17"
     }
+   ],
+   "notes": [
+    "Note: the page never shows the Intelligence runtime setup; harness points runtimeUrl at it."
    ]
   },
   {
@@ -373,6 +376,9 @@
      "narration": null,
      "filmed": "2026-11-17"
     }
+   ],
+   "notes": [
+    "Note: the page never defines the .my-link / .my-heading styles; a harness style block was added."
    ]
   },
   {
@@ -398,6 +404,9 @@
      "narration": null,
      "filmed": "2026-11-17"
     }
+   ],
+   "notes": [
+    "Note: the snippets use placeholder components the page never defines; filled in from the showcase."
    ]
   },
   {
@@ -529,6 +538,9 @@
      "narration": null,
      "filmed": "2026-11-17"
     }
+   ],
+   "notes": [
+    "Note: the mic button only appears with a transcription key; not tested in CI."
    ]
   },
   {
@@ -986,22 +998,24 @@
    "child": false,
    "docPath": "generative-ui/json-render",
    "reachable": "sidebar",
-   "status": "✅",
+   "status": "❌",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [],
+   "findings": [
+    24
+   ],
    "notes": [
-    "Note: the page shows example agent output only, no OpenAI Agents agent; recorded with a harness agent."
+    "Issue: the page gives no OpenAI Agents agent, only example agent output; works only on an agent written by hand."
    ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-25-JsonRender",
      "loom": "https://www.loom.com/share/3610af39b02a4c1597305afef8940452",
-     "narration": null,
+     "narration": "narration/scripts/OAP-react-25-JsonRender.json",
      "filmed": "2026-11-17"
     }
    ]
@@ -1014,7 +1028,7 @@
    "child": false,
    "docPath": "generative-ui/hashbrown",
    "reachable": "sidebar",
-   "status": "⚠️",
+   "status": "❌",
    "review": {
     "verdict": null,
     "approvedAt": null,
@@ -1024,7 +1038,7 @@
     7
    ],
    "notes": [
-    "Issue: the page gives no OpenAI Agents agent, only the JSON the agent should send; works once an agent is written by hand."
+    "Issue: the page gives no OpenAI Agents agent, only the JSON the agent should send; works only on an agent written by hand."
    ],
    "links": [
     {

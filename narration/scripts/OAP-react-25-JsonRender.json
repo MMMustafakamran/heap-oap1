@@ -1,0 +1,34 @@
+{
+ "clip": "OAP-react-25-JsonRender",
+ "finding": "24",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the JSON Render page for OpenAI Agents, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, umm, the page only shows the JSON spec and some example output, there's no OpenAI Agents agent at all."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "+",
+   "text": "This part, the agent and its prompt, wasn't on the page, so I had to add it myself."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. It should render the dashboard from the page's agent, but uh, as written there's nothing to run, it only shows up on my own agent."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the doc says the agent emits a root and elements object, but never gives the agent, so you can't run it as published."
+  },
+  {
+   "at": "+",
+   "text": "Alright, that's the issue, kindly sort it out."
+  }
+ ]
+}

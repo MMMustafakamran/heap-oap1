@@ -90,9 +90,16 @@ export const FINDING_NOTES: Record<string, string> = {
   // #7 (⚠️)
   hashbrown: [
     'hashbrown page says the agent sends one json object and the dashboard streams in',
-    'dashboard does render here,but only on an agent i wrote myself',
-    'page has no openai agents agent at all,just the example json',
-    'so u have to guess the agent and its prompt',
+    'but page has no openai agents agent at all,just the example json',
+    'so as written theres nothing to run on the backend',
+    'dashboard only shows on an agent i wrote myself,had to guess the prompt too',
+  ].join('\n'),
+  // #24
+  'json-render': [
+    'json render page says the agent emits a root elements json object and the dashboard renders',
+    'but theres no openai agents agent on the page,only example agent output',
+    'so u cant run it as written',
+    'had to write the agent and its prompt myself,then the dashboard shows up',
   ].join('\n'),
 };
 
@@ -118,6 +125,9 @@ export const FINDING_EVIDENCE: Record<string, DocEvidence[]> = {
   ],
   'components-theming': [
     { text: 'Set the variables with the', caption: 'theme option; no themed component ever renders' },
+  ],
+  'json-render': [
+    { text: 'JSON object as the assistant message content', caption: 'Only the output format, no OpenAI Agents agent' },
   ],
   hashbrown: [
     { text: 'The agent sends one JSON object as the assistant message', caption: 'Only the output format, no OpenAI Agents agent' },

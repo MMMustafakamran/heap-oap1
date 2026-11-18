@@ -40,7 +40,17 @@ Stack: `@copilotkit/react-core` 1.89.0, `@copilotkit/runtime` 1.89.0, `@ag-ui/cl
 
 ### [Hashbrown](https://docs.copilotkit.ai/openai-agents-python/generative-ui/hashbrown)
 
-**#7** (⚠️) The page gives no OpenAI Agents agent, only "The agent sends **one JSON object** as the assistant message" and example output. The dashboard renders once an agent is written by hand (harness agent).
+**#7** The page gives no OpenAI Agents agent, only the output format and example output. A reader has to write the agent and its prompt by guesswork; the dashboard renders only on a hand-written agent (harness `backend/b_hashbrown.py`).
+**Doc:** "The agent sends **one JSON object** as the assistant message" + example agent output (no agent code).
+**Result:** nothing to run on the backend as published.
+**Confirmed by harness:** with a harness-written `hashbrown_agent = Agent(...)` the dashboard streams in.
+
+### [JSON Render](https://docs.copilotkit.ai/openai-agents-python/generative-ui/json-render)
+
+**#24** The page gives no OpenAI Agents agent, only the spec format and "example agent output". A reader has to write the agent and its prompt by guesswork.
+**Doc:** "The agent emits a `{ root, elements }` JSON object as the assistant message content." + example agent output (no agent code).
+**Result:** nothing to run on the backend as published.
+**Confirmed by harness:** with a harness-written `json_render_agent = Agent(...)` (`backend/b_json_render.py`) the dashboard renders.
 
 ## Minor notes
 
@@ -50,7 +60,9 @@ Stack: `@copilotkit/react-core` 1.89.0, `@copilotkit/runtime` 1.89.0, `@ag-ui/cl
 - **#11** Tool Call Rendering: `SYSTEM_PROMPT`, `search_flights`, `get_stock_price`, `roll_d20` are never defined (NameError as published).
 - **#12** Programmatic Control: `agent_server.py` uses `AGENTS` and `lifespan` without defining them.
 - **#13** Reasoning / Reasoning Messages: no agent or model is given; the example model `gpt-6-luna` does not exist.
-- **#14** JSON Render: no OpenAI Agents agent, only example agent output (same gap as #7; works on a harness agent).
+- **#25** Slots: the snippets use placeholder components the page never defines (filled in from the showcase).
+- **#26** Markdown: the `.my-link` / `.my-heading` styles are never defined (harness style block added).
+- **#27** Threads Drawer: the Intelligence runtime setup is never shown (harness points `runtimeUrl` at it).
 - **#15** Open Generative UI: `VISUALIZATION_DESIGN_SKILL` is never defined. Adopt from A2UI: `Airport` / `Arrow` renderers never shown. Surfaces: `Product` / `ProductRow` never defined.
 - **#16** WebMCP: `searchOrders` is never defined. Governed actions: no page/provider shown; the only agent is LangGraph Python (interrupt path).
 - **#17** HITL overview steps 4–5 point to `useInterrupt`, whose page says "Use useHumanInTheLoop on this framework"; `_answers` in `SchedulerAgent` is undefined.
