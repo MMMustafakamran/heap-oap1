@@ -8,6 +8,8 @@ import { runStandardAction } from '../core/actions';
 import { closeNotepad, openNotepad, typeInNotepad } from '../core/overlays/notepad';
 import { clickTaskbarApp, ensureOverlays, waitForHydration } from '../core/overlays/taskbar';
 import { checkpoint, describe, logAction, mark, probeText, tracked } from '../core/timeline';
+import { voiceGate } from '../core/voice';
+import { isFast } from '../core/fast';
 import { SELECTORS } from '../config/selectors.config';
 import { registerDocEvidence } from '../core/doc-evidence';
 
@@ -189,7 +191,7 @@ export async function showDocEvidence(
   config: PageRecordConfig,
   items: DocEvidence[] | undefined = FINDING_EVIDENCE[config.id],
 ): Promise<void> {
-  if (!items?.length) return;
+  if (!items?.length || isFast()) return; // probe: stay on the demo
   console.log(`   🔎 Showing the finding on the doc page (${items.length} spot(s))...`);
   await clickTaskbarApp(page, 'chrome').catch(() => {});
   // The demo's verdict is settled before this point. docs.copilotkit.ai can throw its own React
@@ -206,6 +208,7 @@ export async function showDocEvidence(
   await sleep(1500);
 
   for (const item of items) {
+    await voiceGate('evidence');
     mark('evidence', item.text);
     if (item.clickTab) {
       const tab = page.getByRole('tab', { name: item.clickTab, exact: true }).first();
@@ -437,6 +440,7 @@ export async function writeFinding(page: Page, id: string, config?: PageRecordCo
     return;
   }
   // The doc highlight now runs in the doc step, before the IDE (core/doc-evidence, registered below).
+  await voiceGate('notepad');
   mark('notepad');
   await openNotepad(page, `finding-${id}.txt`);
   await typeInNotepad(page, humanizeNote(body), TYPING);
@@ -580,6 +584,7 @@ function scripted(steps: Step[]): PageActionHandler {
     for (const s of steps) {
       if ('goto' in s) {
         // A second route is a new demo segment for narration (demo#2, demo#3 ...).
+        await voiceGate('demo');
         mark('demo', s.goto);
         await page.goto(BASE + s.goto, { waitUntil: 'load' }).catch(() => {});
         await sleep(s.holdMs ?? 4000);
@@ -965,6 +970,7 @@ const headlessThreadsTake: PageActionHandler = async (page, config, root, ctx) =
     return;
   }
   // Reload, as a person would, to check the list is not just late.
+  await voiceGate('demo');
   mark('demo', 'reload');
   await page.reload({ waitUntil: 'load' }).catch(() => {});
   await ensureOverlays(page, 'chrome').catch(() => {});
