@@ -86,8 +86,7 @@ export const FINDING_NOTES: Record<string, string> = {
     'asked for a card with a title and a button,nothing renders',
     'reply stays empty or says part of this ui couldnt be shown,3 runs same',
     'so the theme can never be seen',
-  ].join('
-'),
+  ].join('\n'),
   // #7 (⚠️)
   hashbrown: [
     'hashbrown page says the agent sends one json object and the dashboard streams in',
