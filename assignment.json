@@ -792,27 +792,23 @@
    "child": false,
    "docPath": "generative-ui/components/theming",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [
-    22
-   ],
+   "findings": [],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-33-ComponentsTheming",
      "loom": "https://www.loom.com/share/5b2510216411498683b5f86e83fc493c",
-     "narration": "narration/scripts/OAP-react-33-ComponentsTheming.json",
+     "narration": null,
      "filmed": "2026-11-17"
     }
    ],
-   "notes": [
-    "Issue: asked for a card, nothing renders: the reply stays empty or shows \"Part of this UI couldn't be shown\", so the theme can never be seen (3/3 probes)."
-   ]
+   "notes": []
   },
   {
    "id": "components-transports",
