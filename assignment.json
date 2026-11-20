@@ -669,26 +669,21 @@
    "child": false,
    "docPath": "generative-ui/components",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [
-    28
-   ],
+   "findings": [],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-23-Components",
      "loom": "https://www.loom.com/share/d138ec8cc9c34940b7d19b40a34e1f90",
-     "narration": "narration/scripts/OAP-react-23-Components.json",
+     "narration": null,
      "filmed": "2026-11-18"
     }
-   ],
-   "notes": [
-    "Issue: asked for a UI, the agent calls render_ui but no surface renders; the reply is empty or \"I'm sorry, but I can't create that UI right now.\""
    ]
   },
   {
@@ -787,7 +782,7 @@
     3
    ],
    "notes": [
-    "Issue: same failure as Components: render_ui is called, no ProductCard renders, the reply stays empty and the cart never fills."
+    "Issue: asked for product cards, render_ui is called but no ProductCard renders, the reply stays empty and the cart never fills (2/2 CI takes)."
    ],
    "links": [
     {

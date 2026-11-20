@@ -6,15 +6,9 @@ Stack: `@copilotkit/react-core` 1.89.0, `@copilotkit/runtime` 1.89.0, `@ag-ui/cl
 
 ## Dev blockers
 
-### [Components and surfaces](https://docs.copilotkit.ai/openai-agents-python/generative-ui/components)
-
-**#28** Following step 3 ("Already have CopilotKit running? Do step 3 only"), the agent calls `render_ui` but no surface renders.
-- **Doc:** "the runtime gives that run a `render_ui` tool and a short guide".
-- **Result (2/2 CI runs + local):** asked for a card with a bar chart and a Buy button, the reply is empty or "I'm sorry, but I can't create that UI right now." and no surface shows. Browser console: `The agent called the tool "render_ui", and no renderer is registered for it, so that message rendered nothing.`
-
 ### [State and actions](https://docs.copilotkit.ai/openai-agents-python/generative-ui/components/state-and-actions)
 
-**#3** Same failure as Components (#28): `render_ui` is called, but the assistant message stays empty, no `ProductCard` renders and the cart never fills (2/2 CI runs). `shopUI` is split across several blocks on the page (merged into one catalog in the harness).
+**#3** Asked for product cards, `render_ui` is called, but the assistant message stays empty, no `ProductCard` renders and the cart never fills (2/2 CI runs). `shopUI` is split across several blocks on the page (merged into one catalog in the harness).
 
 ### [A2UI](https://docs.copilotkit.ai/openai-agents-python/generative-ui/a2ui)
 

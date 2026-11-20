@@ -11,6 +11,7 @@ import {
   runA2uiDynamicFindingAction,
   runAgentTriggerAction,
   runDocumentStreamAction,
+  runGenuiAction,
   runGenuiFindingAction,
   runHeadlessThreadsAction,
   runKeyboardSendAction,
@@ -25,7 +26,7 @@ import {
 export const ACTION_MAP: Record<string, PageActionHandler> = {
   // ❌ finding pages (level 1 full clips)
   'components-state-actions': runGenuiFindingAction, // #3
-  components: runGenuiFindingAction, // #28: render_ui called, nothing renders
+  components: runGenuiAction, // ✅: surface renders (2/2 CI takes 2026-11-20)
   a2ui: runA2uiDynamicFindingAction, // #4
   'a2ui-dynamic': runA2uiDynamicFindingAction, // #5
   // ✅ since 2026-11-20 (minor notes only)

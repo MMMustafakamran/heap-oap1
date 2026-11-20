@@ -41,15 +41,8 @@ export const FINDING_NOTES: Record<string, string> = {
   'components-state-actions': [
     'doc says the agent renders product cards with an add to cart button that fills the cart',
     'asked for 2 product cards, assistant message just stays empty',
-    'no productcard renders and the cart never fills,same as the components page,render_ui gets called and nothing shows',
+    'no productcard renders and the cart never fills,render_ui gets called and nothing shows,both runs same',
     'shopui is split over a few blocks on the page,merged it into one catalog',
-  ].join('\n'),
-  // #28
-  components: [
-    'components page says do step 3 only,the runtime gives the run a render_ui tool and the agent renders ur components',
-    'asked for a card with a price chart and a buy button,no surface shows up',
-    'reply is empty or says sorry i cant create that ui right now,both runs same',
-    'agent calls render_ui but nothing renders,console says no renderer is registered for render_ui so it rendered nothing',
   ].join('\n'),
   // #4
   a2ui: [
@@ -76,9 +69,6 @@ export const FINDING_NOTES: Record<string, string> = {
 
 /** Where each finding shows on the RENDERED doc page (checked on the rendered HTML, 2026-11-20). */
 export const FINDING_EVIDENCE: Record<string, DocEvidence[]> = {
-  components: [
-    { text: 'the runtime gives that run a render_ui tool and a short guide', caption: 'render_ui is called, nothing renders, empty reply' },
-  ],
   'components-state-actions': [
     { text: '"Add to cart" must add to the cart, with no message to the agent.', caption: 'No ProductCard renders, cart stays empty' },
   ],
@@ -738,6 +728,8 @@ function withFindingOnFailure(handler: PageActionHandler): PageActionHandler {
   };
 }
 export const runGenuiFindingAction = withFindingOnFailure(genuiTake);
+/** Same take without the finding tail (✅ pages that render a surface). */
+export const runGenuiAction: PageActionHandler = genuiTake;
 /** True for the POST that carries an agent run (REST `/agent/<id>/run` or the single endpoint). */
 function isRunRequest(r: import('playwright').Request): boolean {
   if (r.method() !== 'POST' || !/copilotkit/.test(r.url())) return false;
