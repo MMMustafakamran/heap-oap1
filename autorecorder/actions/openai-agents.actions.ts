@@ -673,7 +673,23 @@ const genuiTake: PageActionHandler = async (page, config, _root, ctx) => {
   const after = await surfaceCount(page);
   // An empty surface container is not a rendered surface (CI probe 2026-11-20, Components:
   // 1 new surface, no visible content). Count only surfaces that show something.
-  const shown = (await surfaceContent(page).catch(() => null))?.withContent ?? 0;
+  // core surfaceContent() skips a surface whose outer box has no size (display: contents wrapper):
+  // CI 2026-11-20 it called the rendered "Plan prices" chart card empty. Look inside instead: any
+  // surface with visible text or a sized svg / button / img counts. Give it up to 15 s to paint.
+  const shownNow = () =>
+    page.evaluate((sel) => Array.from(document.querySelectorAll(sel)).filter((el) => {
+      if (((el as HTMLElement).innerText || '').trim()) return true;
+      return Array.from(el.querySelectorAll('svg, canvas, img, button, input')).some((m) => {
+        const r = m.getBoundingClientRect();
+        return r.width * r.height >= 100;
+      });
+    }).length, SURFACE_SEL).catch(() => 0);
+  let shown = await shownNow();
+  for (let i = 0; i < 15 && shown === 0 && after > before; i++) {
+    await sleep(1000);
+    shown = await shownNow();
+  }
+  void surfaceContent;
   const reply = await lastReply(page)();
   void checkpoint('reply', 'agent reply text', async () => reply);
   void checkpoint('surface', 'generative-UI surface rendered', async () =>
