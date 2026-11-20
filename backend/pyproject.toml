@@ -8,4 +8,5 @@ dependencies = [
     "ag-ui-openai-agents",
     "fastapi",
     "uvicorn",
+    "ag-ui-a2ui-toolkit>=0.0.6",
 ]

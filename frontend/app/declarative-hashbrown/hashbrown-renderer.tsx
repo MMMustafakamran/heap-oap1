@@ -7,7 +7,7 @@
  * hashbrown schema via `@hashbrownai/react`'s `useUiKit`. Renders assistant
  * messages through `useJsonParser` for progressive JSON->UI streaming.
  *
- * The agent (`src/agents/byoc_hashbrown_agent.py`) emits JSON of the shape:
+ * The agent (`src/demo_agents/byoc_hashbrown.py`) emits JSON of the shape:
  *   { "ui": [ { "metric": { "props": {...} } }, ... ] }
  */
 import React, { createContext, memo, useContext } from "react";

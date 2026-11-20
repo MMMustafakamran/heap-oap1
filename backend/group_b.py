@@ -30,3 +30,10 @@ _mount("/open-gen-ui-advanced", "b_open_gen_ui_advanced", "open_gen_ui_advanced_
 _mount("/mcp-apps", "b_mcp_apps", "mcp_apps_agent")
 _mount("/a2ui-dynamic", "b_a2ui_dynamic", "a2ui_dynamic_agent")
 _mount("/a2ui-fixed", "b_a2ui_fixed", "a2ui_fixed_agent")
+
+# HARNESS: Code-tab agents (demo_agents/*, copied verbatim from each page's Code tab) mounted at
+# the paths the Code-tab routes call (`${AGENT_URL}/<path>`). No page shows the agent server.
+_mount("/declarative_json_render", "demo_agents.byoc_json_render", "byoc_json_render_agent")
+_mount("/declarative_hashbrown", "demo_agents.byoc_hashbrown", "byoc_hashbrown_agent")
+_mount("/declarative_gen_ui", "demo_agents.a2ui_dynamic", "declarative_gen_ui_agent")
+_mount("/a2ui_fixed_schema", "demo_agents.a2ui_fixed", "a2ui_fixed_agent")

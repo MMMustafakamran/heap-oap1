@@ -8,3 +8,14 @@ MODEL = "gpt-4.1-mini"  # HARNESS: the doc never says which model MODEL is
 
 def chat_settings(**kwargs) -> ModelSettings:  # HARNESS
     return ModelSettings(**kwargs)
+
+
+# HARNESS: a2ui_dynamic.py (Code tab) also imports CHAT_REASONING and openai_client from this
+# module, which no page shows. Minimal stand-ins: no reasoning param, a default AsyncOpenAI client.
+CHAT_REASONING = None  # HARNESS
+
+
+def openai_client():  # HARNESS
+    from openai import AsyncOpenAI
+
+    return AsyncOpenAI()

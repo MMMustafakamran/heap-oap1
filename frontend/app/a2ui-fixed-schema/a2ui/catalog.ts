@@ -5,10 +5,9 @@
  *
  * `includeBasicCatalog: true` merges CopilotKit's built-in components
  * (Card, Column, Row, Text, Button, Divider, …) into this catalog, so
- * the agent's fixed schema (src/agents/a2ui_schemas/flight_schema.json) can
+ * the agent's fixed schema (src/demo_agents/a2ui_schemas/flight_schema.json) can
  * compose custom and basic components interchangeably.
  */
-// @region[catalog-creation]
 import { createCatalog } from "@copilotkit/a2ui-renderer";
 
 import { definitions } from "./definitions";
@@ -20,4 +19,3 @@ export const catalog = createCatalog(definitions, renderers, {
   catalogId: CATALOG_ID,
   includeBasicCatalog: true,
 });
-// @endregion[catalog-creation]

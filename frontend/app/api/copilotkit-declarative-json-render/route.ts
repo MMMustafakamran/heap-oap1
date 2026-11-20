@@ -1,13 +1,16 @@
-/**
- * Dedicated runtime for the declarative-json-render demo.
- *
- * Splitting into its own endpoint (mirroring beautiful-chat +
- * declarative-gen-ui) keeps the `byoc_json_render` agent isolated from the
- * default multi-agent `/api/copilotkit` runtime. The frontend's demo page
- * (src/app/demos/declarative-json-render/page.tsx) points `<CopilotKit
- * runtimeUrl>` here. The graph ID retains the legacy `byoc_json_render`
- * name; only the user-facing slug, route, and frontend folder were renamed.
- */
+// Dedicated runtime for the declarative-json-render demo.
+//
+// Splitting into its own endpoint (mirroring beautiful-chat +
+// declarative-gen-ui) keeps the agent isolated from the default multi-agent
+// `/api/copilotkit` runtime. The demo page
+// (src/app/demos/declarative-json-render/page.tsx) points
+// `<CopilotKit runtimeUrl>` here under the agent name `byoc_json_render`.
+// The backend (src/demo_agents/byoc_json_render.py) is a tool-less agent
+// whose system prompt makes it reply with a `{ root, elements }` json-render
+// spec as plain assistant text.
+//
+// Reference:
+// - showcase/integrations/langgraph-python/src/app/api/copilotkit-declarative-json-render/route.ts
 
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
@@ -15,25 +18,33 @@ import {
   CopilotRuntime,
   createCopilotRuntimeHandler,
 } from "@copilotkit/runtime/v2";
-import { HttpAgent } from "@ag-ui/client"; // HARNESS: OpenAI Agents backend over AG-UI instead of the showcase LangGraph agent
+import { HttpAgent } from "@ag-ui/client";
+import { extractForwardedHeaders } from "@/lib/header-forwarding";
 
+const AGENT_URL = "http://localhost:8093"; // HARNESS: page agents run on 8093 (doc: process.env.AGENT_URL || "http://localhost:8000"; AGENT_URL in .env.local is the quickstart agent)
 
-const byocJsonRenderAgent = new HttpAgent({ url: "http://localhost:8093/json-render" }) // HARNESS: OpenAI Agents backend;
-
-const runtime = new CopilotRuntime({
-  // @ts-ignore -- same-shape mismatch as the other dedicated routes in this
-  // package; the LangGraphAgent satisfies the runtime's agent interface at
-  // runtime but the generics don't line up across the v1/v2 boundary.
-  agents: { byoc_json_render: byocJsonRenderAgent },
-});
-
+// Build per-request so inbound `x-aimock-context` (and other `x-*` headers)
+// is forwarded onto the outbound call to the Python agent_server. See
+// `src/lib/header-forwarding.ts` for the rationale.
 export const POST = async (req: NextRequest) => {
   try {
+    const headers = extractForwardedHeaders(req);
+
+    const runtime = new CopilotRuntime({
+      agents: {
+        byoc_json_render: new HttpAgent({
+          url: `${AGENT_URL}/declarative_json_render`,
+          headers,
+        }),
+      },
+    });
+
     const copilotHandler = createCopilotRuntimeHandler({
       runtime,
       basePath: "/api/copilotkit-declarative-json-render",
       mode: "single-route",
     });
+
     return await copilotHandler(req);
   } catch (error: unknown) {
     const e = error as { message?: string; stack?: string };

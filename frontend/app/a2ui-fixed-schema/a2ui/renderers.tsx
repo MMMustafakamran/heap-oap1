@@ -24,7 +24,6 @@ import { Separator } from "../_components/separator";
 // see resolved strings. One shared helper keeps that narrowing in one place.
 const s = (v: unknown): string => (typeof v === "string" ? v : "");
 
-// @region[renderers-tsx]
 export const renderers: CatalogRenderers<Definitions> = {
   /**
    * Card override: ShadCN-style outer container. The basic catalog's Card
@@ -99,7 +98,7 @@ export const renderers: CatalogRenderers<Definitions> = {
    * Button override: this is a pure-presentation demo, so the button just
    * renders its label. The schema declares an `action` for visual fidelity,
    * but the click handler is inert until the Python SDK exposes
-   * `action_handlers=` on `a2ui.render` (see `src/agents/a2ui_fixed.py`).
+   * `action_handlers=` on `a2ui.render` (see `src/demo_agents/a2ui_fixed.py`).
    */
   Button: ({ props, children }) => (
     <UIButton className="w-full">
@@ -107,4 +106,3 @@ export const renderers: CatalogRenderers<Definitions> = {
     </UIButton>
   ),
 };
-// @endregion[renderers-tsx]

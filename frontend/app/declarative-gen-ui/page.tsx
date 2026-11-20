@@ -18,7 +18,6 @@
  *   https://docs.copilotkit.ai/integrations/langgraph/generative-ui/a2ui
  */
 
-// @region[provider-a2ui-prop]
 import React from "react";
 import { CopilotKit } from "@copilotkit/react-core/v2";
 
@@ -38,6 +37,5 @@ export default function DeclarativeGenUIDemo() {
         </div>
       </div>
     </CopilotKit>
-    // @endregion[provider-a2ui-prop]
   );
 }

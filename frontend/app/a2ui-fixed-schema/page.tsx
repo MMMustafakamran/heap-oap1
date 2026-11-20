@@ -6,12 +6,12 @@
  * In the fixed-schema flavor of A2UI, the component tree (schema) lives on
  * the frontend and the agent only streams *data* into the data model. The
  * flight card is ASSEMBLED from small sub-components in
- * `src/agents/a2ui_schemas/flight_schema.json` (Card > Column > [Title, Row, …]).
+ * `src/demo_agents/a2ui_schemas/flight_schema.json` (Card > Column > [Title, Row, …]).
  *
  * - Definitions (zod schemas): `./a2ui/definitions.ts`
  * - Renderers (React): `./a2ui/renderers.tsx`
  * - Catalog wiring: `./a2ui/catalog.ts` (includes the basic catalog)
- * - Agent: `src/agents/a2ui_fixed.py` (emits an `a2ui_operations` container)
+ * - Agent: `src/demo_agents/a2ui_fixed.py` (emits an `a2ui_operations` container)
  *
  * Reference:
  * https://docs.copilotkit.ai/integrations/langgraph/generative-ui/a2ui/fixed-schema
@@ -31,8 +31,8 @@ export default function A2UIFixedSchemaDemo() {
       agent="a2ui-fixed-schema"
       a2ui={{ catalog: catalog }}
     >
-      <div className="flex justify-center items-center h-screen w-full bg-neutral-50">
-        <div className="h-full w-full max-w-4xl border-x border-neutral-200 bg-white">
+      <div className="flex justify-center items-center h-screen w-full bg-neutral-50 dark:bg-background">
+        <div className="h-full w-full max-w-4xl border-x border-neutral-200 bg-white dark:border-border dark:bg-background">
           <Chat />
         </div>
       </div>

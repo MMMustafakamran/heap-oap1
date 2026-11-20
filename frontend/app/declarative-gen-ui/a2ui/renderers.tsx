@@ -43,6 +43,14 @@ const c = {
   shadow: "0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04)",
 };
 
+// Recharts' default tooltip is #fff / #ccc and its bar hover cursor is #ccc;
+// keep those in light mode and follow the theme tokens in dark mode.
+const tooltipStyle = {
+  backgroundColor: "light-dark(#fff, var(--card))",
+  border: "1px solid light-dark(#ccc, var(--border))",
+};
+const barCursor = { fill: "light-dark(#ccc, var(--accent))" };
+
 const CHART_COLORS = [
   "#3b82f6", // blue-500
   "#8b5cf6", // violet-500
@@ -101,7 +109,6 @@ function CardShell({
   );
 }
 
-// @region[renderers-react]
 export const myRenderers: CatalogRenderers<MyDefinitions> = {
   Row: ({ props, children }) => {
     const justifyMap: Record<string, string> = {
@@ -447,4 +454,3 @@ export const myRenderers: CatalogRenderers<MyDefinitions> = {
     );
   },
 };
-// @endregion[renderers-react]
