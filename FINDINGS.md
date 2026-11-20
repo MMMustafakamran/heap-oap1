@@ -2,58 +2,40 @@
 
 Open doc defects for https://docs.copilotkit.ai/openai-agents-python (React pages), found by following each page verbatim in this harness.
 
-Stack: `@copilotkit/react-core` 1.89.0, `@copilotkit/runtime` 1.89.0, `@ag-ui/client` 1.0.5 (npm latest; the doc pins 1.0.2), Next.js 16.4.5, React 19.3.0 · `openai-agents` 0.25.0, `ag-ui-openai-agents` 0.1.0, FastAPI 0.163.2 · Node 26.7.0, npm 11, Python 3.13.15 · Microsoft Windows 11 Pro · docs snapshot 2026-11-18. CI installs npm `latest` CopilotKit / AG-UI each run (`VERSIONS.md`).
+Stack: `@copilotkit/react-core` 1.89.0, `@copilotkit/runtime` 1.89.0, `@ag-ui/client` 1.0.5 (npm latest; the doc pins 1.0.2), Next.js 16.4.5, React 19.3.0 · `openai-agents` 0.25.0, `ag-ui-openai-agents` 0.1.0, FastAPI 0.163.2 · Node 26.7.0, npm 11, Python 3.13.15 · Microsoft Windows 11 Pro · docs snapshot 2026-11-18 (no drift on 2026-11-20). CI installs npm `latest` CopilotKit / AG-UI each run (`VERSIONS.md`).
 
 ## Dev blockers
 
-### [Render agent state in your app](https://docs.copilotkit.ai/openai-agents-python/shared-state/rendering-in-app)
+### [Components and surfaces](https://docs.copilotkit.ai/openai-agents-python/generative-ui/components)
 
-**#1** `useAgent()` without an agent id looks for an agent named `default`, which no step registers.
-- **Doc:** `const { agent, isReady } = useAgent();` with "No agentId means the "default" agent", under `<CopilotKit runtimeUrl="/api/copilotkit">`. The quickstart registers only `openai_agent`.
-- **Error (every load):** `useAgent: Agent 'default' not found after runtime sync (runtimeUrl=/api/copilotkit). Known agents: [openai_agent, …]`. No reply, no state rendered.
-- **Confirmed by harness:** a copy with `agent="openai_agent"` on the provider runs.
-
-### [Headless Threads](https://docs.copilotkit.ai/openai-agents-python/headless-threads)
-
-**#2** The page's runtime registers the agent as `default`, while the quickstart's provider targets `openai_agent`.
-- **Doc:** `agents: { default: agent }` in `server.ts` (and `useThreads({ agentId: "default" })`); `agent` and `verifyAppSession` are never defined.
-- **Error:** `useAgent: Agent 'openai_agent' not found after runtime sync (runtimeUrl=/api/copilotkit-threads). Known agents: [default]`. No reply.
+**#28** Following step 3 ("Already have CopilotKit running? Do step 3 only"), the agent calls `render_ui` but no surface renders.
+- **Doc:** "the runtime gives that run a `render_ui` tool and a short guide".
+- **Result (2/2 CI runs + local):** asked for a card with a bar chart and a Buy button, the reply is empty or "I'm sorry, but I can't create that UI right now." and no surface shows. Browser console: `The agent called the tool "render_ui", and no renderer is registered for it, so that message rendered nothing.`
 
 ### [State and actions](https://docs.copilotkit.ai/openai-agents-python/generative-ui/components/state-and-actions)
 
-**#3** Asked for product cards, the assistant message stays empty: no `ProductCard` renders and the cart never fills (3/3 runs). `shopUI` is split across several blocks on the page (merged into one catalog in the harness).
+**#3** Same failure as Components (#28): `render_ui` is called, but the assistant message stays empty, no `ProductCard` renders and the cart never fills (2/2 CI runs). `shopUI` is split across several blocks on the page (merged into one catalog in the harness).
 
 ### [A2UI](https://docs.copilotkit.ai/openai-agents-python/generative-ui/a2ui)
 
-**#4** Wrong-framework agent code and a broken surface.
-- **Doc:** `from copilotkit import a2ui` (CopilotKit Python SDK); no OpenAI Agents agent.
-- **Error (3/3):** `A2UI render error: Cannot read properties of undefined (reading 'map')`. Same with the quickstart agent.
+**#4** The surface never renders, even on the page's own OpenAI Agents agent.
+- **Doc:** "The middleware finds tool results that contain A2UI operations. It renders them as surfaces in the chat." The agent is the one in the Dynamic Schema Code tab (`a2ui_dynamic.py`, `ag_ui_a2ui_toolkit`), used as is.
+- **Error (2/2 CI runs):** `A2UI render error: Cannot read properties of undefined (reading 'map')`.
 
 ### [Dynamic Schema A2UI](https://docs.copilotkit.ai/openai-agents-python/generative-ui/a2ui/dynamic-schema)
 
-**#5** The only agent code is LangGraph ("With LangGraph Python"): `from ag_ui_langgraph import get_a2ui_tools`, `from langchain_openai import ChatOpenAI`; `my_other_tool` is undefined. For other agents the page only says to define a `generate_a2ui` tool yourself and links a TypeScript Built-in Agent example. The surface fails with the same `A2UI render error: Cannot read properties of undefined (reading 'map')` (3/3).
-
-### [Fixed Schema A2UI](https://docs.copilotkit.ai/openai-agents-python/generative-ui/a2ui/fixed-schema)
-
-**#6** `display_flight` is defined but no `Agent` using it is built.
-- **Result (harness agent + the page's `flight_schema.json`):** the "Flight Details" card and "Book flight" button render, but airports, airline and price are empty.
-
-### [Hashbrown](https://docs.copilotkit.ai/openai-agents-python/generative-ui/hashbrown)
-
-**#7** The page gives no OpenAI Agents agent, only the output format and example output. A reader has to write the agent and its prompt by guesswork; the dashboard renders only on a hand-written agent (harness `backend/b_hashbrown.py`).
-**Doc:** "The agent sends **one JSON object** as the assistant message" + example agent output (no agent code).
-**Result:** nothing to run on the backend as published.
-**Confirmed by harness:** with a harness-written `hashbrown_agent = Agent(...)` the dashboard streams in.
-
-### [JSON Render](https://docs.copilotkit.ai/openai-agents-python/generative-ui/json-render)
-
-**#24** The page gives no OpenAI Agents agent, only the spec format and "example agent output". A reader has to write the agent and its prompt by guesswork.
-**Doc:** "The agent emits a `{ root, elements }` JSON object as the assistant message content." + example agent output (no agent code).
-**Result:** nothing to run on the backend as published.
-**Confirmed by harness:** with a harness-written `json_render_agent = Agent(...)` (`backend/b_json_render.py`) the dashboard renders.
+**#5** Following the Code tab's OpenAI Agents agent (`a2ui_dynamic.py` with `ag_ui_a2ui_toolkit`), `generate_a2ui` runs and returns the surface, but it never renders.
+- **Doc:** "The A2UI middleware intercepts the stream and renders cards progressively as data items arrive."
+- **Error (2/2 CI runs):** `A2UI render error: Cannot read properties of undefined (reading 'map')` / `Unable to display this surface: Cannot read properties of undefined (reading 'map')`.
 
 ## Minor notes
 
+- **#1** Render agent state in your app: `useAgent()` with no id and the provider default to the `default` agent, the quickstart registers `openai_agent`; add `agent="openai_agent"` to the provider.
+- **#2** Headless Threads: `server.ts` registers the agent as `default` while the quickstart provider targets `openai_agent` (one-string rename); `agent` / `verifyAppSession` are never defined.
+- **#6** Fixed Schema A2UI: the agent and `flight_schema.json` are in the Code tab; `demo_agents._common` and the agent server are not shown.
+- **#7** Hashbrown: the agent and its prompt are in the Code tab; `demo_agents._common` is never shown.
+- **#24** JSON Render: the agent and its prompt are in the Code tab; `demo_agents._common` is never shown.
+- **#29** A2UI / Dynamic Schema: the `ag-ui-a2ui-toolkit` install the Code-tab agent imports is never mentioned.
 - **#8** `demo_agents._common` (`MODEL`, `chat_settings`) is imported on HITL, Sub-agents, Components as Tools, Frontend Tools and Fixed Schema A2UI but never shown.
 - **#9** Shared State: step 1's agent lists `tools=[set_notes]`, defined only in step 2.
 - **#10** State Streaming: `shared_state_streaming_agent` is mounted but never defined.

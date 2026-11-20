@@ -14,30 +14,29 @@ import {
   runGenuiFindingAction,
   runHeadlessThreadsAction,
   runKeyboardSendAction,
-  runKeyboardSendWithFinding,
   runOpenGenUiAction,
   runPromptOrError,
-  runRenderingInAppFindingAction,
-  runStandardWithFinding,
+  runRenderingInAppAction,
   runThreadsDrawerAction,
   SCRIPTED,
 } from './openai-agents.actions';
 
 /** Keys are page ids from `config/pages.config.ts`. Doctor flags any orphans. */
 export const ACTION_MAP: Record<string, PageActionHandler> = {
-  // ❌ / ⚠️ finding pages (FINDINGS.md #1-#7, level 1 full clips)
-  'rendering-in-app': runRenderingInAppFindingAction, // #1: doc page crashes, then the harness copy
-  'headless-threads': runHeadlessThreadsAction, // #2
+  // ❌ finding pages (level 1 full clips)
   'components-state-actions': runGenuiFindingAction, // #3
+  components: runGenuiFindingAction, // #28: render_ui called, nothing renders
   a2ui: runA2uiDynamicFindingAction, // #4
   'a2ui-dynamic': runA2uiDynamicFindingAction, // #5
-  'a2ui-fixed': runStandardWithFinding, // #6: card renders with empty fields
-  hashbrown: runKeyboardSendWithFinding, // #7 ⚠️: works on the harness agent
+  // ✅ since 2026-11-20 (minor notes only)
+  'rendering-in-app': runRenderingInAppAction, // harness route with agent="openai_agent"
+  'headless-threads': runHeadlessThreadsAction,
+  'a2ui-fixed': runPromptOrError,
+  hashbrown: runKeyboardSendAction,
   // ✅ pages with a page-specific take
   'prebuilt-components-copilot-threads-drawer': runThreadsDrawerAction,
   'headless-ui': runKeyboardSendAction,
   'json-render': runKeyboardSendAction,
-  components: runKeyboardSendAction,
   'components-catalogs': runKeyboardSendAction,
   'components-surfaces': runKeyboardSendAction,
   'components-theming': runKeyboardSendAction,

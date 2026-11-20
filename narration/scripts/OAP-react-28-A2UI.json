@@ -8,15 +8,11 @@
   },
   {
    "at": "evidence",
-   "text": "So this is the problem, this agent code imports from the CopilotKit Python SDK, it's not OpenAI Agents code at all."
+   "text": "So this is the problem, umm, the page says the middleware renders these as surfaces in the chat, but the surface never renders."
   },
   {
    "at": "ide",
-   "text": "This is my project, I've implemented the exact code from the doc."
-  },
-  {
-   "at": "+",
-   "text": "This part, the OpenAI Agents agent, wasn't on the page, so I wrote it myself."
+   "text": "This is my project, I've implemented the exact code from the doc, and the agent is the OpenAI Agents one from the dynamic schema code tab."
   },
   {
    "at": "demo",
@@ -24,7 +20,7 @@
   },
   {
    "at": "notepad",
-   "text": "So basically, the page has no OpenAI Agents agent, only another SDK's code, and the surface fails with this render error."
+   "text": "So basically, the agent from the code tab runs fine, but the surface fails with this cannot read map error, both runs the same."
   },
   {
    "at": "+",

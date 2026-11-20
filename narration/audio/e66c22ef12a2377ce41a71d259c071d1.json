@@ -1,0 +1,9 @@
+{
+ "text": "So basically, I used the code tab agent as is, generate A2UI runs, but the surface fails with a render error every time.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 9.381,
+ "file": "e66c22ef12a2377ce41a71d259c071d1.mp3",
+ "clip": "OAP-react-29-A2UIDynamicSchema",
+ "at": "notepad"
+}

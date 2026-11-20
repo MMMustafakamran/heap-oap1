@@ -306,24 +306,22 @@
    "child": false,
    "docPath": "headless-threads",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [
-    2
-   ],
+   "findings": [],
    "notes": [
-    "Issue: the runtime registers the agent as \"default\", but the quickstart's provider targets openai_agent, so useAgent throws: Agent 'openai_agent' not found after runtime sync. Known agents: [default]."
+    "Note: the page registers the agent as \"default\" while the quickstart provider targets openai_agent; a one-string rename fixes it."
    ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-16-HeadlessThreads",
      "loom": "https://www.loom.com/share/9598cf423e2b49609e2397ce8ef7d34b",
-     "narration": "narration/scripts/OAP-react-16-HeadlessThreads.json",
+     "narration": null,
      "filmed": "2026-11-18"
     }
    ]
@@ -671,21 +669,26 @@
    "child": false,
    "docPath": "generative-ui/components",
    "reachable": "sidebar",
-   "status": "✅",
+   "status": "❌",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [],
+   "findings": [
+    28
+   ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-23-Components",
      "loom": "https://www.loom.com/share/d138ec8cc9c34940b7d19b40a34e1f90",
-     "narration": null,
+     "narration": "narration/scripts/OAP-react-23-Components.json",
      "filmed": "2026-11-18"
     }
+   ],
+   "notes": [
+    "Issue: asked for a UI, the agent calls render_ui but no surface renders; the reply is empty or \"I'm sorry, but I can't create that UI right now.\""
    ]
   },
   {
@@ -784,7 +787,7 @@
     3
    ],
    "notes": [
-    "Issue: asked for product cards, the assistant message stays empty, no ProductCard renders and the cart never fills (3/3 runs)."
+    "Issue: same failure as Components: render_ui is called, no ProductCard renders, the reply stays empty and the cart never fills."
    ],
    "links": [
     {
@@ -918,7 +921,7 @@
     4
    ],
    "notes": [
-    "Issue: the agent code is the CopilotKit Python SDK (from copilotkit import a2ui), not OpenAI Agents; the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
+    "Issue: with the OpenAI Agents agent from the Dynamic Schema Code tab (a2ui_dynamic.py, ag_ui_a2ui_toolkit), the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
    ],
    "links": [
     {
@@ -948,7 +951,7 @@
     5
    ],
    "notes": [
-    "Issue: the only agent code is LangGraph (ag_ui_langgraph, langchain_openai); for other agents the page only says to write your own generate_a2ui tool. The surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
+    "Issue: following the Code tab's OpenAI Agents agent (a2ui_dynamic.py, ag_ui_a2ui_toolkit), the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
    ],
    "links": [
     {
@@ -968,24 +971,22 @@
    "child": false,
    "docPath": "generative-ui/a2ui/fixed-schema",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [
-    6
-   ],
+   "findings": [],
    "notes": [
-    "Issue: the page defines display_flight but never builds the agent; with an agent added and the page's flight_schema.json, the card renders with every field empty."
+    "Note: the agent and flight_schema.json are in the Code tab; demo_agents._common and the agent server are not shown."
    ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-30-A2UIFixedSchema",
      "loom": "https://www.loom.com/share/64659feeea5944d79229f1c72851da80",
-     "narration": "narration/scripts/OAP-react-30-A2UIFixedSchema.json",
+     "narration": null,
      "filmed": "2026-11-18"
     }
    ]
@@ -998,24 +999,22 @@
    "child": false,
    "docPath": "generative-ui/json-render",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [
-    24
-   ],
+   "findings": [],
    "notes": [
-    "Issue: the page gives no OpenAI Agents agent, only example agent output; works only on an agent written by hand."
+    "Note: the agent and its prompt are in the page's Code tab; demo_agents._common (MODEL, chat_settings) is never shown."
    ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-25-JsonRender",
      "loom": "https://www.loom.com/share/1bead00ad4214b26ae0b3d27c0e3c569",
-     "narration": "narration/scripts/OAP-react-25-JsonRender.json",
+     "narration": null,
      "filmed": "2026-11-18"
     }
    ]
@@ -1028,24 +1027,22 @@
    "child": false,
    "docPath": "generative-ui/hashbrown",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [
-    7
-   ],
+   "findings": [],
    "notes": [
-    "Issue: the page gives no OpenAI Agents agent, only the JSON the agent should send; works only on an agent written by hand."
+    "Note: the agent and its prompt are in the page's Code tab; demo_agents._common (MODEL, chat_settings) is never shown."
    ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-26-Hashbrown",
      "loom": "https://www.loom.com/share/01f0707ab8024c8588c3f807663d6c74",
-     "narration": "narration/scripts/OAP-react-26-Hashbrown.json",
+     "narration": null,
      "filmed": "2026-11-18"
     }
    ]
@@ -1139,24 +1136,22 @@
    "child": false,
    "docPath": "shared-state/rendering-in-app",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [
-    1
-   ],
+   "findings": [],
    "notes": [
-    "Issue: useAgent() with no agentId looks for an agent named \"default\", which no step registers: Agent 'default' not found after runtime sync. Known agents: [openai_agent]."
+    "Note: useAgent() and the provider default to the \"default\" agent; add agent=\"openai_agent\" to the provider."
    ],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-42-RenderAgentState",
      "loom": "https://www.loom.com/share/0220f5a39c4d47fbbbb3941296463461",
-     "narration": "narration/scripts/OAP-react-42-RenderAgentState.json",
+     "narration": null,
      "filmed": "2026-11-18"
     }
    ]

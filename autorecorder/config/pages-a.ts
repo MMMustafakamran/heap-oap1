@@ -129,7 +129,7 @@ export const PAGES_A = [
     id: 'agent-config', name: 'Agent Config', videoName: 'AgentConfig',
     docPath: 'agent-config', route: 'agent-config',
     ideFile: 'backend/a_agent_config.py', startLine: 1, endLine: 38,
-    extraTabs: [{ filePath: 'frontend/app/agent-config/config-context-relay.tsx', startLine: 1, endLine: 25 }],
+    extraTabs: [{ filePath: 'frontend/app/agent-config/config-context-relay.tsx', startLine: 1, endLine: 21 }],
     prompt: 'Hi! Explain what an API is.',
   },
   {

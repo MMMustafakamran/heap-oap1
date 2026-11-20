@@ -8,15 +8,11 @@
   },
   {
    "at": "evidence",
-   "text": "So this is the problem, umm, the only agent code here is LangGraph, for other agents it just says write your own tool."
+   "text": "So this is the problem, umm, the page says the cards render as the data comes in, but nothing renders."
   },
   {
    "at": "ide",
-   "text": "This is my project, I've implemented the exact code from the doc."
-  },
-  {
-   "at": "+",
-   "text": "The agent wasn't on the page, so I added it."
+   "text": "This is my project, I've implemented the exact code from the doc, including the OpenAI Agents agent from the code tab."
   },
   {
    "at": "demo",
@@ -24,7 +20,7 @@
   },
   {
    "at": "notepad",
-   "text": "So basically, there's LangGraph code with an undefined tool, nothing for OpenAI Agents, and the surface just fails to render."
+   "text": "So basically, I used the code tab agent as is, generate A2UI runs, but the surface fails with a render error every time."
   },
   {
    "at": "+",

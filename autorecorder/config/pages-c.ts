@@ -12,7 +12,7 @@ export const PAGES_C = [
   },
   {
     id: 'rendering-in-app', name: 'Shared State - Render agent state in your app', videoName: 'RenderAgentState',
-    docPath: 'shared-state/rendering-in-app', route: 'shared-state/rendering-in-app',
+    docPath: 'shared-state/rendering-in-app', route: 'shared-state/rendering-in-app/harness', // ✅: harness copy with agent="openai_agent" (minor note)
     ideFile: 'frontend/components/Canvas.tsx', startLine: 20, endLine: 54,
     extraTabs: [
       { filePath: 'frontend/app/shared-state/rendering-in-app/page.tsx', startLine: 1, endLine: 17 },

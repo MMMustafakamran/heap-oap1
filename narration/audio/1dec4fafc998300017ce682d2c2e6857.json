@@ -1,0 +1,9 @@
+{
+ "text": "Moving on to the demo. I asked for a card with a price chart, it should render in the chat, but no surface shows, the reply is empty or just says sorry.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 9.195,
+ "file": "1dec4fafc998300017ce682d2c2e6857.mp3",
+ "clip": "OAP-react-23-Components",
+ "at": "demo"
+}

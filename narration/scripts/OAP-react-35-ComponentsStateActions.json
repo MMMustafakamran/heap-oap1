@@ -24,7 +24,7 @@
   },
   {
    "at": "notepad",
-   "text": "So basically, no product card renders and the cart never fills, same in every run, and the catalog is split over a few blocks on the page."
+   "text": "So basically, same as the components page, render UI gets called but no product card renders, and the cart never fills."
   },
   {
    "at": "+",
