@@ -4,13 +4,13 @@
   "repo": "OpenAIAgents-React",
   "docBase": "https://docs.copilotkit.ai/openai-agents-python/",
   "versions": {
-    "@copilotkit/react-core": "1.89.0",
-    "@copilotkit/runtime": "1.89.0",
+    "@copilotkit/react-core": "1.90.0",
+    "@copilotkit/runtime": "1.90.0",
     "@ag-ui/client": "1.0.5",
     "next": "16.4.5",
     "react": "19.3.0",
     "openai-agents": "0.25.0",
-    "ag-ui-openai-agents": "0.1.0"
+    "ag-ui-openai-agents": "0.2.0"
   },
   "testedContext": {
     "os": "Microsoft Windows 11 Pro",
