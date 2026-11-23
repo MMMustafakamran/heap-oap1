@@ -257,9 +257,7 @@
     "by": null
    },
    "findings": [],
-   "notes": [
-    "Note: AGENTS and lifespan are never defined; harness backend added."
-   ],
+   "notes": [],
    "links": [
     {
      "text": null,
@@ -313,9 +311,7 @@
     "by": null
    },
    "findings": [],
-   "notes": [
-    "Note: the page registers the agent as \"default\" while the quickstart provider targets openai_agent; a one-string rename fixes it."
-   ],
+   "notes": [],
    "links": [
     {
      "text": null,
@@ -375,9 +371,7 @@
      "filmed": "2026-11-23"
     }
    ],
-   "notes": [
-    "Note: the page never defines the .my-link / .my-heading styles; a harness style block was added."
-   ]
+   "notes": []
   },
   {
    "id": "slots",
@@ -403,9 +397,7 @@
      "filmed": "2026-11-23"
     }
    ],
-   "notes": [
-    "Note: the snippets use placeholder components the page never defines; filled in from the showcase."
-   ]
+   "notes": []
   },
   {
    "id": "headless-ui",
@@ -590,9 +582,7 @@
      "filmed": "2026-11-23"
     }
    ],
-   "notes": [
-    "Note: demo_agents._common (MODEL, chat_settings) is never shown; BarChart is your own component."
-   ]
+   "notes": []
   },
   {
    "id": "tool-rendering",
@@ -609,9 +599,7 @@
     "by": null
    },
    "findings": [],
-   "notes": [
-    "Note: the agent uses SYSTEM_PROMPT, search_flights, get_stock_price and roll_d20, which the page never defines."
-   ],
+   "notes": [],
    "links": [
     {
      "text": "Tool Call Rendering - JS",
@@ -885,9 +873,7 @@
     "by": null
    },
    "findings": [],
-   "notes": [
-    "Note: the Airport and Arrow renderers are never shown."
-   ],
+   "notes": [],
    "links": [
     {
      "text": null,
@@ -973,9 +959,7 @@
     "by": null
    },
    "findings": [],
-   "notes": [
-    "Note: the agent and flight_schema.json are in the Code tab; demo_agents._common and the agent server are not shown."
-   ],
+   "notes": [],
    "links": [
     {
      "text": null,
@@ -1001,9 +985,7 @@
     "by": null
    },
    "findings": [],
-   "notes": [
-    "Note: the agent and its prompt are in the page's Code tab; demo_agents._common (MODEL, chat_settings) is never shown."
-   ],
+   "notes": [],
    "links": [
     {
      "text": null,
@@ -1029,9 +1011,7 @@
     "by": null
    },
    "findings": [],
-   "notes": [
-    "Note: the agent and its prompt are in the page's Code tab; demo_agents._common (MODEL, chat_settings) is never shown."
-   ],
+   "notes": [],
    "links": [
     {
      "text": null,
@@ -1082,9 +1062,7 @@
     "by": null
    },
    "findings": [],
-   "notes": [
-    "Note: VISUALIZATION_DESIGN_SKILL is never defined."
-   ],
+   "notes": [],
    "links": [
     {
      "text": null,
@@ -1110,9 +1088,7 @@
     "by": null
    },
    "findings": [],
-   "notes": [
-    "Note: step 1 uses set_notes before step 2 defines it."
-   ],
+   "notes": [],
    "links": [
     {
      "text": null,
@@ -1166,9 +1142,7 @@
     "by": null
    },
    "findings": [],
-   "notes": [
-    "Note: shared_state_streaming_agent is never defined on the page."
-   ],
+   "notes": [],
    "links": [
     {
      "text": null,
