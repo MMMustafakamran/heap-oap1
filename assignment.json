@@ -614,21 +614,21 @@
    ],
    "links": [
     {
-     "text": null,
+     "text": "Tool Call Rendering - JS",
      "clip": "OAP-react-20-ToolRendering",
      "loom": "https://www.loom.com/share/b82480be7e1c4beba7a58f300d3f4e6a",
      "narration": null,
      "filmed": "2026-11-23"
     },
     {
-     "text": null,
+     "text": "Tool Call Rendering (default render) - JS",
      "clip": "OAP-react-21-ToolRenderingDefault",
      "loom": "https://www.loom.com/share/403893135bc44c16940dd0dd684ad1e9",
      "narration": null,
      "filmed": "2026-11-23"
     },
     {
-     "text": null,
+     "text": "Tool Call Rendering (custom render) - JS",
      "clip": "OAP-react-22-ToolRenderingCustom",
      "loom": "https://www.loom.com/share/c7a78a9db794427f9bfda7033d26d267",
      "narration": null,
