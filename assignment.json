@@ -1,1401 +1,1401 @@
 {
-  "framework": "OpenAI Agents (Python)",
-  "ui": "react",
-  "repo": "OpenAIAgents-React",
-  "docBase": "https://docs.copilotkit.ai/openai-agents-python/",
-  "versions": {
-    "@copilotkit/react-core": "1.90.0",
-    "@copilotkit/runtime": "1.90.0",
-    "@ag-ui/client": "1.0.5",
-    "next": "16.4.5",
-    "react": "19.3.0",
-    "openai-agents": "0.25.0",
-    "ag-ui-openai-agents": "0.2.0"
-  },
-  "testedContext": {
-    "os": "Microsoft Windows 11 Pro",
-    "packageManager": "npm 11 (Node 26.7.0)"
-  },
-  "report": {
-    "style": "team",
-    "h1": "OpenAI Agents",
-    "title": "OpenAI Agents Python testing",
-    "quickstartHeading": "Quickstarts",
-    "quickstartHeader": null,
-    "clipsToUpload": true,
-    "guidesHeading": "React Guides",
-    "columns": [
-      "Page/Section",
-      "OpenAI Agents.python"
-    ],
-    "resultColumn": 1
-  },
-  "sections": [
-    {
-      "label": "Basics",
-      "cells": [
-        "Section",
-        "Section"
-      ]
-    },
-    {
-      "label": "Chat",
-      "cells": [
-        "Sub section",
-        "Sub Section"
-      ]
-    },
-    {
-      "label": "Prebuilt Components",
-      "cells": [
-        "",
-        ""
-      ]
-    },
-    {
-      "label": "Custom Look and Feel",
-      "cells": [
-        "Sub section",
-        "Sub section"
-      ]
-    },
-    {
-      "label": "Built Generative UI",
-      "cells": [
-        "Section",
-        "Section"
-      ]
-    },
-    {
-      "label": "Controlled",
-      "cells": [
-        "Sub-Section",
-        "Sub-Section"
-      ]
-    },
-    {
-      "label": "Declarative",
-      "cells": [
-        "Sub-Section",
-        "Sub-Section"
-      ]
-    },
-    {
-      "label": "A2UI",
-      "cells": [
-        "Sub-Section",
-        "Sub-Section"
-      ]
-    },
-    {
-      "label": "Interactivity",
-      "cells": [
-        "Section",
-        "Section"
-      ]
-    },
-    {
-      "label": "Shared State",
-      "cells": [
-        "Section",
-        "Section"
-      ]
-    },
-    {
-      "label": "Agent Capabilities",
-      "cells": [
-        "Section",
-        "Section"
-      ]
-    },
-    {
-      "label": "Debugging",
-      "cells": [
-        "Section",
-        "Section"
-      ]
-    }
+ "framework": "OpenAI Agents (Python)",
+ "ui": "react",
+ "repo": "OpenAIAgents-React",
+ "docBase": "https://docs.copilotkit.ai/openai-agents-python/",
+ "versions": {
+  "@copilotkit/react-core": "1.90.0",
+  "@copilotkit/runtime": "1.90.0",
+  "@ag-ui/client": "1.0.5",
+  "next": "16.4.5",
+  "react": "19.3.0",
+  "openai-agents": "0.25.0",
+  "ag-ui-openai-agents": "0.2.0"
+ },
+ "testedContext": {
+  "os": "Microsoft Windows 11 Pro",
+  "packageManager": "npm 11 (Node 26.7.0)"
+ },
+ "report": {
+  "style": "team",
+  "h1": "OpenAI Agents",
+  "title": "OpenAI Agents Python testing",
+  "quickstartHeading": "Quickstarts",
+  "quickstartHeader": null,
+  "clipsToUpload": true,
+  "guidesHeading": "React Guides",
+  "columns": [
+   "Page/Section",
+   "OpenAI Agents.python"
   ],
-  "pages": [
+  "resultColumn": 1
+ },
+ "sections": [
+  {
+   "label": "Basics",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  },
+  {
+   "label": "Chat",
+   "cells": [
+    "Sub section",
+    "Sub Section"
+   ]
+  },
+  {
+   "label": "Prebuilt Components",
+   "cells": [
+    "",
+    ""
+   ]
+  },
+  {
+   "label": "Custom Look and Feel",
+   "cells": [
+    "Sub section",
+    "Sub section"
+   ]
+  },
+  {
+   "label": "Built Generative UI",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  },
+  {
+   "label": "Controlled",
+   "cells": [
+    "Sub-Section",
+    "Sub-Section"
+   ]
+  },
+  {
+   "label": "Declarative",
+   "cells": [
+    "Sub-Section",
+    "Sub-Section"
+   ]
+  },
+  {
+   "label": "A2UI",
+   "cells": [
+    "Sub-Section",
+    "Sub-Section"
+   ]
+  },
+  {
+   "label": "Interactivity",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  },
+  {
+   "label": "Shared State",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  },
+  {
+   "label": "Agent Capabilities",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  },
+  {
+   "label": "Debugging",
+   "cells": [
+    "Section",
+    "Section"
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "id": "quickstart",
+   "label": "JS (React)",
+   "kind": "quickstart",
+   "group": null,
+   "child": false,
+   "docPath": "quickstart",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
     {
-      "id": "quickstart",
-      "label": "JS (React)",
-      "kind": "quickstart",
-      "group": null,
-      "child": false,
-      "docPath": "quickstart",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-01-Quickstart",
-          "loom": "https://www.loom.com/share/10d245cec760486d914b3c474771b8c9",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "prebuilt-chat",
-      "label": "CopilotChat",
-      "kind": "guide",
-      "group": "Prebuilt Components",
-      "child": false,
-      "docPath": "prebuilt-components/chat",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-02-PrebuiltChat",
-          "loom": "https://www.loom.com/share/3348cfa9a7874633a1ab1e16de8decc0",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "prebuilt-sidebar",
-      "label": "CopilotSidebar",
-      "kind": "guide",
-      "group": "Prebuilt Components",
-      "child": false,
-      "docPath": "prebuilt-components/sidebar",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-03-PrebuiltSidebar",
-          "loom": "https://www.loom.com/share/51de101ba8ad47e6b3594f41ea021364",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "prebuilt-popup",
-      "label": "CopilotPopup",
-      "kind": "guide",
-      "group": "Prebuilt Components",
-      "child": false,
-      "docPath": "prebuilt-components/popup",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-04-PrebuiltPopup",
-          "loom": "https://www.loom.com/share/40e446cda3fd44538cbb4d7dff00b7c0",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "chat-controls",
-      "label": "Open, close, and feedback",
-      "kind": "guide",
-      "group": "Prebuilt Components",
-      "child": false,
-      "docPath": "prebuilt-components/chat-controls",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-05-ChatControls",
-          "loom": "https://www.loom.com/share/56985309130246f0a73afd7eb504f6cf",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "programmatic-control",
-      "label": "Programmatic Control",
-      "kind": "guide",
-      "group": "Prebuilt Components",
-      "child": false,
-      "docPath": "programmatic-control",
-      "reachable": "in-content",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: AGENTS and lifespan are never defined; harness backend added."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-06-ProgrammaticControl",
-          "loom": "https://www.loom.com/share/986be73dcee44fd79cc6bd10aa248842",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "prebuilt-components-copilot-threads-drawer",
-      "label": "Threads Drawer",
-      "kind": "guide",
-      "group": "Prebuilt Components",
-      "child": false,
-      "docPath": "prebuilt-components/copilot-threads-drawer",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-15-ThreadsDrawer",
-          "loom": "https://www.loom.com/share/8fc42544f7e24d95b8762811e4a52e86",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ],
-      "notes": [
-        "Note: the page never shows the Intelligence runtime setup; harness points runtimeUrl at it."
-      ]
-    },
-    {
-      "id": "headless-threads",
-      "label": "Headless Threads",
-      "kind": "guide",
-      "group": "Prebuilt Components",
-      "child": false,
-      "docPath": "headless-threads",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: the page registers the agent as \"default\" while the quickstart provider targets openai_agent; a one-string rename fixes it."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-16-HeadlessThreads",
-          "loom": "https://www.loom.com/share/8699603f1bc64650bdd2feaa07e77056",
-          "narration": null,
-          "filmed": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "css",
-      "label": "CSS Customization",
-      "kind": "guide",
-      "group": "Custom Look and Feel",
-      "child": false,
-      "docPath": "custom-look-and-feel/css",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-07-CSS",
-          "loom": "https://www.loom.com/share/e452652349364316929410da6f9c24bf",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "markdown",
-      "label": "Markdown Rendering",
-      "kind": "guide",
-      "group": "Custom Look and Feel",
-      "child": false,
-      "docPath": "custom-look-and-feel/markdown",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-09-Markdown",
-          "loom": "https://www.loom.com/share/1977b624bdf7432baba2d453abfa4570",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ],
-      "notes": [
-        "Note: the page never defines the .my-link / .my-heading styles; a harness style block was added."
-      ]
-    },
-    {
-      "id": "slots",
-      "label": "Slots (Subcomponents)",
-      "kind": "guide",
-      "group": "Custom Look and Feel",
-      "child": false,
-      "docPath": "custom-look-and-feel/slots",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-08-Slots",
-          "loom": "https://www.loom.com/share/ad03a3a6882a4d1ba65a189dafcf378e",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ],
-      "notes": [
-        "Note: the snippets use placeholder components the page never defines; filled in from the showcase."
-      ]
-    },
-    {
-      "id": "headless-ui",
-      "label": "Headless UI",
-      "kind": "guide",
-      "group": "Custom Look and Feel",
-      "child": false,
-      "docPath": "custom-look-and-feel/headless-ui",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-10-HeadlessUI",
-          "loom": "https://www.loom.com/share/fd740643418e45c0a49e9566580746ad",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "reasoning",
-      "label": "Reasoning",
-      "kind": "guide",
-      "group": "Custom Look and Feel",
-      "child": false,
-      "docPath": "generative-ui/reasoning",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: the page gives no agent or reasoning model; recorded with gpt-5-mini reasoning summaries."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-12-Reasoning",
-          "loom": "https://www.loom.com/share/10472e90f5714585b58082d7ea60288c",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "reasoning-messages",
-      "label": "Reasoning Messages",
-      "kind": "guide",
-      "group": "Custom Look and Feel",
-      "child": false,
-      "docPath": "custom-look-and-feel/reasoning-messages",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: no agent on the page; its example model gpt-6-luna does not exist."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-11-ReasoningMessages",
-          "loom": "https://www.loom.com/share/844187baa6cb4afab00c44cf2f9554b2",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "multimodal",
-      "label": "Multimodal Attachments",
-      "kind": "guide",
-      "group": "Custom Look and Feel",
-      "child": false,
-      "docPath": "multimodal-attachments",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-13-Multimodal",
-          "loom": "https://www.loom.com/share/6cf6a8bb7543481292498c56f307b07d",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "voice",
-      "label": "Voice",
-      "kind": "guide",
-      "group": "Custom Look and Feel",
-      "child": false,
-      "docPath": "voice",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-14-Voice",
-          "loom": "https://www.loom.com/share/5daae3b181f74d44bf453036e8b7b62f",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ],
-      "notes": [
-        "Note: the mic button only appears with a transcription key; not tested in CI."
-      ]
-    },
-    {
-      "id": "frontend-tools",
-      "label": "Frontend Tools",
-      "kind": "guide",
-      "group": "Custom Look and Feel",
-      "child": false,
-      "docPath": "frontend-tools",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-17-FrontendTools",
-          "loom": "https://www.loom.com/share/e68b12f972de4f7fa00313eb6f471ac1",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "tool-based",
-      "label": "Components as Tools",
-      "kind": "guide",
-      "group": "Controlled",
-      "child": true,
-      "docPath": "generative-ui/tool-based",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-37-ComponentsAsTools",
-          "loom": "https://www.loom.com/share/cd6f4bf5d1f94c8283a25b99c5e595e2",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ],
-      "notes": [
-        "Note: demo_agents._common (MODEL, chat_settings) is never shown; BarChart is your own component."
-      ]
-    },
-    {
-      "id": "tool-rendering",
-      "label": "Tool Call Rendering",
-      "kind": "guide",
-      "group": "Controlled",
-      "child": true,
-      "docPath": "generative-ui/tool-rendering",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: the agent uses SYSTEM_PROMPT, search_flights, get_stock_price and roll_d20, which the page never defines."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-20-ToolRendering",
-          "loom": "https://www.loom.com/share/59c24307ea614e2283f7a677e5e83f73",
-          "narration": null,
-          "filmed": "2026-11-18"
-        },
-        {
-          "text": null,
-          "clip": "OAP-react-21-ToolRenderingDefault",
-          "loom": "https://www.loom.com/share/c12a7216f8ce4bf1811fe13fd12d8146",
-          "narration": null,
-          "filmed": "2026-11-18"
-        },
-        {
-          "text": null,
-          "clip": "OAP-react-22-ToolRenderingCustom",
-          "loom": "https://www.loom.com/share/1dfb74b2740b40e39fc4174ced762fef",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "state-rendering",
-      "label": "State Rendering",
-      "kind": "guide",
-      "group": "Controlled",
-      "child": true,
-      "docPath": "generative-ui/state-rendering",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-38-StateRendering",
-          "loom": "https://www.loom.com/share/58486c8981834969964030b88a471c03",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "components",
-      "label": "Components and surfaces",
-      "kind": "guide",
-      "group": "Declarative",
-      "child": false,
-      "docPath": "generative-ui/components",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-23-Components",
-          "loom": "https://www.loom.com/share/84d87636a7804ab9ae7d0d73c2b72085",
-          "narration": null,
-          "filmed": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "components-surfaces",
-      "label": "Surfaces",
-      "kind": "guide",
-      "group": "Declarative",
-      "child": false,
-      "docPath": "generative-ui/components/surfaces",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-32-ComponentsSurfaces",
-          "loom": "https://www.loom.com/share/418a3d1a09b84e2e9ec62f3e966269b7",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "components-catalogs",
-      "label": "Catalogs",
-      "kind": "guide",
-      "group": "Declarative",
-      "child": false,
-      "docPath": "generative-ui/components/catalogs",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-31-ComponentsCatalogs",
-          "loom": "https://www.loom.com/share/b6aa7534d9b34e43b817948896a23adf",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "components-standard-catalog",
-      "label": "Standard catalog",
-      "kind": "guide",
-      "group": "Declarative",
-      "child": false,
-      "docPath": "generative-ui/components/standard-catalog",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: works, but the model sometimes answers in text instead of a component."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-39-ComponentsStandardCatalog",
-          "loom": "https://www.loom.com/share/1a6eab06ba4346dfaf3b790f919ba3a0",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "components-state-actions",
-      "label": "State and actions",
-      "kind": "guide",
-      "group": "Declarative",
-      "child": false,
-      "docPath": "generative-ui/components/state-and-actions",
-      "reachable": "sidebar",
-      "status": "❌",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [
-        3
-      ],
-      "notes": [
-        "Issue: asked for product cards, render_ui is called but no ProductCard renders, the reply stays empty and the cart never fills (2/2 CI takes)."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-35-ComponentsStateActions",
-          "loom": "https://www.loom.com/share/9ff5d9890dba406fbf65916091141f1c",
-          "narration": "narration/scripts/OAP-react-35-ComponentsStateActions.json",
-          "filmed": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "components-theming",
-      "label": "Theming",
-      "kind": "guide",
-      "group": "Declarative",
-      "child": false,
-      "docPath": "generative-ui/components/theming",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-33-ComponentsTheming",
-          "loom": "https://www.loom.com/share/235bd4d3a6984e909e66ed4028ecad98",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ],
-      "notes": []
-    },
-    {
-      "id": "components-transports",
-      "label": "Transports",
-      "kind": "guide",
-      "group": "Declarative",
-      "child": false,
-      "docPath": "generative-ui/components/transports",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-34-ComponentsTransports",
-          "loom": "https://www.loom.com/share/d5033a6da96941ef96d65a6e9ac03578",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "components-markdown-mode",
-      "label": "Markdown mode",
-      "kind": "guide",
-      "group": "Declarative",
-      "child": false,
-      "docPath": "generative-ui/components/markdown-mode",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-36-ComponentsMarkdownMode",
-          "loom": "https://www.loom.com/share/35f782751a84442baaf5d0466c98d971",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "components-from-a2ui",
-      "label": "Adopt from A2UI",
-      "kind": "guide",
-      "group": "Declarative",
-      "child": false,
-      "docPath": "generative-ui/components/from-a2ui",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: the Airport and Arrow renderers are never shown."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-40-ComponentsFromA2UI",
-          "loom": "https://www.loom.com/share/8af8162304824e2eb63c6907887c289c",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "a2ui",
-      "label": "A2UI",
-      "kind": "guide",
-      "group": "A2UI",
-      "child": false,
-      "docPath": "generative-ui/a2ui",
-      "reachable": "sidebar",
-      "status": "❌",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [
-        4
-      ],
-      "notes": [
-        "Issue: with the OpenAI Agents agent from the Dynamic Schema Code tab (a2ui_dynamic.py, ag_ui_a2ui_toolkit), the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-28-A2UI",
-          "loom": "https://www.loom.com/share/285bf6e3475641069eee77942c206cd8",
-          "narration": "narration/scripts/OAP-react-28-A2UI.json",
-          "filmed": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "a2ui-dynamic",
-      "label": "Dynamic Schema A2UI",
-      "kind": "guide",
-      "group": "A2UI",
-      "child": false,
-      "docPath": "generative-ui/a2ui/dynamic-schema",
-      "reachable": "sidebar",
-      "status": "❌",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [
-        5
-      ],
-      "notes": [
-        "Issue: following the Code tab's OpenAI Agents agent (a2ui_dynamic.py, ag_ui_a2ui_toolkit), the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-29-A2UIDynamicSchema",
-          "loom": "https://www.loom.com/share/48dcd16d026b432d9ace43edcdc94750",
-          "narration": "narration/scripts/OAP-react-29-A2UIDynamicSchema.json",
-          "filmed": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "a2ui-fixed",
-      "label": "Fixed Schema A2UI",
-      "kind": "guide",
-      "group": "A2UI",
-      "child": false,
-      "docPath": "generative-ui/a2ui/fixed-schema",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: the agent and flight_schema.json are in the Code tab; demo_agents._common and the agent server are not shown."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-30-A2UIFixedSchema",
-          "loom": "https://www.loom.com/share/99cc8878dae54057a21a967f8e699627",
-          "narration": null,
-          "filmed": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "json-render",
-      "label": "JSON Render",
-      "kind": "guide",
-      "group": "A2UI",
-      "child": false,
-      "docPath": "generative-ui/json-render",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: the agent and its prompt are in the page's Code tab; demo_agents._common (MODEL, chat_settings) is never shown."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-25-JsonRender",
-          "loom": "https://www.loom.com/share/1dd5cc17d49b4957b34d1dbd9c3dfb7a",
-          "narration": null,
-          "filmed": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "hashbrown",
-      "label": "Hashbrown",
-      "kind": "guide",
-      "group": "A2UI",
-      "child": false,
-      "docPath": "generative-ui/hashbrown",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: the agent and its prompt are in the page's Code tab; demo_agents._common (MODEL, chat_settings) is never shown."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-26-Hashbrown",
-          "loom": "https://www.loom.com/share/4a44f75b52464ce896b5f24b9aef7c51",
-          "narration": null,
-          "filmed": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "mcp-apps",
-      "label": "MCP Apps",
-      "kind": "guide",
-      "group": "A2UI",
-      "child": false,
-      "docPath": "generative-ui/mcp-apps",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-24-McpApps",
-          "loom": "https://www.loom.com/share/f0fcad4941204960a6c80d54dceb2d05",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "open-generative-ui",
-      "label": "Open Generative UI",
-      "kind": "guide",
-      "group": "A2UI",
-      "child": false,
-      "docPath": "generative-ui/open-generative-ui",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: VISUALIZATION_DESIGN_SKILL is never defined."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-27-OpenGenerativeUI",
-          "loom": "https://www.loom.com/share/a9dd84a03ee24092a2c738a45e9f8c67",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "shared-state",
-      "label": "Shared State",
-      "kind": "guide",
-      "group": "Shared State",
-      "child": false,
-      "docPath": "shared-state",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: step 1 uses set_notes before step 2 defines it."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-41-SharedState",
-          "loom": "https://www.loom.com/share/3d6850ada48e48dbb224338b13c1f952",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "rendering-in-app",
-      "label": "Render agent state in your app",
-      "kind": "guide",
-      "group": "Shared State",
-      "child": false,
-      "docPath": "shared-state/rendering-in-app",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: useAgent() and the provider default to the \"default\" agent; add agent=\"openai_agent\" to the provider."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-42-RenderAgentState",
-          "loom": "https://www.loom.com/share/c3c95736d40d4c6a90789f887fede57c",
-          "narration": null,
-          "filmed": "2026-11-20"
-        }
-      ]
-    },
-    {
-      "id": "state-streaming",
-      "label": "State Streaming",
-      "kind": "guide",
-      "group": "Shared State",
-      "child": false,
-      "docPath": "shared-state/streaming",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: shared_state_streaming_agent is never defined on the page."
-      ],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-43-StateStreaming",
-          "loom": "https://www.loom.com/share/1336f32cf43a468e9281aa436454eb11",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "agent-readonly",
-      "label": "Agent Read-Only Context",
-      "kind": "guide",
-      "group": "Shared State",
-      "child": false,
-      "docPath": "shared-state/agent-readonly",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-44-AgentReadOnly",
-          "loom": "https://www.loom.com/share/171c70b264c248fbb818499e9893f781",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "human-in-the-loop",
-      "label": "HITL Overview",
-      "kind": "guide",
-      "group": "Shared State",
-      "child": false,
-      "docPath": "human-in-the-loop",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-45-HumanInTheLoop",
-          "loom": "https://www.loom.com/share/407dc9d5e41549efa643ed430b11aec5",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "use-interrupt",
-      "label": "Pausing the Agent for Input",
-      "kind": "guide",
-      "group": "Shared State",
-      "child": true,
-      "docPath": "human-in-the-loop/useInterrupt",
-      "reachable": "sidebar",
-      "status": "N/A",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: the page says to use useHumanInTheLoop on this framework (interrupts unavailable)."
-      ],
-      "links": []
-    },
-    {
-      "id": "headless-interrupts",
-      "label": "Headless Interrupts",
-      "kind": "guide",
-      "group": "Shared State",
-      "child": true,
-      "docPath": "human-in-the-loop/headless",
-      "reachable": "sidebar",
-      "status": "N/A",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "notes": [
-        "Note: the page says to use useHumanInTheLoop on this framework (interrupts unavailable)."
-      ],
-      "links": []
-    },
-    {
-      "id": "governed-actions",
-      "label": "Governed Action Approval UI",
-      "kind": "guide",
-      "group": "Shared State",
-      "child": true,
-      "docPath": "human-in-the-loop/governed-actions",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-46-GovernedActions",
-          "loom": "https://www.loom.com/share/1fc0a71291ab4f1aa3fc2414fbbd3efe",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ],
-      "notes": [
-        "Note: the only agent shown is LangGraph Python (interrupt path); recorded with the useHumanInTheLoop path on the quickstart agent."
-      ]
-    },
-    {
-      "id": "webmcp",
-      "label": "WebMCP",
-      "kind": "guide",
-      "group": "Shared State",
-      "child": false,
-      "docPath": "webmcp",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-47-WebMCP",
-          "loom": "https://www.loom.com/share/ea3d012f76bf4effb0a0ef799130e494",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "subagents",
-      "label": "Sub-agents",
-      "kind": "guide",
-      "group": "Agent Capabilities",
-      "child": false,
-      "docPath": "multi-agent/subagents",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-48-SubAgents",
-          "loom": "https://www.loom.com/share/acf578e960744c9f83e3fb2dca066a97",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "agent-config",
-      "label": "Agent Config",
-      "kind": "guide",
-      "group": "Agent Capabilities",
-      "child": false,
-      "docPath": "agent-config",
-      "reachable": "in-content",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-18-AgentConfig",
-          "loom": "https://www.loom.com/share/40aa773c7f56471cbcef8b2468cc0559",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
-    },
-    {
-      "id": "inspector",
-      "label": "Inspector",
-      "kind": "guide",
-      "group": "Debugging",
-      "child": false,
-      "docPath": "inspector",
-      "reachable": "sidebar",
-      "status": "✅",
-      "review": {
-        "verdict": null,
-        "approvedAt": null,
-        "by": null
-      },
-      "findings": [],
-      "links": [
-        {
-          "text": null,
-          "clip": "OAP-react-19-Inspector",
-          "loom": "https://www.loom.com/share/f786f7ab2051435396370a9bb0aea72b",
-          "narration": null,
-          "filmed": "2026-11-18"
-        }
-      ]
+     "text": null,
+     "clip": "OAP-react-01-Quickstart",
+     "loom": "https://www.loom.com/share/c636f9ae163a4c689fe7ae594412335a",
+     "narration": null,
+     "filmed": "2026-11-23"
     }
-  ]
+   ]
+  },
+  {
+   "id": "prebuilt-chat",
+   "label": "CopilotChat",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "prebuilt-components/chat",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-02-PrebuiltChat",
+     "loom": "https://www.loom.com/share/487b8f8dd727472ea615704f17c66410",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "prebuilt-sidebar",
+   "label": "CopilotSidebar",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "prebuilt-components/sidebar",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-03-PrebuiltSidebar",
+     "loom": "https://www.loom.com/share/1fb2f528acf74254b592baf55046c1b8",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "prebuilt-popup",
+   "label": "CopilotPopup",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "prebuilt-components/popup",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-04-PrebuiltPopup",
+     "loom": "https://www.loom.com/share/8d888f2338a34055bef2e05880e4db72",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "chat-controls",
+   "label": "Open, close, and feedback",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "prebuilt-components/chat-controls",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-05-ChatControls",
+     "loom": "https://www.loom.com/share/ab58003686824d6ab780e745eb381228",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "programmatic-control",
+   "label": "Programmatic Control",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "programmatic-control",
+   "reachable": "in-content",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: AGENTS and lifespan are never defined; harness backend added."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-06-ProgrammaticControl",
+     "loom": "https://www.loom.com/share/6251bf8675f34950b2a59ee2d3be8b8c",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "prebuilt-components-copilot-threads-drawer",
+   "label": "Threads Drawer",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "prebuilt-components/copilot-threads-drawer",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-15-ThreadsDrawer",
+     "loom": "https://www.loom.com/share/d8d3b22bf06f41b4834e549bfcee232e",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ],
+   "notes": [
+    "Note: the page never shows the Intelligence runtime setup; harness points runtimeUrl at it."
+   ]
+  },
+  {
+   "id": "headless-threads",
+   "label": "Headless Threads",
+   "kind": "guide",
+   "group": "Prebuilt Components",
+   "child": false,
+   "docPath": "headless-threads",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: the page registers the agent as \"default\" while the quickstart provider targets openai_agent; a one-string rename fixes it."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-16-HeadlessThreads",
+     "loom": "https://www.loom.com/share/63cb3d3408f64aeb81ba6fa005e17acb",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "css",
+   "label": "CSS Customization",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/css",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-07-CSS",
+     "loom": "https://www.loom.com/share/be4fa7e4a1aa42e18fb019e5b0cd7f7c",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "markdown",
+   "label": "Markdown Rendering",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/markdown",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-09-Markdown",
+     "loom": "https://www.loom.com/share/5aaee176ddc240b3b11bb88b2042e8fd",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ],
+   "notes": [
+    "Note: the page never defines the .my-link / .my-heading styles; a harness style block was added."
+   ]
+  },
+  {
+   "id": "slots",
+   "label": "Slots (Subcomponents)",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/slots",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-08-Slots",
+     "loom": "https://www.loom.com/share/729fa615e845448691e44113cdf0985d",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ],
+   "notes": [
+    "Note: the snippets use placeholder components the page never defines; filled in from the showcase."
+   ]
+  },
+  {
+   "id": "headless-ui",
+   "label": "Headless UI",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/headless-ui",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-10-HeadlessUI",
+     "loom": "https://www.loom.com/share/5436e3fde4c542359f00e650b077c6e3",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "reasoning",
+   "label": "Reasoning",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "generative-ui/reasoning",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: the page gives no agent or reasoning model; recorded with gpt-5-mini reasoning summaries."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-12-Reasoning",
+     "loom": "https://www.loom.com/share/7580b9e766c74385aad44acb63dd8521",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "reasoning-messages",
+   "label": "Reasoning Messages",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "custom-look-and-feel/reasoning-messages",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: no agent on the page; its example model gpt-6-luna does not exist."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-11-ReasoningMessages",
+     "loom": "https://www.loom.com/share/5f25674bc708490b9d0f7e476885beda",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "multimodal",
+   "label": "Multimodal Attachments",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "multimodal-attachments",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-13-Multimodal",
+     "loom": "https://www.loom.com/share/418074906e3443728d4de7dc188f4cfc",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "voice",
+   "label": "Voice",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "voice",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-14-Voice",
+     "loom": "https://www.loom.com/share/7de374f492984fc69a24b7e20b2b2a38",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ],
+   "notes": [
+    "Note: the mic button only appears with a transcription key; not tested in CI."
+   ]
+  },
+  {
+   "id": "frontend-tools",
+   "label": "Frontend Tools",
+   "kind": "guide",
+   "group": "Custom Look and Feel",
+   "child": false,
+   "docPath": "frontend-tools",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-17-FrontendTools",
+     "loom": "https://www.loom.com/share/36414d099b394d7d9123e5f4b8b0c4da",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "tool-based",
+   "label": "Components as Tools",
+   "kind": "guide",
+   "group": "Controlled",
+   "child": true,
+   "docPath": "generative-ui/tool-based",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-37-ComponentsAsTools",
+     "loom": "https://www.loom.com/share/e20376578f7140b3873a50a40b6887ee",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ],
+   "notes": [
+    "Note: demo_agents._common (MODEL, chat_settings) is never shown; BarChart is your own component."
+   ]
+  },
+  {
+   "id": "tool-rendering",
+   "label": "Tool Call Rendering",
+   "kind": "guide",
+   "group": "Controlled",
+   "child": true,
+   "docPath": "generative-ui/tool-rendering",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: the agent uses SYSTEM_PROMPT, search_flights, get_stock_price and roll_d20, which the page never defines."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-20-ToolRendering",
+     "loom": "https://www.loom.com/share/b82480be7e1c4beba7a58f300d3f4e6a",
+     "narration": null,
+     "filmed": "2026-11-23"
+    },
+    {
+     "text": null,
+     "clip": "OAP-react-21-ToolRenderingDefault",
+     "loom": "https://www.loom.com/share/403893135bc44c16940dd0dd684ad1e9",
+     "narration": null,
+     "filmed": "2026-11-23"
+    },
+    {
+     "text": null,
+     "clip": "OAP-react-22-ToolRenderingCustom",
+     "loom": "https://www.loom.com/share/c7a78a9db794427f9bfda7033d26d267",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "state-rendering",
+   "label": "State Rendering",
+   "kind": "guide",
+   "group": "Controlled",
+   "child": true,
+   "docPath": "generative-ui/state-rendering",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-38-StateRendering",
+     "loom": "https://www.loom.com/share/bb5a0a2c180e46f692245a0f1ebc3cd6",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "components",
+   "label": "Components and surfaces",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-23-Components",
+     "loom": "https://www.loom.com/share/b3dcb2882ba244a9a4ed581d117d72e0",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "components-surfaces",
+   "label": "Surfaces",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/surfaces",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-32-ComponentsSurfaces",
+     "loom": "https://www.loom.com/share/88265b6184264bf4918ac8133e3f133e",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "components-catalogs",
+   "label": "Catalogs",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/catalogs",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-31-ComponentsCatalogs",
+     "loom": "https://www.loom.com/share/69b9abe8b5ed4af9acaad2310e471a39",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "components-standard-catalog",
+   "label": "Standard catalog",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/standard-catalog",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: works, but the model sometimes answers in text instead of a component."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-39-ComponentsStandardCatalog",
+     "loom": "https://www.loom.com/share/9982bddceb9b46c8ac6e1dc58ea8ab80",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "components-state-actions",
+   "label": "State and actions",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/state-and-actions",
+   "reachable": "sidebar",
+   "status": "❌",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [
+    3
+   ],
+   "notes": [
+    "Issue: asked for product cards, render_ui is called but no ProductCard renders, the reply stays empty and the cart never fills (2/2 CI takes)."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-35-ComponentsStateActions",
+     "loom": "https://www.loom.com/share/12859e357ab94c4fabd3c5df8a5c7c9a",
+     "narration": "narration/scripts/OAP-react-35-ComponentsStateActions.json",
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "components-theming",
+   "label": "Theming",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/theming",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-33-ComponentsTheming",
+     "loom": "https://www.loom.com/share/de75a0ad6632478e9aa675b27ed51ee7",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "components-transports",
+   "label": "Transports",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/transports",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-34-ComponentsTransports",
+     "loom": "https://www.loom.com/share/61254bf76c3e43ae9f05d40704d2b83b",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "components-markdown-mode",
+   "label": "Markdown mode",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/markdown-mode",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-36-ComponentsMarkdownMode",
+     "loom": "https://www.loom.com/share/73884543985b4b47a8a1e38ded91b130",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "components-from-a2ui",
+   "label": "Adopt from A2UI",
+   "kind": "guide",
+   "group": "Declarative",
+   "child": false,
+   "docPath": "generative-ui/components/from-a2ui",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: the Airport and Arrow renderers are never shown."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-40-ComponentsFromA2UI",
+     "loom": "https://www.loom.com/share/aae1c0ff017642daa33b3ce7706fb91e",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "a2ui",
+   "label": "A2UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/a2ui",
+   "reachable": "sidebar",
+   "status": "❌",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [
+    4
+   ],
+   "notes": [
+    "Issue: with the OpenAI Agents agent from the Dynamic Schema Code tab (a2ui_dynamic.py, ag_ui_a2ui_toolkit), the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-28-A2UI",
+     "loom": "https://www.loom.com/share/913d53f3ccae42eb9f058c089d4fac10",
+     "narration": "narration/scripts/OAP-react-28-A2UI.json",
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "a2ui-dynamic",
+   "label": "Dynamic Schema A2UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/a2ui/dynamic-schema",
+   "reachable": "sidebar",
+   "status": "❌",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [
+    5
+   ],
+   "notes": [
+    "Issue: following the Code tab's OpenAI Agents agent (a2ui_dynamic.py, ag_ui_a2ui_toolkit), the surface fails with A2UI render error: Cannot read properties of undefined (reading 'map')."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-29-A2UIDynamicSchema",
+     "loom": "https://www.loom.com/share/22b9e140bce64e759858f1fd7edaf470",
+     "narration": "narration/scripts/OAP-react-29-A2UIDynamicSchema.json",
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "a2ui-fixed",
+   "label": "Fixed Schema A2UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/a2ui/fixed-schema",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: the agent and flight_schema.json are in the Code tab; demo_agents._common and the agent server are not shown."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-30-A2UIFixedSchema",
+     "loom": "https://www.loom.com/share/7a93390be7654af3aae35fa04dd1375e",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "json-render",
+   "label": "JSON Render",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/json-render",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: the agent and its prompt are in the page's Code tab; demo_agents._common (MODEL, chat_settings) is never shown."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-25-JsonRender",
+     "loom": "https://www.loom.com/share/ad5c23fbfa0e470b9b3c996f4be44328",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "hashbrown",
+   "label": "Hashbrown",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/hashbrown",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: the agent and its prompt are in the page's Code tab; demo_agents._common (MODEL, chat_settings) is never shown."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-26-Hashbrown",
+     "loom": "https://www.loom.com/share/e0e711aec8c346eba60f0b1dfe586a14",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "mcp-apps",
+   "label": "MCP Apps",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/mcp-apps",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-24-McpApps",
+     "loom": "https://www.loom.com/share/f3acca77d56d42759c2a699fd477613f",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "open-generative-ui",
+   "label": "Open Generative UI",
+   "kind": "guide",
+   "group": "A2UI",
+   "child": false,
+   "docPath": "generative-ui/open-generative-ui",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: VISUALIZATION_DESIGN_SKILL is never defined."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-27-OpenGenerativeUI",
+     "loom": "https://www.loom.com/share/49869135b0654e568995442cf1ac412c",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "shared-state",
+   "label": "Shared State",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "shared-state",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: step 1 uses set_notes before step 2 defines it."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-41-SharedState",
+     "loom": "https://www.loom.com/share/e8c48acfc2be45cd91fee087f0764012",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "rendering-in-app",
+   "label": "Render agent state in your app",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "shared-state/rendering-in-app",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: useAgent() and the provider default to the \"default\" agent; add agent=\"openai_agent\" to the provider."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-42-RenderAgentState",
+     "loom": "https://www.loom.com/share/a8568acd5f4d43c2bdf9fdba8bb9810e",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "state-streaming",
+   "label": "State Streaming",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "shared-state/streaming",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: shared_state_streaming_agent is never defined on the page."
+   ],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-43-StateStreaming",
+     "loom": "https://www.loom.com/share/1fcd1d686a594cae9de682134d5a7d67",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "agent-readonly",
+   "label": "Agent Read-Only Context",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "shared-state/agent-readonly",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-44-AgentReadOnly",
+     "loom": "https://www.loom.com/share/3e817d2f54c2480d8b14965dbe87678f",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "human-in-the-loop",
+   "label": "HITL Overview",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "human-in-the-loop",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-45-HumanInTheLoop",
+     "loom": "https://www.loom.com/share/5e25053ae02d4f65a290727207f7432e",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "use-interrupt",
+   "label": "Pausing the Agent for Input",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": true,
+   "docPath": "human-in-the-loop/useInterrupt",
+   "reachable": "sidebar",
+   "status": "N/A",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: the page says to use useHumanInTheLoop on this framework (interrupts unavailable)."
+   ],
+   "links": []
+  },
+  {
+   "id": "headless-interrupts",
+   "label": "Headless Interrupts",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": true,
+   "docPath": "human-in-the-loop/headless",
+   "reachable": "sidebar",
+   "status": "N/A",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "notes": [
+    "Note: the page says to use useHumanInTheLoop on this framework (interrupts unavailable)."
+   ],
+   "links": []
+  },
+  {
+   "id": "governed-actions",
+   "label": "Governed Action Approval UI",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": true,
+   "docPath": "human-in-the-loop/governed-actions",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-46-GovernedActions",
+     "loom": "https://www.loom.com/share/bf4404e2dcf04f57bce09fdb6d45872d",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ],
+   "notes": [
+    "Note: the only agent shown is LangGraph Python (interrupt path); recorded with the useHumanInTheLoop path on the quickstart agent."
+   ]
+  },
+  {
+   "id": "webmcp",
+   "label": "WebMCP",
+   "kind": "guide",
+   "group": "Shared State",
+   "child": false,
+   "docPath": "webmcp",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-47-WebMCP",
+     "loom": "https://www.loom.com/share/86cde9fce8f5407682494eaa9ac1061f",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "subagents",
+   "label": "Sub-agents",
+   "kind": "guide",
+   "group": "Agent Capabilities",
+   "child": false,
+   "docPath": "multi-agent/subagents",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-48-SubAgents",
+     "loom": "https://www.loom.com/share/12da9b8322924f9d9ea63f61eca037aa",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "agent-config",
+   "label": "Agent Config",
+   "kind": "guide",
+   "group": "Agent Capabilities",
+   "child": false,
+   "docPath": "agent-config",
+   "reachable": "in-content",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-18-AgentConfig",
+     "loom": "https://www.loom.com/share/7cc9089b0923400bbbe2195d296a8920",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  },
+  {
+   "id": "inspector",
+   "label": "Inspector",
+   "kind": "guide",
+   "group": "Debugging",
+   "child": false,
+   "docPath": "inspector",
+   "reachable": "sidebar",
+   "status": "✅",
+   "review": {
+    "verdict": null,
+    "approvedAt": null,
+    "by": null
+   },
+   "findings": [],
+   "links": [
+    {
+     "text": null,
+     "clip": "OAP-react-19-Inspector",
+     "loom": "https://www.loom.com/share/a91cf9dd952e42348a873155ee9be421",
+     "narration": null,
+     "filmed": "2026-11-23"
+    }
+   ]
+  }
+ ]
 }
