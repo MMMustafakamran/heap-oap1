@@ -1369,7 +1369,8 @@
      "narration": null,
      "filmed": "2026-11-23"
     }
-   ]
+   ],
+   "excluded": "Backend section of the docs sidebar (owner 2026-11-23: Backend pages out of scope)"
   }
  ]
 }
