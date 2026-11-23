@@ -99,7 +99,10 @@ export const PAGES_A = [
       { filePath: 'frontend/app/voice/sample-audio-button.tsx', startLine: 1, endLine: 17 },
       { filePath: 'frontend/app/voice/voice-chat.tsx', startLine: 1, endLine: 20 },
     ],
+    // Spoken through the mic, not typed: assets/voice-prompt.wav (Windows SAPI voice) is the take's fake mic.
     prompt: 'What is the weather in Tokyo?',
+    fakeMicWav: 'assets/voice-prompt.wav',
+    timeouts: { replyStartMs: 120_000, replyStreamMs: 90_000 },
   },
   {
     id: 'prebuilt-components-copilot-threads-drawer', name: 'Prebuilt Components - Threads Drawer', videoName: 'ThreadsDrawer',

@@ -19,11 +19,13 @@ import {
   runPromptOrError,
   runRenderingInAppAction,
   runThreadsDrawerAction,
+  runVoiceMicAction,
   SCRIPTED,
 } from './openai-agents.actions';
 
 /** Keys are page ids from `config/pages.config.ts`. Doctor flags any orphans. */
 export const ACTION_MAP: Record<string, PageActionHandler> = {
+  voice: runVoiceMicAction, // spoken through the fake mic (fakeMicWav)
   // ❌ finding pages (level 1 full clips)
   'components-state-actions': runGenuiFindingAction, // #3
   components: runGenuiAction, // ✅: surface renders (2/2 CI takes 2026-11-20)
