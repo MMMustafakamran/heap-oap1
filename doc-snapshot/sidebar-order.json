@@ -1,0 +1,1481 @@
+{
+ "root": "openai-agents-python",
+ "savedAt": "2026-11-23",
+ "pages": [
+  {
+   "url": "/openai-agents-python/quickstart",
+   "name": "Quickstart",
+   "group": []
+  },
+  {
+   "url": "/openai-agents-python/build-with-agents",
+   "name": "Build with agents",
+   "group": []
+  },
+  {
+   "url": "/openai-agents-python/intelligence/overview",
+   "name": "Intelligence",
+   "group": []
+  },
+  {
+   "url": "/openai-agents-python/prebuilt-components/chat",
+   "name": "CopilotChat",
+   "group": [
+    "Basics",
+    "Chat",
+    "Prebuilt Components"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/prebuilt-components/sidebar",
+   "name": "CopilotSidebar",
+   "group": [
+    "Basics",
+    "Chat",
+    "Prebuilt Components"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/prebuilt-components/popup",
+   "name": "CopilotPopup",
+   "group": [
+    "Basics",
+    "Chat",
+    "Prebuilt Components"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/prebuilt-components/chat-controls",
+   "name": "Open, close, and feedback",
+   "group": [
+    "Basics",
+    "Chat",
+    "Prebuilt Components"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/custom-look-and-feel/css",
+   "name": "CSS Customization",
+   "group": [
+    "Basics",
+    "Chat",
+    "Custom Look and Feel"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/custom-look-and-feel/slots",
+   "name": "Slots (Subcomponents)",
+   "group": [
+    "Basics",
+    "Chat",
+    "Custom Look and Feel"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/custom-look-and-feel/markdown",
+   "name": "Markdown Rendering",
+   "group": [
+    "Basics",
+    "Chat",
+    "Custom Look and Feel"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/custom-look-and-feel/headless-ui",
+   "name": "Headless UI",
+   "group": [
+    "Basics",
+    "Chat",
+    "Custom Look and Feel"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/custom-look-and-feel/reasoning-messages",
+   "name": "Reasoning Messages",
+   "group": [
+    "Basics",
+    "Chat",
+    "Custom Look and Feel"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/multimodal-attachments",
+   "name": "Multimodal Attachments",
+   "group": [
+    "Basics",
+    "Chat"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/voice",
+   "name": "Voice",
+   "group": [
+    "Basics",
+    "Chat"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/reasoning",
+   "name": "Reasoning",
+   "group": [
+    "Basics",
+    "Chat"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/prebuilt-components/copilot-threads-drawer",
+   "name": "Threads Drawer",
+   "group": [
+    "Basics",
+    "Threads"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/headless-threads",
+   "name": "Headless Threads",
+   "group": [
+    "Basics",
+    "Threads"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/frontend-tools",
+   "name": "Frontend-tools",
+   "group": [
+    "Basics"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/tool-based",
+   "name": "Components as Tools",
+   "group": [
+    "Generative UI",
+    "Controlled"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/tool-rendering",
+   "name": "Tool Call Rendering",
+   "group": [
+    "Generative UI",
+    "Controlled"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/state-rendering",
+   "name": "State Rendering",
+   "group": [
+    "Generative UI",
+    "Controlled"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components",
+   "name": "Components and surfaces",
+   "group": [
+    "Generative UI",
+    "Declarative"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/surfaces",
+   "name": "Surfaces",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/catalogs",
+   "name": "Catalogs",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog",
+   "name": "Standard catalog",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/box",
+   "name": "Box",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Layout"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/column",
+   "name": "Column",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Layout"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/row",
+   "name": "Row",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Layout"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/grid",
+   "name": "Grid",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Layout"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/card",
+   "name": "Card",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Layout"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/flow",
+   "name": "Flow",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Layout"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/carousel",
+   "name": "Carousel",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Layout"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/spacer",
+   "name": "Spacer",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Layout"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/divider",
+   "name": "Divider",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Layout"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/tabs",
+   "name": "Tabs",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Layout"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/title",
+   "name": "Title",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/text",
+   "name": "Text",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/caption",
+   "name": "Caption",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/label",
+   "name": "Label",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/bold",
+   "name": "Bold",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/italic",
+   "name": "Italic",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/underline",
+   "name": "Underline",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/strikethrough",
+   "name": "Strikethrough",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/badge",
+   "name": "Badge",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/blockquote",
+   "name": "Blockquote",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/code",
+   "name": "Code",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/markdown",
+   "name": "Markdown",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/math",
+   "name": "Math",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/shimmer-text",
+   "name": "ShimmerText",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/link",
+   "name": "Link",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/tooltip",
+   "name": "Tooltip",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Text"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/button",
+   "name": "Button",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/pressable",
+   "name": "Pressable",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/form",
+   "name": "Form",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/text-field",
+   "name": "TextField",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/text-area",
+   "name": "TextArea",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/select",
+   "name": "Select",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/check-box",
+   "name": "CheckBox",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/radio",
+   "name": "Radio",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/radio-group",
+   "name": "RadioGroup",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/slider",
+   "name": "Slider",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/segmented-control",
+   "name": "SegmentedControl",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/choice-picker",
+   "name": "ChoicePicker",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/date-time-input",
+   "name": "DateTimeInput",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Inputs"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/table",
+   "name": "Table",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Data"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/list",
+   "name": "List",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Data"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/chart",
+   "name": "Chart",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Data"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/map",
+   "name": "Map",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Data"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/image",
+   "name": "Image",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Media"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/icon",
+   "name": "Icon",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Media"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/favicon",
+   "name": "Favicon",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Media"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/svg",
+   "name": "Svg",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Media"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/video",
+   "name": "Video",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Media"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/audio-player",
+   "name": "AudioPlayer",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Media"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/html-view",
+   "name": "HtmlView",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Media"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/pulse-indicator",
+   "name": "PulseIndicator",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Feedback and overlay"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/flashcard-flip",
+   "name": "FlashcardFlip",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Feedback and overlay"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/popover",
+   "name": "Popover",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Feedback and overlay"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/modal",
+   "name": "Modal",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Feedback and overlay"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/link-card",
+   "name": "LinkCard",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Composites"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/citation",
+   "name": "Citation",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Composites"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/follow-up",
+   "name": "FollowUp",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Composites"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/entity-card",
+   "name": "EntityCard",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Composites"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/standard-catalog/image-grid",
+   "name": "ImageGrid",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces",
+    "Standard catalog",
+    "Composites"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/state-and-actions",
+   "name": "State and actions",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/theming",
+   "name": "Theming",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/transports",
+   "name": "Transports",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/markdown-mode",
+   "name": "Markdown mode",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/components/from-a2ui",
+   "name": "Adopt from A2UI",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "Components and surfaces"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/a2ui",
+   "name": "A2UI",
+   "group": [
+    "Generative UI",
+    "Declarative"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/a2ui/dynamic-schema",
+   "name": "Dynamic Schema A2UI",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "A2UI"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/a2ui/fixed-schema",
+   "name": "Fixed Schema A2UI",
+   "group": [
+    "Generative UI",
+    "Declarative",
+    "A2UI"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/json-render",
+   "name": "JSON Render",
+   "group": [
+    "Generative UI",
+    "Declarative"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/hashbrown",
+   "name": "Hashbrown",
+   "group": [
+    "Generative UI",
+    "Declarative"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/mcp-apps",
+   "name": "MCP Apps",
+   "group": [
+    "Generative UI",
+    "Open-ended"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/generative-ui/open-generative-ui",
+   "name": "Open Generative UI",
+   "group": [
+    "Generative UI",
+    "Open-ended"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/shared-state",
+   "name": "Shared State",
+   "group": [
+    "Interactivity",
+    "Shared state"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/shared-state/rendering-in-app",
+   "name": "Render agent state in your app",
+   "group": [
+    "Interactivity",
+    "Shared state"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/shared-state/streaming",
+   "name": "State Streaming",
+   "group": [
+    "Interactivity",
+    "Shared state"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/shared-state/agent-readonly",
+   "name": "Agent Read-Only Context",
+   "group": [
+    "Interactivity",
+    "Shared state"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/human-in-the-loop",
+   "name": "HITL Overview",
+   "group": [
+    "Interactivity",
+    "Human-in-the-loop"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/human-in-the-loop/useInterrupt",
+   "name": "Pausing the Agent for Input",
+   "group": [
+    "Interactivity",
+    "Human-in-the-loop"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/human-in-the-loop/headless",
+   "name": "Headless Interrupts",
+   "group": [
+    "Interactivity",
+    "Human-in-the-loop"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/human-in-the-loop/governed-actions",
+   "name": "Governed Action Approval UI",
+   "group": [
+    "Interactivity",
+    "Human-in-the-loop"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/webmcp",
+   "name": "WebMCP",
+   "group": [
+    "Interactivity"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/multi-agent/subagents",
+   "name": "Sub-agents",
+   "group": [
+    "Agent capabilities"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/quickstart",
+   "name": "Quickstart",
+   "group": [
+    "Intelligence",
+    "Get started"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/intelligence-platform",
+   "name": "Architecture",
+   "group": [
+    "Intelligence",
+    "Get started"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/plans",
+   "name": "Plans",
+   "group": [
+    "Intelligence",
+    "Get started"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/AG-UI-Streams",
+   "name": "Overview",
+   "group": [
+    "Intelligence",
+    "Features",
+    "AG-UI Streams"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/bring-your-own-thread-system",
+   "name": "Bring your own thread system",
+   "group": [
+    "Intelligence",
+    "Features",
+    "AG-UI Streams"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/server-side-runs",
+   "name": "Server-side runs",
+   "group": [
+    "Intelligence",
+    "Features",
+    "AG-UI Streams"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/threads-import",
+   "name": "Add to Existing Threads",
+   "group": [
+    "Intelligence",
+    "Features",
+    "AG-UI Streams"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/threads-lifecycle",
+   "name": "Thread & History Lifecycle",
+   "group": [
+    "Intelligence",
+    "Features",
+    "AG-UI Streams"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/threads-explained",
+   "name": "Streams & Framework Threads",
+   "group": [
+    "Intelligence",
+    "Features",
+    "AG-UI Streams"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/learning",
+   "name": "Overview",
+   "group": [
+    "Intelligence",
+    "Features",
+    "Automatic Learning"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/learned-skills",
+   "name": "Skill delivery",
+   "group": [
+    "Intelligence",
+    "Features",
+    "Automatic Learning"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/memories",
+   "name": "User Memories",
+   "group": [
+    "Intelligence",
+    "Features"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/trajectories",
+   "name": "Overview",
+   "group": [
+    "Intelligence",
+    "Features",
+    "Trajectories"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/trajectories-quickstart",
+   "name": "Quickstart",
+   "group": [
+    "Intelligence",
+    "Features",
+    "Trajectories"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/capture-interactions",
+   "name": "Capture interactions",
+   "group": [
+    "Intelligence",
+    "Features",
+    "Trajectories"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/captured-data",
+   "name": "Captured data",
+   "group": [
+    "Intelligence",
+    "Features",
+    "Trajectories"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/trajectories-reference",
+   "name": "API reference",
+   "group": [
+    "Intelligence",
+    "Features",
+    "Trajectories"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/standalone-collector",
+   "name": "Standalone collector",
+   "group": [
+    "Intelligence",
+    "Features"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/analytics",
+   "name": "Product Analytics",
+   "group": [
+    "Intelligence",
+    "Features"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/channels",
+   "name": "Channels",
+   "group": [
+    "Intelligence",
+    "Features"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/managed-intelligence-platform",
+   "name": "Cloud-hosted",
+   "group": [
+    "Intelligence",
+    "Hosting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/self-hosting",
+   "name": "Self-hosted",
+   "group": [
+    "Intelligence",
+    "Hosting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/self-hosting-ecs",
+   "name": "AWS ECS/Fargate",
+   "group": [
+    "Intelligence",
+    "Hosting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/intelligence/self-hosting-local",
+   "name": "Local evaluation",
+   "group": [
+    "Intelligence",
+    "Hosting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/backend/copilot-runtime",
+   "name": "Copilot Runtime",
+   "group": [
+    "Backend",
+    "Runtime"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/backend/runtime-endpoints",
+   "name": "Runtime HTTP endpoints",
+   "group": [
+    "Backend",
+    "Runtime"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/backend/custom-agent",
+   "name": "Use any model router",
+   "group": [
+    "Backend",
+    "Runtime"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/backend/custom-ag-ui-agent",
+   "name": "Write your own AG-UI agent",
+   "group": [
+    "Backend",
+    "Runtime"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/backend/agent-runner",
+   "name": "AgentRunner and persistence",
+   "group": [
+    "Backend",
+    "Runtime"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/backend/message-history",
+   "name": "Message history",
+   "group": [
+    "Backend",
+    "Runtime"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/backend/self-managed-agents",
+   "name": "Self-managed agents",
+   "group": [
+    "Backend",
+    "Runtime"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/backend/ag-ui",
+   "name": "Connect AG-UI agents",
+   "group": [
+    "Backend",
+    "Runtime"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/runtime-server-adapter",
+   "name": "Deploy to any runtime",
+   "group": [
+    "Backend",
+    "Runtime"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/auth",
+   "name": "Authentication",
+   "group": [
+    "Backend",
+    "Runtime"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/deploy/agentcore",
+   "name": "AWS AgentCore",
+   "group": [
+    "Backend",
+    "Deployment"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/deploy/aws-lambda",
+   "name": "AWS Lambda",
+   "group": [
+    "Backend",
+    "Deployment"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/deploy/langsmith",
+   "name": "LangSmith Platform",
+   "group": [
+    "Backend",
+    "Deployment"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/inspector",
+   "name": "Inspector",
+   "group": [
+    "Backend",
+    "Debugging"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/vs-code-extension",
+   "name": "VS Code Extension",
+   "group": [
+    "Backend",
+    "Debugging"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/concepts/architecture",
+   "name": "Architecture",
+   "group": [
+    "Learn",
+    "Concepts"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/concepts/generative-ui-overview",
+   "name": "Generative UI",
+   "group": [
+    "Learn",
+    "Concepts"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/concepts/which-hook",
+   "name": "Which Hook for Which Job",
+   "group": [
+    "Learn",
+    "Concepts"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/concepts/oss-vs-enterprise",
+   "name": "Open source vs Intelligence",
+   "group": [
+    "Learn",
+    "Concepts"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/contributing/code-contributions",
+   "name": "Code Contributions",
+   "group": [
+    "Other",
+    "Contributing"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/contributing/docs-contributions",
+   "name": "Documentation Contributions",
+   "group": [
+    "Other",
+    "Contributing"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/troubleshooting/common-issues",
+   "name": "Common Copilot Issues",
+   "group": [
+    "Other",
+    "Troubleshooting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/troubleshooting/error-reference",
+   "name": "Error message reference",
+   "group": [
+    "Other",
+    "Troubleshooting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/troubleshooting/error-debugging",
+   "name": "Error Debugging & Observability",
+   "group": [
+    "Other",
+    "Troubleshooting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/troubleshooting/inspector-dev-console",
+   "name": "Inspector and dev console",
+   "group": [
+    "Other",
+    "Troubleshooting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/troubleshooting/debug-mode",
+   "name": "Debug Mode",
+   "group": [
+    "Other",
+    "Troubleshooting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/troubleshooting/event-inspector",
+   "name": "AG-UI Event Inspector",
+   "group": [
+    "Other",
+    "Troubleshooting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/troubleshooting/hook-explorer",
+   "name": "Hook Explorer",
+   "group": [
+    "Other",
+    "Troubleshooting"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/telemetry",
+   "name": "Open-source telemetry",
+   "group": [
+    "Other"
+   ]
+  },
+  {
+   "url": "/openai-agents-python/community-frameworks",
+   "name": "Community frameworks",
+   "group": [
+    "Other"
+   ]
+  }
+ ]
+}
