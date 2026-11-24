@@ -1,0 +1,9 @@
+{
+ "text": "So basically, the page code is used as is, the card never renders, and it was the same on both runs.",
+ "model": "s2.1-pro-free",
+ "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
+ "duration": 8.545,
+ "file": "108c0f939f90a4fbbddbbd2307039c6b.mp3",
+ "clip": "OAP-react-23-Components",
+ "at": "notepad"
+}

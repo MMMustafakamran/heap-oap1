@@ -1,0 +1,31 @@
+{
+ "clip": "OAP-react-23-Components",
+ "finding": "30",
+ "segments": [
+  {
+   "at": "doc",
+   "text": "Ok so this is the Components and surfaces page for OpenAI Agents, and I'm reporting a problem on this page."
+  },
+  {
+   "at": "evidence",
+   "text": "So this is the problem, umm, the page says after step three the agent renders components in the chat, but nothing renders."
+  },
+  {
+   "at": "ide",
+   "text": "This is my project, I've implemented the exact code from the doc."
+  },
+  {
+   "at": "demo",
+   "text": "Moving on to the demo. I asked for a card with a bar chart and a buy button, it should show up in the chat, but uh, no card, just text."
+  },
+  {
+   "at": "notepad",
+   "text": "So basically, the page code is used as is, the card never renders, and it was the same on both runs."
+  },
+  {
+   "at": "+",
+   "text": "So yeah, kindly check this and fix it."
+  }
+ ],
+ "page": "components"
+}

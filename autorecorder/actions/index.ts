@@ -28,7 +28,7 @@ export const ACTION_MAP: Record<string, PageActionHandler> = {
   voice: runVoiceMicAction, // spoken through the fake mic (fakeMicWav)
   // ❌ finding pages (level 1 full clips)
   'components-state-actions': runGenuiFindingAction, // #3
-  components: runGenuiAction, // ✅: surface renders (2/2 CI takes 2026-11-20)
+  components: runGenuiFindingAction, // #30 (❌ since 2026-11-24: no surface, 2/2 probes + CI)
   a2ui: runA2uiDynamicFindingAction, // #4
   'a2ui-dynamic': runA2uiDynamicFindingAction, // #5
   // ✅ since 2026-11-20 (minor notes only)

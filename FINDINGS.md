@@ -10,6 +10,12 @@ Stack: `@copilotkit/react-core` 1.90.0, `@copilotkit/runtime` 1.90.0, `@ag-ui/cl
 
 **#3** Asked for product cards, `render_ui` is called, but the assistant message stays empty, no `ProductCard` renders and the cart never fills (2/2 CI runs). `shopUI` is split across several blocks on the page (merged into one catalog in the harness).
 
+### [Components and surfaces](https://docs.copilotkit.ai/openai-agents-python/generative-ui/components)
+
+**#30** After step 3 (provider with the standard catalog + `CopilotChat`, page code as is), asking for a card renders nothing.
+- **Doc:** "That is a working setup. The agent now renders standard components in the chat".
+- **Result (2/2 local probes + CI 2026-11-24):** no surface; the reply is plain text ("I can't render the card here…") or the chat shows "Part of this UI couldn't be shown." with the console saying no renderer is registered for `render_ui`. Rendered on 2026-11-20/23.
+
 ### [A2UI](https://docs.copilotkit.ai/openai-agents-python/generative-ui/a2ui)
 
 **#4** The surface never renders, even on the page's own OpenAI Agents agent.
