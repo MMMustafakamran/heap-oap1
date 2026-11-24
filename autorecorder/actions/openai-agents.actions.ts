@@ -64,8 +64,7 @@ export const FINDING_NOTES: Record<string, string> = {
     'asked for a card with a bar chart of plan prices and a buy button',
     'no card at all,just a plain text reply or part of this ui couldnt be shown',
     'provider and chat are the page code as is,render_ui gets no renderer,both runs same',
-  ].join('
-'),
+  ].join('\n'),
   // #22
   'components-theming': [
     'theming page says set the theme and the generated components use ur colors',
