@@ -9,6 +9,7 @@ export const PAGES_C = [
     ideFile: 'backend/c_shared_state.py', startLine: 1, endLine: 60,
     extraTabs: [{ filePath: 'frontend/app/shared-state-read-write/page.tsx', startLine: 40, endLine: 70 }],
     prompt: 'Remember that I love hiking. Also, what is my name?',
+    waitAfterPromptMs: 20000, // recorder: the text reply lands before set_notes fills the scratch pad (2026-11-24 take ended mid-run)
   },
   {
     id: 'rendering-in-app', name: 'Shared State - Render agent state in your app', videoName: 'RenderAgentState',
