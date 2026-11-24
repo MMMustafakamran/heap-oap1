@@ -58,14 +58,6 @@ export const FINDING_NOTES: Record<string, string> = {
     'used the openai agents agent from the code tab as is,a2ui_dynamic.py with ag_ui_a2ui_toolkit',
     'generate_a2ui runs and returns the surface but it never renders,same in both runs',
   ].join('\n'),
-  // #30
-  components: [
-    'components page says after step 3 the agent renders standard components in the chat',
-    'asked for a card with a bar chart of plan prices and a buy button',
-    'no card at all,just a plain text reply or part of this ui couldnt be shown',
-    'provider and chat are the page code as is,render_ui gets no renderer,both runs same',
-  ].join('
-'),
   // #22
   'components-theming': [
     'theming page says set the theme and the generated components use ur colors',
@@ -85,9 +77,6 @@ export const FINDING_EVIDENCE: Record<string, DocEvidence[]> = {
   ],
   'a2ui-dynamic': [
     { text: 'renders cards progressively as data items arrive', caption: 'Code-tab agent used as is; A2UI render error (reading map)' },
-  ],
-  components: [
-    { text: 'That is a working setup. The agent now renders standard components in the chat', caption: 'no surface renders, plain text reply' },
   ],
   'components-theming': [
     { text: 'Set the variables with the', caption: 'theme option; no themed component ever renders' },

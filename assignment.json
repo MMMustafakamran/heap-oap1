@@ -657,26 +657,21 @@
    "child": false,
    "docPath": "generative-ui/components",
    "reachable": "sidebar",
-   "status": "❌",
+   "status": "✅",
    "review": {
     "verdict": null,
     "approvedAt": null,
     "by": null
    },
-   "findings": [
-    30
-   ],
+   "findings": [],
    "links": [
     {
      "text": null,
      "clip": "OAP-react-23-Components",
      "loom": "https://www.loom.com/share/b3dcb2882ba244a9a4ed581d117d72e0",
-     "narration": "narration/scripts/OAP-react-23-Components.json",
+     "narration": null,
      "filmed": "2026-11-23"
     }
-   ],
-   "notes": [
-    "Issue: step 3 as written, asking for a card renders nothing, plain text reply."
    ]
   },
   {

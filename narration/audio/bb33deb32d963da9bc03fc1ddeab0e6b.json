@@ -1,9 +1,0 @@
-{
- "text": "So this is the problem, umm, the page says after step three the agent renders components in the chat, but nothing renders.",
- "model": "s2.1-pro-free",
- "refSha256": "2c9d0ecf4608feacc07c88e869cd4dec601481306a939b7be92fc1bff521a727",
- "duration": 9.66,
- "file": "bb33deb32d963da9bc03fc1ddeab0e6b.mp3",
- "clip": "OAP-react-23-Components",
- "at": "evidence"
-}
