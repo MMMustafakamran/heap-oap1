@@ -12,6 +12,7 @@ import { voiceGate } from '../core/voice';
 import { isFast } from '../core/fast';
 import { SELECTORS } from '../config/selectors.config';
 import { registerDocEvidence } from '../core/doc-evidence';
+import { runEnded, waitForUiOrRunEnd } from '../core/run-watch';
 
 import { humanizeNote } from '../core/overlays/note-style';
 /** Probe: the last assistant message's text (null when there is none). Read-only. */
@@ -475,6 +476,7 @@ const keyboardSend: PageActionHandler = async (page, config, _root, ctx) => {
   logAction('type', describe(input), 'ok', { text: config.prompt });
   await sleep(400);
   if (!(await input.inputValue().catch(() => config.prompt)).trim()) await input.fill(config.prompt);
+  const sentAt = Date.now();
   await page.keyboard.press('Enter');
   logAction('key', 'Enter');
   const errored = await Promise.race([
@@ -482,13 +484,19 @@ const keyboardSend: PageActionHandler = async (page, config, _root, ctx) => {
     waitForAgentResponseCompletion(page, 2500, before).then(() => false),
     // Generative-UI pages often answer with a surface only (no assistant text), which the
     // text-based reply check never sees. A new surface counts as the reply.
-    page
-      .waitForFunction(
+    // Gives up once the agent run ended and the screen stayed still (core/run-watch.ts); 180 s cap.
+    waitForUiOrRunEnd(
+      page,
+      page.waitForFunction(
         (n) => document.querySelectorAll('[data-generative-ui-surface], .a2ui-surface').length > n,
         surfacesBefore,
         { timeout: 180000, polling: 500 },
-      )
-      .then(async () => { await sleep(6000); return false; }),
+      ),
+      { timeoutMs: 180000, sinceT: sentAt },
+    ).then(async (r) => {
+      if (r.ui) { await sleep(6000); return false; }
+      return null; // run over, nothing rendered: the reply checkpoint fails below
+    }),
   ]).catch((e) => {
     ctx.fail(`No reply after a keyboard send: ${String(e).slice(0, 160)}`);
     return null;
@@ -626,10 +634,10 @@ const genuiTake: PageActionHandler = async (page, config, _root, ctx) => {
   });
   // The run is one streamed POST to the runtime (/api/copilotkit/agent/<id>/run); it finishes
   // when the agent run ends, whatever the agent sent.
-  const runDone = page
-    .waitForEvent('requestfinished', { predicate: (r) => /\/agent\/[^/]+\/run/.test(r.url()), timeout: 180000 })
-    .then(() => true)
-    .catch(() => false);
+  // core/run-watch.ts also reads the stream: RUN_FINISHED / RUN_ERROR end it even when the
+  // connection stays open (it used to sit out the 180 s cap, review 2026-11-27).
+  const sentAt = Date.now();
+  const runDone = runEnded(page, sentAt, 180000).then((e) => !!e);
   await glideClick(page, input);
   await sleep(300);
   await page.keyboard.type(config.prompt, { delay: 45 });
@@ -637,14 +645,15 @@ const genuiTake: PageActionHandler = async (page, config, _root, ctx) => {
   await sleep(400);
   await page.keyboard.press('Enter');
   logAction('key', 'Enter');
-  const appeared = page
-    .waitForFunction(
+  const appeared = waitForUiOrRunEnd(
+    page,
+    page.waitForFunction(
       ({ sel, n }) => document.querySelectorAll(sel).length > n,
       { sel: SURFACE_SEL, n: before },
       { timeout: 180000, polling: 500 },
-    )
-    .then(() => 'surface' as const)
-    .catch(() => null);
+    ),
+    { timeoutMs: 180000, sinceT: sentAt },
+  ).then((r) => (r.ui ? ('surface' as const) : null));
   const first = await Promise.race([
     appeared,
     runDone.then(() => 'done' as const),
@@ -746,10 +755,9 @@ async function sendAndAwaitRun(page: Page, prompt: string, timeoutMs: number): P
   const input = page.locator('textarea:visible, [contenteditable="true"]:visible').first();
   await input.waitFor({ state: 'visible', timeout: 60000 });
   await sleep(2000);
-  const runDone = page
-    .waitForEvent('requestfinished', { predicate: isRunRequest, timeout: timeoutMs })
-    .then(() => true)
-    .catch(() => false);
+  // Run end from core/run-watch.ts (stream events or the POST finishing); timeoutMs is the cap.
+  void isRunRequest;
+  const runDone = runEnded(page, Date.now(), timeoutMs).then((e) => !!e);
   await glideClick(page, input);
   await sleep(300);
   await page.keyboard.type(prompt, { delay: 45 });
